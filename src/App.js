@@ -6,9 +6,12 @@ import {
 import HomePage from './Pages/HomePage.jsx';
 import ContactPage from './Pages/ContactPage.jsx';
 import FarmMap from './Pages/FarmMap.jsx';
+import Section14Map from './Pages/Section14Map.jsx';
 import OxfordMap from './Pages/OxfordMap.jsx';
 import RegionMap from './Pages/RegionMap.jsx';
 import OhioRiverValleyMap from './Pages/OhioRiverValleyMap.jsx';
+import UnitedStatesMap from './Pages/UnitedStatesMap.jsx';
+import EarthMap from './Pages/EarthMap.jsx';
 
 const Routes = () => (
   <Router>
@@ -16,9 +19,12 @@ const Routes = () => (
       <Route exact path="/" component={HomePage} />
       <Route path="/contact" component={ContactPage} />
       <Route path="/explore/farm" component={FarmMap} />
+      <Route path="/explore/section14" component={Section14Map} />
       <Route path="/explore/oxford" component={OxfordMap} />
       <Route path="/explore/region" component={RegionMap} />
       <Route path="/explore/ohiorivervalley" component={OhioRiverValleyMap} />
+      <Route path="/explore/unitedstates" component={UnitedStatesMap} />
+      <Route path="/explore/earth" component={EarthMap} />
     </div>
   </Router>
 )

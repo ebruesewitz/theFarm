@@ -15,8 +15,8 @@ const OxfordMapWithClasses = ({
       previousPageTitle="The Region"
       previousPageLink="/explore/region"
       pageTitle="Oxford"
-      nextPageTitle="The Farm"
-      nextPageLink="/explore/farm"
+      nextPageTitle="Section 14"
+      nextPageLink="/explore/section14"
       classes
     >
       <img src={BeesIcon} className={[classes.beesIcon, classes.mapIcons].join(" ")} alt="" />

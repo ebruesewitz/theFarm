@@ -12,10 +12,10 @@ const FarmMapWithClasses = ({
   classes
 }) => (
   <MapPage
-      iconImages={[HarvestIcon, BreakingGroundIcon, InstituteforFoodIcon, LandscapeChoreographyIcon, StudentReflectionsIcon]}
+    iconImages={[HarvestIcon, BreakingGroundIcon, InstituteforFoodIcon, LandscapeChoreographyIcon, StudentReflectionsIcon]}
     mapImage={FarmImage}
-    previousPageTitle="Oxford"
-    previousPageLink="/explore/oxford"
+    previousPageTitle="Section 14"
+    previousPageLink="/explore/section14"
     pageTitle="The Farm"
     classes
   >
