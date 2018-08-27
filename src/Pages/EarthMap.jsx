@@ -15,8 +15,24 @@ const EarthMapWithClasses = ({
       nextPageTitle="United States"
       nextPageLink="/explore/unitedstates"
       classes
+      iconInformationMap={{
+        [WeBelieveIcon]: {
+          articleTitle: "We believe...",
+          articleContent: "When we met to envision the Institute for Food Farm in January, 2016," + 
+            " the group of participants—students, faculty, and members of the Oxford" + 
+            " community—responded to the prompt, “We believe in an Institute for Food.." + 
+            " (fill in the blank).” Here are the somber, serious, playful, joyous, imaginative" + 
+            " results—a snapshot of spontaneous collective wisdom.",
+          articleLink: "/essays/webelieve",
+        },
+      }}
     >
-      <img src={WeBelieveIcon} className={[classes.weBelieveIcon, classes.mapIcons].join(" ")} alt="" />
+      <img 
+        alt="" 
+        className={[classes.weBelieveIcon, classes.mapIcons].join(" ")}
+        id={WeBelieveIcon}
+        src={WeBelieveIcon}
+      />
     </MapPage>
   );
 
@@ -26,7 +42,7 @@ const styles = {
     height: '6vh',
     cursor: 'pointer',
     '&:hover': {
-      opacity: .5,
+      opacity: '1 !important',
     }
   },
   weBelieveIcon: {

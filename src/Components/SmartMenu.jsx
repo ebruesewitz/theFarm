@@ -47,6 +47,8 @@ export default class SmartMenu extends Component{
       shouldShowArrow,
       children,
       iconImages,
+      selectedIcon,
+      setSelectedIcon, 
     } = this.props;
 
     return(
@@ -57,6 +59,8 @@ export default class SmartMenu extends Component{
         arrowDirection={this.state.arrowDirection}
         isOpen={this.state.isMenuOpen}
         shouldShowArrow={shouldShowArrow}
+        selectedIcon={selectedIcon}
+        setSelectedIcon={setSelectedIcon}
       >
         {children}  
       </Menu>

@@ -12,6 +12,8 @@ import RegionMap from './Pages/RegionMap.jsx';
 import OhioRiverValleyMap from './Pages/OhioRiverValleyMap.jsx';
 import UnitedStatesMap from './Pages/UnitedStatesMap.jsx';
 import EarthMap from './Pages/EarthMap.jsx';
+import WeBelieve from './Pages/Essays/WeBelieve/index';
+import CornAndCows from './Pages/Essays/CornAndCows/index';
 
 const Routes = () => (
   <Router>
@@ -23,8 +25,12 @@ const Routes = () => (
       <Route path="/explore/oxford" component={OxfordMap} />
       <Route path="/explore/region" component={RegionMap} />
       <Route path="/explore/ohiorivervalley" component={OhioRiverValleyMap} />
+
       <Route path="/explore/unitedstates" component={UnitedStatesMap} />
+      <Route path="/essays/cornandcows" component={CornAndCows} />
+
       <Route path="/explore/earth" component={EarthMap} />
+      <Route path="/essays/webelieve" component={WeBelieve} />
     </div>
   </Router>
 )

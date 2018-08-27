@@ -1,75 +1,117 @@
-import React from 'react';
+import React, { Component } from 'react';
 import injectSheet from 'react-jss';
 import { Link } from 'react-router-dom'
 import ZoomIn from '../images/zoomin.png';
 import ZoomOut from '../images/zoomout.png';
 import SmartMenu from '../Components/SmartMenu';
 
-const MapPageWithClasses = ({
-  children,
-  iconImages,
-  mapImage,
-  mapClassName,
-  previousPageTitle,
-  previousPageLink,
-  pageTitle,
-  nextPageTitle,
-  nextPageLink,
-  classes
-}) => (
-  <div>
-    <SmartMenu iconImages={iconImages} />
-    <div className={classes.homePage}>
-      <div className={classes.pageContainer}>
-        <div className={classes.imageContainer}>
-          <img src={mapImage} className={[classes.map, mapClassName].join(" ")} />
-        </div>
-        {
-          previousPageTitle &&
-          <h1 className={[classes.bannerText, classes.previousTitle].join(" ")}>{previousPageTitle}</h1>
-        }
-        <h1 className={classes.bannerText}>{pageTitle}</h1>
-        {children}
-        <div className={classes.zoomControls}>
-          {
-            nextPageTitle ?
-              <div className={classes.zoomIconAndText}>
-                <div className={classes.zoomText}>Zoom in to {nextPageTitle}</div>
-                <Link to={nextPageLink}>
-                  <div className={classes.iconContainer}>
-                    <img src={ZoomIn} alt="" />
+class MapPageWithClasses extends Component {
+  constructor(){
+    super();
+    this.state = {
+      selectedIcon: null,
+    };
+  }
+
+  setSelectedIcon = (event) => {
+    this.setState({selectedIcon: event.target.id});
+  }
+
+  render(){
+    const {
+      children,
+      iconImages,
+      iconInformationMap,
+      mapImage,
+      mapClassName,
+      previousPageTitle,
+      previousPageLink,
+      pageTitle,
+      nextPageTitle,
+      nextPageLink,
+      classes
+    } = this.props;
+
+    return (
+      <div>
+        <SmartMenu 
+          iconImages={iconImages} 
+          selectedIcon={this.state.selectedIcon}
+          setSelectedIcon={this.setSelectedIcon}
+        />
+        <div className={classes.homePage}>
+          <div className={classes.pageContainer}>
+            <div className={classes.imageContainer}>
+              <img src={mapImage} className={[classes.map, mapClassName].join(" ")} />
+            </div>
+            {
+              previousPageTitle &&
+              <h1 className={[classes.bannerText, classes.previousTitle].join(" ")}>{previousPageTitle}</h1>
+            }
+            <h1 className={classes.bannerText}>{pageTitle}</h1>
+            {
+              React.Children.map(children, child =>
+                React.cloneElement(child, {
+                  onClick: this.setSelectedIcon,
+                  style: child.props.id === this.state.selectedIcon ? {opacity: 100} : {opacity: .5}
+                })
+              )
+      
+            }
+            {
+              this.state.selectedIcon && iconInformationMap && iconInformationMap[this.state.selectedIcon] &&
+              <div className={classes.summaryContainer}>
+                <h2>{iconInformationMap[this.state.selectedIcon].articleTitle}</h2>
+                <p>{iconInformationMap[this.state.selectedIcon].articleContent}</p>
+                <Link to={iconInformationMap[this.state.selectedIcon].articleLink}>
+                  <div className={classes.readMoreButton}>
+                    Read More
                   </div>
                 </Link>
               </div>
-            :
-              <div className={classes.zoomIconAndText}>
-                <div className={[classes.disabledIcon, classes.iconContainer].join(" ")}>
-                  <img src={ZoomIn} alt="" />
-                </div>
-              </div>
-          }
-          {
-            previousPageTitle ?
-              <div className={classes.zoomIconAndText}>
-                <div className={classes.zoomText}>Zoom out to {previousPageTitle}</div>
-                <Link to={previousPageLink}>
-                  <div className={classes.iconContainer}>
-                    <img src={ZoomOut} alt="" />
+            }
+            <div className={classes.zoomControls}>
+              {
+                nextPageTitle ?
+                  <div className={classes.zoomIconAndText}>
+                    <div className={classes.zoomText}>Zoom in to {nextPageTitle}</div>
+                    <Link to={nextPageLink}>
+                      <div className={classes.iconContainer}>
+                        <img src={ZoomIn} alt="" />
+                      </div>
+                    </Link>
                   </div>
-                </Link>
-              </div>
-            :
-              <div className={classes.zoomIconAndText}>
-                <div className={[classes.disabledIcon, classes.iconContainer].join(" ")}>
-                  <img src={ZoomOut} alt="" />
-                </div>
-              </div>
-          }
+                :
+                  <div className={classes.zoomIconAndText}>
+                    <div className={[classes.disabledIcon, classes.iconContainer].join(" ")}>
+                      <img src={ZoomIn} alt="" />
+                    </div>
+                  </div>
+              }
+              {
+                previousPageTitle ?
+                  <div className={classes.zoomIconAndText}>
+                    <div className={classes.zoomText}>Zoom out to {previousPageTitle}</div>
+                    <Link to={previousPageLink}>
+                      <div className={classes.iconContainer}>
+                        <img src={ZoomOut} alt="" />
+                      </div>
+                    </Link>
+                  </div>
+                :
+                  <div className={classes.zoomIconAndText}>
+                    <div className={[classes.disabledIcon, classes.iconContainer].join(" ")}>
+                      <img src={ZoomOut} alt="" />
+                    </div>
+                  </div>
+              }
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-);
+    );
+  }
+}
 
 const styles = {
   homePage: {
@@ -128,6 +170,45 @@ const styles = {
     '@media (max-width: 760px)': {
       top: 45,
     }
+  },
+  summaryContainer: {
+    width: '25vw',
+    maxHeight: '60vh',
+    backgroundColor: '#ffffff',
+    overflowY: 'scroll',
+    position: 'fixed',
+    bottom: '25px',
+    left: '130px',
+    padding: '30px',
+    '& h2': {
+      fontFamily: 'komu-b',
+      fontSize: 32,
+      marginTop: 0,
+      '@media(max-width: 760px)': {
+        marginBottom: '15px',
+      }
+    },
+    '@media (max-width: 760px)': {
+      left: '15px',
+      width: '60vw',
+      padding: '15px',
+      bottom: '100px',
+      height: '40vh',
+    },
+    '& p': {
+      '@media (max-width: 760px)': {
+        overflow: 'hidden',
+        height: 'calc(100% - 112px)',
+      }
+    }
+    
+  },
+  readMoreButton: {
+    backgroundColor: '#F05A28',
+    display: 'inline-block',
+    padding: '15px 45px',
+    color: '#ffffff',
+    textTransform: 'uppercase',
   },
   zoomControls: {
     position: 'fixed',

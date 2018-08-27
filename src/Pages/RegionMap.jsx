@@ -35,7 +35,7 @@ const styles = {
     height: '6vh',
     cursor: 'pointer',
     '&:hover': {
-      opacity: .5,
+      opacity: '1 !important',
     }
   },
   pigsIcon: {

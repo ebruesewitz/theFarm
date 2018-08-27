@@ -14,6 +14,8 @@ const MenuWithClasses = ({
   iconImages,
   onMenuClick,
   onArrowClick,
+  selectedIcon,
+  setSelectedIcon,
   shouldShowArrow,
   arrowDirection,
   children,
@@ -40,7 +42,13 @@ const MenuWithClasses = ({
           <div onClick={onArrowClick} className={[classes.logoContainer, classes.iconContainer].join(' ')}>
             {iconImages.map((iconImage)=>(
               <div>
-                <img src={iconImage}/>
+                <img 
+                  id={iconImage}
+                  src={iconImage}
+                  style={selectedIcon === iconImage ? {opacity: 1}: {opacity: .5}}
+                  onClick={setSelectedIcon}
+                  className={classes.mapIcon}
+                />
               </div>
             ))}
           </div>
@@ -187,6 +195,11 @@ const styles = {
     padding: '40px 0px',
     '@media (max-width: 760px)': {
       padding: 20,
+    }
+  },
+  mapIcon: {
+    '&:hover': {
+      opacity: '1 !important',
     }
   },
   downArrowContainer: {
