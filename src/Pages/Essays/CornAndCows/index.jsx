@@ -30,9 +30,9 @@ const CornAndCowsWithClasses = ({
         <p><sup>3</sup> Email from Jack Fryman to Marguerite S. Shaffer July 10, 2018.</p>,
       ]}
       resources={[
-        <a target="blank" href="https://butler.osu.edu/home">OSU Extension, Butler County</a>,
-        <a target="blank" href="https://www.lanepl.org/research/smith-library/">OSU Extension, Butler County</a>,
-        <a target="blank" href={PDFMapOxfordTownship}>1930 Map Oxford Township</a>
+        <a target="blank" href="https://butler.osu.edu/home"><p>OSU Extension, Butler County</p></a>,
+        <a target="blank" href="https://www.lanepl.org/research/smith-library/"><p>OSU Extension, Butler County</p></a>,
+        <a target="blank" href={PDFMapOxfordTownship}><p>1930 Map Oxford Township</p></a>
       ]}
     >
       <figure
@@ -71,7 +71,6 @@ const CornAndCowsWithClasses = ({
       <p>Felix Fryman wrote his memoir, <i>From the Mountains to the Valley</i>, in part as a plea to protect the farm from destruction by a planned, four-lane bypass around the city of Oxford (which thankfully never came to pass). Fryman had a deep understanding and respect for the land he farmed. His description bears quoting in full. He writes:</p>
       <p className={classes.blockQuote}>"This was one of the most beautiful farms that I had ever seen. It had the things on it that I wanted in a farm. It had a creek—named Four Mile Creek—running down through the west, and south side of it. Beautiful big sycamore trees lined the creek bed. A covered bridge crossed the creek, and there were swimming holes, fishing holes, and wonderful areas for picnics. In the east, and part of the north of the farm, there was a 50-foot hill—a rim. On top of the rim, was a large, wonderful plateau, that made wonderful pasture. Most of the side of the hill was covered with big ash trees, and a few cottonwoods. From the house, you could see the leaves changing to the seasons. From the top of the hill, you could look out over the farm, and see the large fields, the fertile bottom land, and all the buildings. There were wooded areas, all round—not only on the hill, but all up and down the creek. You had everything, that you could want in a farm.” (Fryman 1971, 78).</p>
       <p>In our current moment where concerns about nutrient run-off, pesticides, monocultures, and GMO’s are rising, it seems convenient to juxtapose modern commodity crop farming across the Corn Belt and sustainable small-scale diversified farming. In this frame, commodity crop corporate businessmen are pitched against sustainable farm environmentalists. Felix Fryman’s appreciation of his farmland and successful stewardship of the farm suggest this polarized view is not so simple. Forces far beyond the control of individual farmers have shaped Corn Belt farming: industrialization, modernization, government policy, and globalization. That does not mean that individual commodity farmers do not have a deep commitment to the places they farm. Felix Fryman and his family’s stewardship of the Austin-Magie Farm during the 20<sup>th</sup> century attest to a longstanding desire to value and conserve this place as a productive agricultural landscape.</p>
-      <a target="blank" href={PDFMapOxfordTownship}>1930 Map Oxford Township</a>
     </ EssayPage>
   );
 
@@ -88,9 +87,6 @@ const styles = {
   figure: {
     margin: '50px 0px',
   },
-  weBelieveStatement: {
-    fontStyle: 'italic',
-  }
 }
 
 export default injectSheet(styles)(CornAndCowsWithClasses);

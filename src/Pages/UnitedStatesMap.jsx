@@ -24,6 +24,11 @@ const UnitedStatesMapWithClasses = ({
           articleContent: "During the 20th century, urbanization and industrialization combined with technological and economic change made agriculture a global business. Farming practices on the Austin-Magie Farm, which was then known as the Fryman Farm, reflect the larger transformation of agricultural and rural life during this period.  The farm expanded and production shifted from pigs and open pollinated “Indian” corn to dairy cows, Angus beef, hybrid corn and soybeans. Felix Fryman, who owned and farmed the property through the last decades of the 20th century, adeptly negotiated the expansion and consolidation of agriculture in the Corn Belt during the pre and post-World War II era.  His success offers a testament to the inherent value of this agricultural landscape.",
           articleLink: "/essays/cornandcows",
         },
+        [NewRuralismIcon]: {
+          articleTitle: "Education for Healing the Rural-Urban Divide",
+          articleContent: "The rural-urban divide, reflected strongly in recent political events, has been a long time in the making. The Austin-Magie farm reflects the trajectory of this divide. In little more than a hundred years, the United States went from a country with a majority of its population engaged in direct food production to less than two percent farmers. The rural-urban divide is a global phenomenon that requires urgent attention. It is likely going to be one of a handful of essential sociocultural divides of the 21st century. Our universities are the perfect place to start, as is the Institute for Food Farm.",
+          articleLink: "/essays/newruralism",
+        },
       }}
     >
       <img 

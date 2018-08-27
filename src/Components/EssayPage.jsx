@@ -1,35 +1,124 @@
-import React from 'react';
+import React, {Component} from 'react';
 import injectSheet from 'react-jss';
 import ArticleBackgroundImage from '../images/articlebackground.jpg';
 import SmartMenu from '../Components/SmartMenu';
 
-const EssayPageWithClasses = ({
-  articleTitle,
-  authorName,
-  contributors,
-  links,
-  children,
-  classes,
-}) => (
-  <div>
-    <SmartMenu/>
-    <img src={ArticleBackgroundImage} alt="" className={classes.backgroundImage}/>
-    <div className={classes.homePage}>
-      { articleTitle &&
-        <h1 className={classes.bannerText}>{articleTitle}</h1>
-      }
-      {
-        authorName &&
-        <h2 className={classes.authorName}>{authorName}</h2>
-      }
-      <div className={classes.childContainer}>
-        {children}
+class EssayPageWithClasses extends Component {
+  constructor(){
+    super();
+    this.state = {areLinksOpen: false}
+  }
+
+  toggleMenu = () => {
+    this.setState({areLinksOpen: !this.state.areLinksOpen})
+  }
+
+  render(){
+    const {
+      articleTitle,
+      authorName,
+      references,
+      footNotes,
+      resources,
+      children,
+      classes,
+    } = this.props;
+    
+    return (
+      <div>
+        <SmartMenu/>
+        {
+          (resources || references || footNotes) &&
+          <div className={classes.linksMenu} onClick={this.toggleMenu}>Contributors &amp; Links</div>
+        }
+        {
+          this.state.areLinksOpen &&
+          <div className={classes.linksContainer}>
+              {
+                footNotes && 
+                <div>
+                  {footNotes}
+                </div>
+              }
+            {
+              resources && 
+              <div>
+                <h2>Resources</h2>
+                {resources}
+              </div>
+            }
+            {
+              references && 
+              <div>
+                <h2>References</h2>
+                {references}
+              </div>
+            }
+          </div>
+        }
+        <img src={ArticleBackgroundImage} alt="" className={classes.backgroundImage}/>
+        <div className={classes.homePage}>
+          { articleTitle &&
+            <h1 className={classes.bannerText}>{articleTitle}</h1>
+          }
+          {
+            authorName &&
+            <h2 className={classes.authorName}>{authorName}</h2>
+          }
+          <div className={classes.childContainer}>
+            {children}
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-);
+    );
+  } 
+}
 
 const styles = {
+  linksMenu: {
+    width: '100vh',
+    height: '50px',
+    transform: 'rotate(270deg)',
+    zIndex: '100',
+    position: 'fixed',
+    bottom: 'calc(50vh - 25px)',
+    textAlign: 'center',
+    right: 'calc(-50vh + 25px)',
+    backgroundColor: '#ffffff',
+    textTransform: 'uppercase',
+    fontFamily: 'komu-b',
+    fontSize: '32px',
+    alignItems: 'center',
+    display: 'flex',
+    justifyContent: 'center',
+    cursor: 'pointer',
+    '&:hover': {
+      color: '#F05A28'
+    }
+  },
+  linksContainer: {
+    width: '20vw',
+    height: '100vh',
+    zIndex: '100',
+    position: 'fixed',
+    top: '0',
+    padding: 15,
+    overflowY: 'scroll',
+    textAlign: 'center',
+    right: 50,
+    backgroundColor: '#ffffff',
+    borderRight: '2px solid #e4e4e4',
+    textAlign: 'left',
+    boxSizing: 'border-box',
+    '& h2': {
+      fontFamily: 'komu-b',
+      textAlign: 'center',
+    },
+    '& a': {
+      color: '#F05A28',
+      textDecoration: 'none',
+    }
+  },
   homePage: {
     width: '100vw',
     paddingLeft: 200,

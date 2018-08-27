@@ -18,9 +18,16 @@ const OhioRiverValleyMapWithClasses = ({
       nextPageTitle="The Region"
       nextPageLink="/explore/region"
       classes
+      iconInformationMap={{
+        [SustainableFoodIcon]: {
+          articleTitle: "Defining Sustainable Local Agriculture",
+          articleContent: "Over the past several decades a range of theories have pointed toward the promise of sustainable agriculture. Influenced by various historical, cultural, geographical, biological, and climate factors, the dream of sustainable agriculture—based as it is in ecology, economics, and social well-being—has depended on faith in local, land-based knowledge. As such, this range of theories can be thought of as converging. Permaculture and planning theory can be brought to bear on this convergence, the result being a more robust definition of sustainable local agriculture.",
+          articleLink: "/essays/sustainableagriculture",
+        },
+      }}
     >
-      <img src={MigrationandSettlementIcon} className={[classes.migrationandSettlementIcon, classes.mapIcons].join(" ")} alt="" />
-      <img src={SustainableFoodIcon} className={[classes.sustainableFoodIcon, classes.mapIcons].join(" ")} alt="" />
+      <img id={MigrationandSettlementIcon} src={MigrationandSettlementIcon} className={[classes.migrationandSettlementIcon, classes.mapIcons].join(" ")} alt="" />
+      <img id={SustainableFoodIcon} src={SustainableFoodIcon} className={[classes.sustainableFoodIcon, classes.mapIcons].join(" ")} alt="" />
     </MapPage>
   );
 
