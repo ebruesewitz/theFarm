@@ -16,6 +16,7 @@ import WeBelieve from './Pages/Essays/WeBelieve/index';
 import CornAndCows from './Pages/Essays/CornAndCows/index';
 import NewRuralism from './Pages/Essays/NewRuralism/index';
 import SustainableFood from './Pages/Essays/SustainableFood/index';
+import MigrationAndSettlement from './Pages/Essays/MigrationAndSettlement/index';
 
 const Routes = () => (
   <Router>
@@ -28,7 +29,8 @@ const Routes = () => (
       <Route path="/explore/region" component={RegionMap} />
       
       <Route path="/explore/ohiorivervalley" component={OhioRiverValleyMap} />
-      <Route path="/explore/sustainableagriculture" component={SustainableFood} />
+      <Route path="/essays/sustainableagriculture" component={SustainableFood} />
+      <Route path="/essays/migrationandsettlement" component={MigrationAndSettlement} />
 
 
       <Route path="/explore/unitedstates" component={UnitedStatesMap} />

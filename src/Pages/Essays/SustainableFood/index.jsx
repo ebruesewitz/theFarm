@@ -41,7 +41,7 @@ const SustainableFoodWithClasses = ({
           <p>Shepard, M. 2013. <i>Restoration agriculture</i>. Texas, US: Acres, 2013.</p>,
           <p>Smith, J. R. 1929. <i>Tree crops: A permanent agriculture</i>. Harcourt Brace, New York.</p>,
           <p>Smith, A., &amp; MacKinnon, J.B. 2009. The 100-Mile Diet: A Year of Local Eating. Random House, Canada, Toronto.</p>,
-          <p>United States Farm Bill. 1990. Food, Agriculture, Conservation, and Trade Act of 1990 (FACTA), Public Law 101-624, Title XVI, Subtitle A, Section 1603 (Government Printing Office, Washington, DC, 1990) NAL Call # KF1692.A31 1990]</p>,
+          <p>United States Farm Bill. 1990. Food, Agriculture, Conservation, and Trade Act of 1990 (FACTA), Public Law 101-624, Title XVI, Subtitle A, Section 1603 (Government Printing Office, Washington, DC, 1990) NAL Call # KF1692.A31 1990</p>,
           <p>Von Thünen, J. H., &amp; Hall, P. G. (1826). 1966. <i>Isolated state: an English edition of Der isolierte Staat</i>. Pergamon.</p>,
           <p>Wight, R. A. &amp; Trauth, B. 2016. Ecology, Energy, and Alternative Agriculture: A New Synthesis. The Central Ohio River Valley Local Food Guide. Talk Local Article Series. Available at: https://static1.squarespace.com/static/5314fdefe4b0f6aa70872c9f/t/578ffb14e3df2837879d7fe3/1469053716870/Ecology%2C+Energy%2C+and+Agriculture+-+New+Synthesis+Final.pdf</p>,
           <p>Weber, A. 1929. <i>Theory of the Location of Industries</i>. The University of Chicago Press.</p>,
@@ -120,7 +120,7 @@ const SustainableFoodWithClasses = ({
         </ul>
       </p>
     </ EssayPage>
-  );
+);
 
 const styles = {
   blockQuote: {

@@ -24,6 +24,11 @@ const OhioRiverValleyMapWithClasses = ({
           articleContent: "Over the past several decades a range of theories have pointed toward the promise of sustainable agriculture. Influenced by various historical, cultural, geographical, biological, and climate factors, the dream of sustainable agriculture—based as it is in ecology, economics, and social well-being—has depended on faith in local, land-based knowledge. As such, this range of theories can be thought of as converging. Permaculture and planning theory can be brought to bear on this convergence, the result being a more robust definition of sustainable local agriculture.",
           articleLink: "/essays/sustainableagriculture",
         },
+        [MigrationandSettlementIcon]: {
+          articleTitle: "Early Anglo-American Settlement in the Miami Valley",
+          articleContent: "By 1850, the Ohio country was quintessentially American, with two-thirds of its two million inhabitants native-born, in contrast to the rest of the United States. The migrant population into southwest Ohio brought a distinctive regional Pennsylvania-German subculture, characterized most readily by a commercially-oriented and diversified agricultural econony focused on both crop production and livestock rearing. The Austin-Magie site thus embodies a number of important themes with regard to the early settlement of Ohio and the Corn Belt, and indeed of the Midwest itself.",
+          articleLink: "/essays/migrationandsettlement",
+        },
       }}
     >
       <img id={MigrationandSettlementIcon} src={MigrationandSettlementIcon} className={[classes.migrationandSettlementIcon, classes.mapIcons].join(" ")} alt="" />
