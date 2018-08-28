@@ -17,6 +17,9 @@ import CornAndCows from './Pages/Essays/CornAndCows/index';
 import NewRuralism from './Pages/Essays/NewRuralism/index';
 import SustainableFood from './Pages/Essays/SustainableFood/index';
 import MigrationAndSettlement from './Pages/Essays/MigrationAndSettlement/index';
+import Groundwater from './Pages/Essays/Groundwater/index';
+import Soils from './Pages/Essays/Soils/index';
+import Porkopolis from './Pages/Essays/Porkopolis';
 
 const Routes = () => (
   <Router>
@@ -26,7 +29,11 @@ const Routes = () => (
       <Route path="/explore/farm" component={FarmMap} />
       <Route path="/explore/section14" component={Section14Map} />
       <Route path="/explore/oxford" component={OxfordMap} />
+      
       <Route path="/explore/region" component={RegionMap} />
+      <Route path="/essays/groundwater" component={Groundwater} />
+      <Route path="/essays/soils" component={Soils} />
+      <Route path="/essays/porkopolis" component={Porkopolis} />
       
       <Route path="/explore/ohiorivervalley" component={OhioRiverValleyMap} />
       <Route path="/essays/sustainableagriculture" component={SustainableFood} />
