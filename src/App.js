@@ -20,6 +20,8 @@ import MigrationAndSettlement from './Pages/Essays/MigrationAndSettlement/index'
 import Groundwater from './Pages/Essays/Groundwater/index';
 import Soils from './Pages/Essays/Soils/index';
 import Porkopolis from './Pages/Essays/Porkopolis';
+import Bees from './Pages/Essays/Bees';
+import LocalFood from './Pages/Essays/LocalFood';
 
 const Routes = () => (
   <Router>
@@ -28,7 +30,10 @@ const Routes = () => (
       <Route path="/contact" component={ContactPage} />
       <Route path="/explore/farm" component={FarmMap} />
       <Route path="/explore/section14" component={Section14Map} />
+     
       <Route path="/explore/oxford" component={OxfordMap} />
+      <Route path="/essays/bees" component={Bees} />
+      <Route path="/essays/localfood" component={LocalFood} />
       
       <Route path="/explore/region" component={RegionMap} />
       <Route path="/essays/groundwater" component={Groundwater} />

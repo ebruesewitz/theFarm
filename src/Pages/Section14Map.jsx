@@ -19,10 +19,17 @@ const Section14MapWithClasses = ({
       nextPageTitle="The Farm"
       nextPageLink="/explore/farm"
       classes
+      iconInformationMap={{
+        [BlackCoveredBridgeIcon]: {
+          articleTitle: "Black (Pugh’s Mill) Covered Bridge",
+          articleContent: "The Black (Pugh’s Mill) Covered bridge, built in 1868-1869, is a registered historic landmark, listed on the National Register of Historic Places in 1975. Once part of the Fryman Farm, the bridge is now part of the Oxford Recreational Trail.",
+          articleLink: "/essays/blackcoveredbridge",
+        },
+      }}
     >
-      <img src={AustinMagieIcon} className={[classes.austinMagieIcon, classes.mapIcons].join(" ")} alt="" />
-      <img src={AustinMillComplexIcon} className={[classes.austinMillComplexIcon, classes.mapIcons].join(" ")} alt="" />
-      <img src={BlackCoveredBridgeIcon} className={[classes.blackCoveredBridgeIcon, classes.mapIcons].join(" ")} alt="" />
+      <img id={AustinMagieIcon} src={AustinMagieIcon} className={[classes.austinMagieIcon, classes.mapIcons].join(" ")} alt="" />
+      <img id={AustinMillComplexIcon} src={AustinMillComplexIcon} className={[classes.austinMillComplexIcon, classes.mapIcons].join(" ")} alt="" />
+      <img id={BlackCoveredBridgeIcon} src={BlackCoveredBridgeIcon} className={[classes.blackCoveredBridgeIcon, classes.mapIcons].join(" ")} alt="" />
     </MapPage>
   );
 
