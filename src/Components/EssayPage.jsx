@@ -29,7 +29,7 @@ class EssayPageWithClasses extends Component {
         <SmartMenu/>
         {
           (resources || references || footNotes) &&
-          <div className={classes.linksMenu} onClick={this.toggleMenu}>Contributors &amp; Links</div>
+          <div className={classes.linksMenu} onClick={this.toggleMenu}>Resources &amp; References</div>
         }
         {
           this.state.areLinksOpen &&
