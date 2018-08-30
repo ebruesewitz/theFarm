@@ -41,17 +41,17 @@ class EssayPageWithClasses extends Component {
                 </div>
               }
             {
-              resources && 
-              <div>
-                <h2>Resources</h2>
-                {resources}
-              </div>
-            }
-            {
               references && 
               <div>
                 <h2>References</h2>
                 {references}
+              </div>
+            }
+            {
+              resources && 
+              <div>
+                <h2>Resources</h2>
+                {resources}
               </div>
             }
           </div>
