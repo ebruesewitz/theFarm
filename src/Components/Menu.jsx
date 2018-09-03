@@ -59,10 +59,10 @@ const MenuWithClasses = ({
         <div className={classes.rightMenuContent}>
           <div className={classes.rightMenuChildren}>
             <Link to={`/`}>HOME</Link>
-            <Link to={`/contact`}>CONTACT</Link>
+            {/* <Link to={`/contact`}>CONTACT</Link> */}
             {children}
           </div>
-          <div className={[classes.downArrowContainer, classes.exploreLink].join(" ")}>EXPLORE THE MAP</div>
+          {/* <div className={[classes.downArrowContainer, classes.exploreLink].join(" ")}>EXPLORE THE MAP</div> */}
         </div>
         <div className={classes.blurContent}/>
       </div>

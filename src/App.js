@@ -31,7 +31,7 @@ const Routes = () => (
       <Route exact path="/educatingfromthegroundup" component={EducatingFromTheGroundUp} />
 
 
-      <Route path="/contact" component={ContactPage} />
+      {/* <Route path="/contact" component={ContactPage} />
 
       <Route path="/explore/farm" component={FarmMap} />
 
@@ -56,7 +56,7 @@ const Routes = () => (
       <Route path="/essays/newruralism" component={NewRuralism} />
 
       <Route path="/explore/earth" component={EarthMap} />
-      <Route path="/essays/webelieve" component={WeBelieve} />
+      <Route path="/essays/webelieve" component={WeBelieve} /> */}
     </div>
   </Router>
 )
