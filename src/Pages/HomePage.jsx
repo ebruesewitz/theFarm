@@ -21,9 +21,7 @@ const HomePageWithClasses = ({classes}) => (
       </div>
       <div className={classes.pageContainer}>
         <h2 className={[classes.sectionTwoText, classes.headingText].join(" ")}>WHAT’S THIS ALL ABOUT?</h2>
-        <p className={classes.sectionTwoText}>Educating From the Ground Up maps a particular place: a historic farm north of the city of Oxford, Ohio. Through multiple layers it explores the intricate connections that link agricultural areas to metropolitan regions—the country and the city—the local and the global. It traces the lay of the land and tracks agricultural development. It documents the economic, environmental, and cultural value of rural places. And it advocates a vision for the New Ruralism.</p>
-        <h2 className={[classes.sectionTwoText, classes.headingText, classes.addMargin].join(" ")}>WHY SHOULD I CARE?</h2>
-        <p className={classes.sectionTwoText}>The name of this project, If Oxford Grows, encapsulates a set of issues we wish to address in this publication, and it simultaneously defines our location, IF, the Institute for Food farm, grounded at Miami University, Oxford, Ohio. “If Oxford grows” captures the hope of growing good food locally, etc. etc. , and the threat of the potential loss of a significant agricultural legacy centered at the historic Austin-Magie farm at the intersection of Morning Sun and Somerville Roads adjacent to Four Mile Creek.</p>
+        <p className={classes.sectionTwoText}>Educating From the Ground Up maps a particular place: a historic farm north of the city of Oxford, Ohio. A micro history that expands out through multiple layers, it explores the intricate connections that link agricultural areas to metropolitan regions—the country and the city—the local and the global. It traces the lay of the land and tracks agricultural development. It documents the economic, ecological, social and cultural value of rural places. And it advocates a vision for the New Ruralism.</p>
         <Button className={[classes.addMargin, classes.button].join(" ")} buttonText="EXPLORE THE MAP"/>
       </div>
       <div className={classes.marquee}>

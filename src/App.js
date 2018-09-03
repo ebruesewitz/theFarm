@@ -22,13 +22,19 @@ import Soils from './Pages/Essays/Soils/index';
 import Porkopolis from './Pages/Essays/Porkopolis';
 import Bees from './Pages/Essays/Bees';
 import LocalFood from './Pages/Essays/LocalFood';
+import EducatingFromTheGroundUp from './Pages/Essays/EducatingFromTheGroundUp';
 
 const Routes = () => (
   <Router>
     <div>
       <Route exact path="/" component={HomePage} />
+      <Route exact path="/educatingfromthegroundup" component={EducatingFromTheGroundUp} />
+
+
       <Route path="/contact" component={ContactPage} />
+
       <Route path="/explore/farm" component={FarmMap} />
+
       <Route path="/explore/section14" component={Section14Map} />
      
       <Route path="/explore/oxford" component={OxfordMap} />
