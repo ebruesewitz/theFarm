@@ -22,13 +22,19 @@ import Soils from './Pages/Essays/Soils/index';
 import Porkopolis from './Pages/Essays/Porkopolis';
 import Bees from './Pages/Essays/Bees';
 import LocalFood from './Pages/Essays/LocalFood';
+import EducatingFromTheGroundUp from './Pages/Essays/EducatingFromTheGroundUp';
 
 const Routes = () => (
   <Router>
     <div>
       <Route exact path="/" component={HomePage} />
-      <Route path="/contact" component={ContactPage} />
+      <Route exact path="/educatingfromthegroundup" component={EducatingFromTheGroundUp} />
+
+
+      {/* <Route path="/contact" component={ContactPage} />
+
       <Route path="/explore/farm" component={FarmMap} />
+
       <Route path="/explore/section14" component={Section14Map} />
      
       <Route path="/explore/oxford" component={OxfordMap} />
@@ -50,7 +56,7 @@ const Routes = () => (
       <Route path="/essays/newruralism" component={NewRuralism} />
 
       <Route path="/explore/earth" component={EarthMap} />
-      <Route path="/essays/webelieve" component={WeBelieve} />
+      <Route path="/essays/webelieve" component={WeBelieve} /> */}
     </div>
   </Router>
 )
