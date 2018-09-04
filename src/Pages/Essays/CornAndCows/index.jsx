@@ -80,12 +80,14 @@ const styles = {
     margin: 'auto',
   },
   image: {
-    width: '75%',
+    width: '100%',
     height: 'auto',
-    margin: '15px 0px'
+    margin: '15px auto'
   },
   figure: {
-    margin: '50px 0px',
+    margin: '50px auto',
+    textAlign: 'center',
+    width: '75%',
   },
 }
 
