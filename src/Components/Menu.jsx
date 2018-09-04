@@ -28,9 +28,9 @@ const MenuWithClasses = ({
             <img className={classes.logo} src={Logo} alt=""/>
           </div>
         </Link>
-        <div onClick={onMenuClick} className={[classes.logoContainer, classes.menuIconContainer].join(' ')}>
+        {/* <div onClick={onMenuClick} className={[classes.logoContainer, classes.menuIconContainer].join(' ')}>
             <img src={isOpen ? ExitMenu : Menu} alt=""/>
-        </div>
+        </div> */}
       </div>
       { shouldShowArrow &&
         <div onClick={onArrowClick} className={[classes.logoContainer, classes.downArrowContainer].join(' ')}>
