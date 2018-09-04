@@ -62,6 +62,15 @@ class MapPageWithClasses extends Component {
               this.state.selectedIcon && iconInformationMap && iconInformationMap[this.state.selectedIcon] &&
               <div className={classes.summaryContainer}>
                 <h2>{iconInformationMap[this.state.selectedIcon].articleTitle}</h2>
+                { iconInformationMap[this.state.selectedIcon].thumbnails && 
+                  <div className={classes.thumbnailContainer}>
+                    {iconInformationMap[this.state.selectedIcon].thumbnails.map(thumbnail =>
+                      <div>
+                        <img src={thumbnail} alt=""/>
+                      </div>
+                    )}
+                  </div>
+                }
                 <p>{iconInformationMap[this.state.selectedIcon].articleContent}</p>
                 <Link to={iconInformationMap[this.state.selectedIcon].articleLink}>
                   <div className={classes.readMoreButton}>
@@ -202,6 +211,16 @@ const styles = {
       }
     }
     
+  },
+  thumbnailContainer: {
+    display: 'flex',
+    justifyContent: 'space-around',
+    '& div': {
+      width: '20%',
+    },
+    '& img': {
+      width: '100%',
+    }
   },
   readMoreButton: {
     backgroundColor: '#F05A28',
