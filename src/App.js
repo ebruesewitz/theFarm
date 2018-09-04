@@ -54,7 +54,7 @@ const Routes = () => (
       <Route exact path="/explore/oxford" component={OxfordMap} />
       <Route exact path="/essays/bees" component={Bees} />
       <Route exact path="/essays/localfood" component={LocalFood} />
-      
+
       <Route exact path="/explore/region" component={RegionMap} />
       <Route exact path="/essays/groundwater" component={Groundwater} />
       <Route exact path="/essays/soils" component={Soils} />
