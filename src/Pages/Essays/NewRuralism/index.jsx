@@ -60,7 +60,7 @@ const NewRuralismWithClasses = ({
 
 const styles = {
   image: {
-    width: '100%',
+    width: '75%',
     height: 'auto',
   },
   figure: {

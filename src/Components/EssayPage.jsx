@@ -29,22 +29,15 @@ class EssayPageWithClasses extends Component {
         <SmartMenu/>
         {
           (resources || references || footNotes) &&
-          <div className={classes.linksMenu} onClick={this.toggleMenu}>Contributors &amp; Links</div>
+          <div className={classes.linksMenu} onClick={this.toggleMenu}>Resources &amp; References</div>
         }
         {
           this.state.areLinksOpen &&
           <div className={classes.linksContainer}>
-              {
-                footNotes && 
-                <div>
-                  {footNotes}
-                </div>
-              }
             {
-              resources && 
+              footNotes && 
               <div>
-                <h2>Resources</h2>
-                {resources}
+                {footNotes}
               </div>
             }
             {
@@ -52,6 +45,13 @@ class EssayPageWithClasses extends Component {
               <div>
                 <h2>References</h2>
                 {references}
+              </div>
+            }
+            {
+              resources && 
+              <div>
+                <h2>Resources</h2>
+                {resources}
               </div>
             }
           </div>
@@ -94,6 +94,12 @@ const styles = {
     cursor: 'pointer',
     '&:hover': {
       color: '#F05A28'
+    },
+    '@media (max-width: 760px)': {
+      width: '100vw',
+      right: 0,
+      transform: 'initial',
+      bottom: 0,
     }
   },
   linksContainer: {
@@ -117,6 +123,11 @@ const styles = {
     '& a': {
       color: '#F05A28',
       textDecoration: 'none',
+    },
+    '@media (max-width: 760px)': {
+      width: '100vw',
+      height: 'calc(100vh - 50px)',
+      right: '0px',
     }
   },
   homePage: {
@@ -127,7 +138,8 @@ const styles = {
     position: 'relative',
     zIndex: 1,
     '@media (max-width: 760px)': {
-      padding: '75px 0px 77px 0px'
+      padding: '75px 0px 77px 0px',
+      textAlign: 'center',
     }
   },
   backgroundImage: {
@@ -158,6 +170,10 @@ const styles = {
   childContainer: {
     width: '50vw',
     marginTop: 150,
+    '@media (max-width: 760px)': {
+      margin: 'auto',
+      width: '90vw',
+    }
   }
 }
 

@@ -62,7 +62,7 @@ const MenuWithClasses = ({
             <Link to={`/contact`}>CONTACT</Link>
             {children}
           </div>
-          <div className={[classes.downArrowContainer, classes.exploreLink].join(" ")}>EXPLORE THE MAP</div>
+          <div className={[classes.downArrowContainer, classes.exploreLink].join(" ")}><Link to={`/explore/farm`}>EXPLORE THE MAP</Link></div>
         </div>
         <div className={classes.blurContent}/>
       </div>

@@ -25,6 +25,16 @@ const Section14MapWithClasses = ({
           articleContent: "The Black (Pugh’s Mill) Covered bridge, built in 1868-1869, is a registered historic landmark, listed on the National Register of Historic Places in 1975. Once part of the Fryman Farm, the bridge is now part of the Oxford Recreational Trail.",
           articleLink: "/essays/blackcoveredbridge",
         },
+        [AustinMillComplexIcon]: {
+          articleTitle: "Austin’s Mills",
+          articleContent: "For 100 years Austin’s Mills, powered by water from Four-Mile Creek, channeled through a mile long mill-race, served the surrounding community by processing grain and timber. The Austin-Magie Farm and Mill District, on the U. S. National Register of Historic Places, represents significant aspects of nineteenth century agricultural and commercial activity, comprised as it is of the Austin-Magie Farm, and the Austin-Pugh mills. This rich history informs the present by revealing how intertwined agricultural and industrial developments operated early in the nineteenth century.",
+          articleLink: "/essays/austinsmills",
+        },
+        [AustinMagieIcon]: {
+          articleTitle: "Austin-Magie Farm",
+          articleContent: "Over the course of the 19th century, the Austin Magie Farm & Mill District was a flourishing commercial enterprise and one of the most successful farms in Butler County. From 1815-1863, the farm was owned by Aaron Austin, who built Oxford Township’s largest mill complex, which included a flourmill and a sawmill. The subsequent owner, David M. Magie, was one of Ohio’s most prominent 19th century stock farmers and swine breeders. The farm was a thriving agricultural landscape where natural resources—soil, water, trees, and land—were transformed through labor and skill into flour, lumber, and pork which became integral to an expanding supply chain that shipped products across the region, throughout the United States, and eventually around the world.",
+          articleLink: "/essays/austinmagiefarm",
+        },
       }}
     >
       <img id={AustinMagieIcon} src={AustinMagieIcon} className={[classes.austinMagieIcon, classes.mapIcons].join(" ")} alt="" />

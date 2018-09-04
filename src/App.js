@@ -22,35 +22,55 @@ import Soils from './Pages/Essays/Soils/index';
 import Porkopolis from './Pages/Essays/Porkopolis';
 import Bees from './Pages/Essays/Bees';
 import LocalFood from './Pages/Essays/LocalFood';
+import BlackCoveredBridge from './Pages/Essays/BlackCoveredBridge';
+import AustinsMills from './Pages/Essays/AustinsMills';
+import AustinMagieFarm from './Pages/Essays/AustinMagieFarm';
+import StudentReflections from './Pages/Essays/StudentReflections';
+import LandscapeChoreography from './Pages/Essays/LandscapeChoreography';
+import BreakingGround from './Pages/Essays/BreakingGround';
+import InstituteForFood from './Pages/Essays/InstituteForFood';
+import EducatingFromTheGroundUp from './Pages/Essays/EducatingFromTheGroundUp';
 
 const Routes = () => (
-  <Router>
+  <Router basename={'/farmsitepreview'}>
     <div>
       <Route exact path="/" component={HomePage} />
-      <Route path="/contact" component={ContactPage} />
-      <Route path="/explore/farm" component={FarmMap} />
-      <Route path="/explore/section14" component={Section14Map} />
-     
-      <Route path="/explore/oxford" component={OxfordMap} />
-      <Route path="/essays/bees" component={Bees} />
-      <Route path="/essays/localfood" component={LocalFood} />
+      <Route exact path="/educatingfromthegroundup" component={EducatingFromTheGroundUp} />
+
+      <Route exact path="/contact" component={ContactPage} />
       
-      <Route path="/explore/region" component={RegionMap} />
-      <Route path="/essays/groundwater" component={Groundwater} />
-      <Route path="/essays/soils" component={Soils} />
-      <Route path="/essays/porkopolis" component={Porkopolis} />
+      <Route exact path="/explore/farm" component={FarmMap} />
+      <Route exact path="/essays/studentreflections" component={StudentReflections} />
+      <Route exact path="/essays/landscapechoreography" component={LandscapeChoreography} />
+      <Route exact path="/essays/breakingground" component={BreakingGround} />
+      <Route exact path="/essays/instituteforfood" component={InstituteForFood} />
+
+      <Route exact path="/explore/section14" component={Section14Map} />
+      <Route exact path="/essays/blackcoveredbridge" component={BlackCoveredBridge} />
+      <Route exact path="/essays/austinsmills" component={AustinsMills} />
+      <Route exact path="/essays/austinmagiefarm" component={AustinMagieFarm} />
+
+
+      <Route exact path="/explore/oxford" component={OxfordMap} />
+      <Route exact path="/essays/bees" component={Bees} />
+      <Route exact path="/essays/localfood" component={LocalFood} />
       
-      <Route path="/explore/ohiorivervalley" component={OhioRiverValleyMap} />
-      <Route path="/essays/sustainableagriculture" component={SustainableFood} />
-      <Route path="/essays/migrationandsettlement" component={MigrationAndSettlement} />
+      <Route exact path="/explore/region" component={RegionMap} />
+      <Route exact path="/essays/groundwater" component={Groundwater} />
+      <Route exact path="/essays/soils" component={Soils} />
+      <Route exact path="/essays/porkopolis" component={Porkopolis} />
+      
+      <Route exact path="/explore/ohiorivervalley" component={OhioRiverValleyMap} />
+      <Route exact path="/essays/sustainableagriculture" component={SustainableFood} />
+      <Route exact path="/essays/migrationandsettlement" component={MigrationAndSettlement} />
 
 
-      <Route path="/explore/unitedstates" component={UnitedStatesMap} />
-      <Route path="/essays/cornandcows" component={CornAndCows} />
-      <Route path="/essays/newruralism" component={NewRuralism} />
+      <Route exact path="/explore/unitedstates" component={UnitedStatesMap} />
+      <Route exact path="/essays/cornandcows" component={CornAndCows} />
+      <Route exact path="/essays/newruralism" component={NewRuralism} />
 
-      <Route path="/explore/earth" component={EarthMap} />
-      <Route path="/essays/webelieve" component={WeBelieve} />
+      <Route exact path="/explore/earth" component={EarthMap} />
+      <Route exact path="/essays/webelieve" component={WeBelieve} />
     </div>
   </Router>
 )

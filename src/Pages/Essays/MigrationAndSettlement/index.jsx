@@ -94,7 +94,7 @@ const styles = {
     margin: 'auto',
   },
   image: {
-    width: '100%',
+    width: '75%',
     height: 'auto',
     margin: '15px 0px'
   },

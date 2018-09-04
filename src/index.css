@@ -1,6 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'brandon-grotesque';
   overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
 }
