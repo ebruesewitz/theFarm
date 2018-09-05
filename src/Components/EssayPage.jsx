@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import injectSheet from 'react-jss';
+import { Link } from 'react-router-dom'
 import ArticleBackgroundImage from '../images/articlebackground.jpg';
 import SmartMenu from '../Components/SmartMenu';
 
@@ -22,11 +23,13 @@ class EssayPageWithClasses extends Component {
       resources,
       children,
       classes,
+      className,
+      mapPageLink,
     } = this.props;
     
     return (
       <div>
-        <SmartMenu/>
+        <SmartMenu shouldShowArrow isArrowDirectionFixed/>
         {
           (resources || references || footNotes) &&
           <div className={classes.linksMenu} onClick={this.toggleMenu}>Resources &amp; References</div>
@@ -65,8 +68,9 @@ class EssayPageWithClasses extends Component {
             authorName &&
             <h2 className={classes.authorName}>{authorName}</h2>
           }
-          <div className={classes.childContainer}>
+          <div className={[classes.childContainer, className].join(" ")}>
             {children}
+            {mapPageLink && <Link to={mapPageLink}><p className={classes.mapLink}>Return To Map</p></Link>}
           </div>
         </div>
       </div>
@@ -169,11 +173,18 @@ const styles = {
   },
   childContainer: {
     width: '50vw',
-    marginTop: 150,
+    marginTop: 50,
+    marginBottom: 150,
     '@media (max-width: 760px)': {
       margin: 'auto',
       width: '90vw',
     }
+  },
+  mapLink: {
+    marginTop: 50,
+    color: '#F05A28',
+    borderBottom: '2px solid #F05A28',
+    display: 'inline',
   }
 }
 

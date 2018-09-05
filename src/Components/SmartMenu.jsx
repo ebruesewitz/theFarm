@@ -11,7 +11,7 @@ export default class SmartMenu extends Component{
   }
 
   componentDidMount(){
-    if(this.props.shouldShowArrow){
+    if(this.props.shouldShowArrow && !this.props.isArrowDirectionFixed){
       window.addEventListener('scroll', ()=>{
         if (window.scrollY >= window.innerHeight && this.state.arrowDirection==='down'){
           this.setState({arrowDirection: 'up'});
@@ -19,6 +19,8 @@ export default class SmartMenu extends Component{
           this.setState({arrowDirection: 'down'});
         }
       });
+    }else if(this.props.isArrowDirectionFixed){
+      this.setState({arrowDirection: 'up'});
     }
   }
 
@@ -38,7 +40,9 @@ export default class SmartMenu extends Component{
         top: 0,
         behavior: "smooth"
       });
-      this.setState({ arrowDirection: 'down' });
+      if(!this.props.isArrowDirectionFixed){
+        this.setState({ arrowDirection: 'down' });
+      }
     }
   }
 
