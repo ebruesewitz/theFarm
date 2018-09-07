@@ -53,7 +53,7 @@ class MapPageWithClasses extends Component {
               React.Children.map(children, child =>
                 React.cloneElement(child, {
                   onClick: this.setSelectedIcon,
-                  style: child.props.id === this.state.selectedIcon ? {opacity: 100} : {opacity: .5}
+                  style: (!this.state.selectedIcon || child.props.id === this.state.selectedIcon) ? {opacity: 1} : {opacity: .5}
                 })
               )
       

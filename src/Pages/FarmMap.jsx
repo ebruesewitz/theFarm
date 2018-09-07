@@ -78,7 +78,7 @@ const styles = {
     height: '6vh',
     cursor: 'pointer',
     '&:hover': {
-      opacity: '1 !important',
+      opacity: '.7 !important',
     }
   },
   harvestIcon: {
