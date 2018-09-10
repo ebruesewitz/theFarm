@@ -16,6 +16,9 @@ const GroundwaterWithClasses = ({
     <EssayPage
       articleTitle='Assessment of Groundwater Flow and Quality at the Miami University Organic Farm'
       authorName='Jonathan Levy, Patrick Shanahan, Erin Pickford'
+      className={classes.essayOverrides}
+      headerClassName={classes.headerOverride}
+      mapPageLink="/explore/region"
       references={
         [
            <p>Bigelow, DP, A Borcher (2017) Major Uses of Land in the United States, 2012. EIB-178, U.S. Department of Agriculture, Economic Research Service, August 2017. </p>,
@@ -36,6 +39,7 @@ const GroundwaterWithClasses = ({
       <h3>Introduction</h3>
       <p>At the time of this writing, there are just over 7.637 billion people on the earth, but despite this massive population, the amount of food available per person has continued to increase worldwide at least since 1961 (FAO, 2017). This has been possible due, in part, to the so-called green revolution which has comprised development of high-yielding varieties of cereals, increased use of chemical fertilizers and pesticides, increased mechanization and increased irrigation through the building of dams and the drilling of groundwater extraction wells. While successful at increasing food production, all of these innovations result in some environmental degradation. Agricultural chemicals pose a threat to the quality of fresh water globally. Historically, we have treated our fresh water supply as if it were an infinite renewable resource. However, fresh water represents less than one percent of all of Earth’s water. Our growing population along with its waste disposal and use of potentially harmful chemicals, have forced us to recognize that fresh water is only potentially renewable. To maintain fresh water systems that are healthy for ecosystems and humans, we need to rethink many of our current practices.</p>
       <p>The vast majority of the more than 300 million acres of crops planted in the US in 2015 was traditionally cultivated, meaning that synthetic fertilizers and pesticides were applied (Bigelow and Borcher, 2017; USDA, 2017; USDA, 2012). Pesticide and fertilizer application associated with conventional farming has led to widespread nonpoint-source groundwater and surface-water contamination. The Ohio Environmental Protection Agency lists fertilizer applications as one of it “highest priority sources.” (OEPA, 2018) resulting in nitrate contamination. Almost half of Ohio’s residents derive their drinking water from groundwater aquifers (geologic formations capable of supply usable quantities of water) and about 3.2% of Ohio’s public water supply wells contained water with nitrate concentrations exceeding 5 mg/L, 50% of the US EPA’s maximum contaminant level (MCL), a level that triggers regulatory action. Of all the public water supply wells in Ohio’s sand-and-gravel aquifers, about 5.1% contained water with nitrate concentrations exceeding 5 mg/L. Pesticide application can also pose a threat to drinking-water quality. Atrazine is an herbicide widely used on corn, and water contaminated with atrazine has been associated with a higher risk of cancer along with hormonal, cardiovascular, kidney and lung problems. Atrazine has also been linked to sexual and hormonal abnormalities in amphibians, fish and reptiles (Wu et al., 2009). In a 2003-2004 study, atrazine was detected in > 90% of 14,000 water samples from 139 public water systems (Wu et al., 2009). From 2005-2008, 35,000 water samples were again taken from 153 public water systems 12 states including Ohio, and atrazine was detected in 80% of them. Two public water systems in Ohio had average concentrations in finished water greater than the 3 g/L MCL and peak concentrations greater than 35 g/L.</p>
+      <p className={classes.pullQuote}>Our growing population along with its waste disposal and use of potentially harmful chemicals, have forced us to recognize that fresh water is only potentially renewable. To maintain fresh water systems that are healthy for ecosystems and humans, we need to rethink many of our current practices.</p>
       <p>Miami University’s Institute for Food (IF) Farm seeks to provide a model of sustainable food production, community engagement, and experiential learning for others to follow. Increasing the portion of cropland that is farmed without artificial fertilizers and pesticides would reduce the overall chemical load to our water systems, mitigate the risk such contamination poses to human and ecosystem health and potentially save money by reducing the final burden of contamination on residents and tax payers.</p>
       <p>The IF’s 35-acre sustainable farm is located about one mile northeast of the City of Oxford in southwest Ohio, by the intersection of Somerville Road and SR 732 (Figure 1). The farm sits above the Four Mile Creek buried valley aquifer, the source of about half of the City of Oxford’s drinking water supply. Before the Pleistocene epoch, the Four Mile Creek valley was carved into the underlying Ordovician bedrock and was about 180 ft deeper than the valley we see today. During the glacial advances and retreats of the Pleistocene, much of the valley was filled with alternating layers of sand-and-gravel outwash, clayey glacial till, and silty-clay lake sediment. Due to its high permeability and available pore space, the sand-and-gravel outwash, makes an excellent aquifer where deposits are thick enough. The much less-permeable glacial till and lake sediment layers act as confining units to groundwater movement. The IF farm is surrounded by traditionally-cultivated farmland, making it an excellent site to study the potential benefits to groundwater quality associated with abstaining from application of artificial fertilizer and pesticides.</p>
 
@@ -83,7 +87,7 @@ const GroundwaterWithClasses = ({
       <p>Slug tests were performed on each of our piezometers resulting in mean K values for the area immediately around each piezometer screen (Table 1). Values ranged from 0.75 to 170 ft/d. Assuming that the low value at MUF-3A was not representative of the glacial outwash, the geometric mean for the outwash was 65 ft/d with a 95% confidence interval of 20 to 210 ft/d.</p>
       <p>A 48-hour aquifer pumping was conducted for the area near the farm’s irrigation well between MUF-1 and MUF 2. Drawdown measurements at MUF-2 were analyzed using the Neumann (1974) method and indicated a horizontal K-value of about 68 ft/d, in close agreement with the slug test values. The pumping test indicated a much smaller vertical K-value of about 0.66 ft/d. </p>
       <figure
-        className={classes.figure}
+        className={[classes.figure, classes.figureOverride].join(" ")}
       >
         <img src={Table1} className={classes.image} alt=""/>
         <figcaption>Table 1. Average hydraulic conductivity for each piezometer. Values were calculated by averaging the results of three slug tests performed on each.</figcaption>
@@ -112,19 +116,69 @@ const GroundwaterWithClasses = ({
     </ EssayPage>
   );
 
-const styles = {
-  blockQuote: {
-    width: '75%',
-    margin: 'auto',
-  },
-  image: {
-    width: '75%',
-    height: 'auto',
-    margin: '15px 0px'
-  },
-  figure: {
-    margin: '50px 0px',
-  },
-}
+  const styles = {
+    essayOverrides: {
+      lineHeight: 1.7,
+      '& sup': {
+        fontSize: '.7em',
+        color: '#F05A28',
+      },
+      '& h3': {
+        fontFamily: 'komu-b',
+        fontSize: '2.5em',
+      }
+    },
+    headerOverride: {
+      fontSize: 80,
+      '@media (max-width: 760px)': {
+        fontSize: 60,
+      }
+    },
+    blockQuote: {
+      width: '75%',
+      margin: 'auto',
+    },
+    image: {
+      width: '100%',
+      height: 'auto',
+      margin: '15px auto'
+    },
+    figure: {
+      margin: '50px auto',
+      textAlign: 'center',
+      width: '75%',
+      '& figcaption': {
+        fontSize: '.7em',
+        letterSpacing: '0.2em',
+        fontFamily: 'komu-b'
+      }
+    },
+    figureOverride: {
+      width: 'calc(50% - 100px)',
+    },
+    figureContainer: {
+      width: '100%',
+      display: 'flex',
+      alignItems: 'baseline',
+      '& figure': {
+        margin: '50px'
+      }
+    },
+    sectionDivider: {
+      width: '30%',
+      borderBottom: '4px solid #F05A28',
+      margin: '50px auto'
+    },
+    pullQuote: {
+      color: '#F05A28',
+      width: '75%',
+      margin: '50px auto',
+      fontSize: '2em',
+      fontFamily: 'komu-b',
+      textAlign: 'justify',
+      lineHeight: '1.5em',
+  
+    },
+  };
 
 export default injectSheet(styles)(GroundwaterWithClasses);

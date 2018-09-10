@@ -10,6 +10,9 @@ const NewRuralismWithClasses = ({
   <EssayPage 
     articleTitle='Education for Healing the Rural-Urban Divide'
     authorName="Kathleen R. Smythe"
+    className={classes.essayOverrides}
+    headerClassName={classes.headerOverride}
+    mapPageLink="/explore/unitedstates"
     references={[
       <p>Florida, Richard L. 2008. <i>Who's Your City?: How the Creative Economy is Making Where to Live the Most important Decision of your Life</i>. New York: Basic Books.</p>,
       <p>Fryman, John Felix. 1971. <i>From the Mountains to the Valley</i>. Oxford, OH: Oxford Press.</p>,
@@ -34,18 +37,20 @@ const NewRuralismWithClasses = ({
     </figure>
       <p>As a transplant to Ohio, a resident of Cincinnati, an African historian who has worked at the nexus of sustainability, globalization, and agriculture for some time, and an educator at Xavier University where students come from urban, suburban and rural backgrounds, I see the rural-urban divide as a global phenomenon that requires urgent attention. It is likely going to be one of a handful of essential sociocultural divides of the 21st century.</p>
       <p>Within the United States, after the election of 2016 it is obvious that the rural-urban divide is real and has significant political implications. Analyses in <i>The Washington Post, The New York Times</i> and elsewhere in October and November after the election described the increasing polarization of urban and rural areas, noting the magnitude of loss for Hilary Clinton in low-density areas and for Donald Trump in high-density areas, a trend that has been evident since at least 2004. Katherine Cramer, a political science professor at the University of Wisconsin-Madison, emphasized that people in rural places and small communities felt ignored, disrespected and overlooked. In the general election, I would posit that what became clear, among many other things, was that in a very real sense, rural areas are being left behind.</p>
-      <h2>Austin-Magie Farm and creation of the divide</h2>
+      <h3>Austin-Magie Farm and creation of the divide</h3>
       <p>This divide has been a long time in the making and the trajectory of the Austin-Magie Farm reflects the larger trajectory beautifully. Aaron Austin was part of the first waves of settlers in Ohio who found the area north of the Ohio River perfect for subsistence farming. The combination of forests, rich soils, game animals, abundant rivers and creeks was attractive for the Revolutionary War veterans and others who crossed the Appalachian Mountains in search of a new life in the late 1700s and early 1800s.  Felix Fryman’s declaration more than a century and a half later that the farm located on Four Mile Creek “was one of the most beautiful farms” he had ever seen with large fields and fertile bottom land reflects earlier sentiments well (Fryman 1971, 78). Austin’s estate was clearly established to provide both subsistence as well as a source of income to his family and aid in the development of the region in the form of the mill complex and millrace.</p>
       <p>The 1800s was marked in Europe, Australia, and the United States as a time of agricultural transition. Due to the mechanization of equipment, agricultural productivity doubled in areas with access to the capital to buy the new tilling, sowing, and harvesting equipment. For the century between 1850 and 1950, farms increased in size, employment on farms began to decline, and due to improvements in transportation, food grown in one part of the country could be sold in another part. With the increase in transport of goods, many farmers began to specialize as we see David Magie doing. With demand for pork increasing, and transport relatively convenient, particularly with the construction of canals and then railroads, farmers often chose to become producers of one or a small handful of products and to exchange multifaceted subsistence production for increased engagement in the marketplace.</p>
+      <div className={classes.sectionDivider}/>
       <p>After World War II, the use of fossil fuels in farming led to productivity increases from 50 to 100 times previous levels. The same dynamic of decreasing rural agricultural labor, large-scale farming, and increasing urban settlement continued. Small-scale subsistence farms with a large number of outbuildings and some kind of production onsite, like milling, slowly disappeared. This disappearance is lamented in a number of works, particularly those by Wendell Berry but also our own Ohio writer and farmer Louis Bromfield whose Malabar Farm was a holdout of organic and sustainable farming methods as other families were being driven to ruin by the rapidly changing economy. Felix Fryman, who owned the farm in the 1930s, was a businessman and farmer. He grew corn, wheat, oats, soybeans, and hay and had a herd of dairy cattle. He also owned a general store for a while and began to buy up farms in the area, around 200 acres or so in size. Fryman’s participation in the aggregation of farmland is one of the key dynamics of the post-1950 era. As equipment and inputs became more and more expensive, farmers either had to keep up with the changes or sell their land to someone who could. The scale of efficient farming continued to increase in size with more powerful tractors, combines, etc. Historians Marcel Mazoyer and Laurence Roudart note in <i>A History of World Agriculture</i> (2006) that globally farmers abandon the profession when an unskilled urban job earns them the same if not more revenue than farming.	</p>
       <p>Those who were squeezed out, the used-to-be family farmers, moved to the cities and after the 1950s to suburban areas to look for work and other opportunities there. In little more than a hundred years, the United States went from a country with a majority of its population engaged in direct food production to less than two percent farmers. </p>
-      <h2>The dominance of urban areas by the late 20th century</h2>
+      <h3>The dominance of urban areas by the late 20th century</h3>
       <p>A stark sign of how far this trend has gone is the work of popular social analyst Richard Florida. One of his recent books, <i>Who’s Your City?</i> takes his work about the creative class to another level, arguing that young professionals should choose where they want to live first and foremost as that will dictate their lifetime earning potential, marriage partners, etc. The mostly unstated assumption behind Florida’s argument is the idea that rural areas are no longer worthy of career/lifestyle consideration. This work builds on earlier work, noting the concentration of creativity, wealth, and technology in certain key cities around the world. For Florida, this clustering of talent and economic assets over physical labor (generally in cities vs. rural areas) is among the most disruptive transformations in recorded history. Yet, he sees little way forward but to exacerbate it. </p>
       <p>Chronicling this rural exodus, rather than proscribing it, are two sociologists who spent a year in a small town in Iowa and learned that parents, teachers and schools administrators were all contributing to the death of their towns by encouraging the best and the brightest to leave home after high school and to seek opportunities elsewhere. These are two perspectives on the problem; drug abuse, poverty rates, educational attainment, and obesity would be other ways to measure the decline of rural communities, most of which make headlines on a regular basis. And the role that this divide and the dissatisfaction with it, at least from those in rural areas, as evidenced in the 2016 election is another.</p>
-      <h2>What role might the Institute for Food at Miami University play?</h2>
+      <h3>What role might the Institute for Food at Miami University play?</h3>
       <p>If there are reasons to seek to bridge the rural-urban divide and perhaps to restore employment and health to rural areas, and I will argue there are, then Miami University’s Institute for Food and the Austin-Magie Farm have an important role to play. The vast majority of our food still comes from rural areas and the small towns and landscapes that support the farmers who live there. These folks are generally resilient, they care for the land, and they often have family members who work in nearby urban areas in white collar or service jobs. They are an essential part of our national fabric but their traditions, knowledge and contributions are increasingly marginalized in an urban-centric America.</p>
       <p>An historical and working farm at Miami University has the potential to go far beyond teaching students more about food production, health, etc. but to contribute to a national project of significant importance: rural revitalization. And since the Midwest has been chronicled as the prime place where significant political transition is taking place, Miami University’s efforts then lie at the heart of this national conversation on our political, and educational future.</p>
       <p>Higher education is by its nature urban-centric. If you think about the core disciplines that universities have inherited from the Middle Ages—philosophy and history, for example—they are largely urban-centric in their inherited orientation—philosophers from the cities of ancient Greece and Rome, histories of urban civilizations built on the agricultural surplus of rural areas. If there is any merit in seeking to bridge a growing rural-urban divide, then certainly one place to start would be at places like Miami University. For students who come from rural areas, active engagement with their history and contributions is an essential corrective to the education that we have inherited. Miami University’s Institute for Food and the Austin-Magie working farm have the opportunity to demonstrate how the rural/urban, white collar/intellectual vs. blue collar/manual labor divide are spent ideologies in need of replacement by a more holistic approach to both food production and individual engagement with subsistence needs. But there are many other reasons to embrace the Austin-Magie Farm. </p>
+      <p className={classes.pullQuote}>An historical and working farm at Miami University has the potential to go far beyond teaching students more about food production, health, etc. but to contribute to a national project of significant importance: rural revitalization.</p>
       <p>Education about farming and rural areas offers a wide variety of opportunities and messages for both rural and urban based students about rural history:</p>
       <p>
         <ol>
@@ -59,12 +64,59 @@ const NewRuralismWithClasses = ({
 );
 
 const styles = {
-  image: {
+  essayOverrides: {
+    lineHeight: 1.7,
+    '& sup': {
+      fontSize: '.7em',
+      color: '#F05A28',
+    },
+    '& h3': {
+      fontFamily: 'komu-b',
+      fontSize: '2.5em',
+    }
+  },
+  headerOverride: {
+    fontSize: 80,
+    '@media (max-width: 760px)': {
+      fontSize: 60,
+    }
+  },
+  blockQuote: {
     width: '75%',
+    margin: 'auto',
+  },
+  image: {
+    width: '100%',
     height: 'auto',
+    margin: '15px auto'
   },
   figure: {
-    margin: '50px 0px',
+    margin: '50px auto',
+    textAlign: 'center',
+    width: '75%',
+    '& figcaption': {
+      fontSize: '.7em',
+      letterSpacing: '0.2em',
+      fontFamily: 'komu-b'
+    }
+  },
+  figureOverride: {
+    width: 'calc(70% - 100px)',
+  },
+  pullQuote: {
+    color: '#F05A28',
+    width: '75%',
+    margin: '50px auto',
+    fontSize: '2em',
+    fontFamily: 'komu-b',
+    textAlign: 'justify',
+    lineHeight: '1.5em',
+
+  },
+  sectionDivider: {
+    width: '30%',
+    borderBottom: '4px solid #F05A28',
+    margin: '50px auto'
   },
 }
 

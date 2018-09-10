@@ -24,7 +24,9 @@ class EssayPageWithClasses extends Component {
       children,
       classes,
       className,
+      headerClassName,
       mapPageLink,
+      mapTextOverride,
     } = this.props;
     
     return (
@@ -62,7 +64,7 @@ class EssayPageWithClasses extends Component {
         <img src={ArticleBackgroundImage} alt="" className={classes.backgroundImage}/>
         <div className={classes.homePage}>
           { articleTitle &&
-            <h1 className={classes.bannerText}>{articleTitle}</h1>
+            <h1 className={[classes.bannerText, headerClassName].join(" ")}>{articleTitle}</h1>
           }
           {
             authorName &&
@@ -70,7 +72,7 @@ class EssayPageWithClasses extends Component {
           }
           <div className={[classes.childContainer, className].join(" ")}>
             {children}
-            {mapPageLink && <Link to={mapPageLink}><p className={classes.mapLink}>Return To Map</p></Link>}
+            {mapPageLink && <Link to={mapPageLink}><p className={classes.mapLink}>{mapTextOverride || 'Return To Map'}</p></Link>}
           </div>
         </div>
       </div>

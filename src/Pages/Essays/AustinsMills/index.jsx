@@ -14,6 +14,8 @@ const AustinsMillsWithClasses = ({
     <EssayPage
       articleTitle='Austin’s Mills'
       authorName='Stephen Gordon'
+      className={classes.essayOverrides}
+      mapPageLink="/explore/section14"
       references={
         [
           <p>Evans, Oliver. 1846. The Young Millwright and Miller’s Guide. Philadelphia: Lea & Blanchard.</p>,
@@ -44,6 +46,7 @@ const AustinsMillsWithClasses = ({
         <figcaption>Evans’ grist mill plan, 1795, from Evans, Oliver. 1846. The Young Millwright and Miller’s Guide. Philadelphia: Lea & Blanchard.</figcaption>
       </figure>
       <p>Austin’s Mill was likely modeled after Oliver Evans' famous "Improved Merchant Flour Mill," a prototype invented in 1795 (Evans 1846). Austin also constructed a water-powered sawmill near the gristmill. By 1847, Austin's son Benjamin Franklin, or "Frank," served as the millwright and had re-built the original mill. Austin's operation included a three-story merchant grist mill, a water-powered, reciprocating sawmill where it is very likely timbers were later sawn for construction of the Black Covered Bridge (1868), and a two-story, center-hall Greek Revival style house, built ca. 1841. Of the three gristmills and four sawmills in Oxford Township in 1846, Austin's was the largest. The shallow dry channel still visible on the site functioned as the mill's tailrace.</p>
+      <p className={classes.pullQuote}>" Today, the millrace, a remarkable 19th-century engineering achievement, is the most intact vestige of Austin's mill operation "</p>
       <p>Aaron Austin died in 1860 from an accidental fall. In 1869, James B. Pugh acquired the mill. Turbine water wheels, very likely employed from the prototype invented by James Leffel of Springfield, Ohio, turned three sets of buhrstones that produced custom and merchant flour (Leffel & Co. 2001). Three employees operated the mill for ten months out of a year. It is likely wheat and corn grown by David Magie, a nationally acclaimed local hog breeder, was ground at Austin’s Mill.</p>
       <figure
         className={classes.figure}
@@ -57,17 +60,41 @@ const AustinsMillsWithClasses = ({
   );
 
 const styles = {
+  essayOverrides: {
+    lineHeight: 1.7,
+    '& sup': {
+      fontSize: '.7em',
+      color: '#F05A28',
+    },
+  },
   blockQuote: {
     width: '75%',
     margin: 'auto',
   },
   image: {
-    width: '75%',
+    width: '100%',
     height: 'auto',
-    margin: '15px 0px'
+    margin: '15px auto'
   },
   figure: {
-    margin: '50px 0px',
+    margin: '50px auto',
+    textAlign: 'center',
+    width: '75%',
+    '& figcaption': {
+      fontSize: '.7em',
+      letterSpacing: '0.2em',
+      fontFamily: 'komu-b'
+    }
+  },
+  pullQuote: {
+    color: '#F05A28',
+    width: '75%',
+    margin: '50px auto',
+    fontSize: '2em',
+    fontFamily: 'komu-b',
+    textAlign: 'justify',
+    lineHeight: '1.5em',
+
   },
 }
 

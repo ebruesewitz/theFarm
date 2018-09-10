@@ -90,7 +90,7 @@ const AustinMagieFarmWithClasses = ({
       </figure>
       <div className={classes.sectionDivider} />
       <p>The Austin Magie Farm & Mill District was once a flourishing commercial enterprise and one of the most successful farms in Butler County. Aaron Austin, an early settler of the region, who at one time owned almost the whole western half of Section 14, built the township’s largest grist mill in 1815. After purchasing an additional 160 acres in 1832, he built his Federal-style brick farmhouse nine years later in 1841—evidence of the richness of the soil and the flow and power of Four Mile Creek, which supported 35 years of success as a farmer and miller. Although the original mill burned about 1845, Aaron Austin’s son, aptly named Benjamin Franklin, quickly rebuilt the mill and added a saw mill (McBride 1983). Around that time, in 1846, Butler County Courthouse Tax Re-Appraisal Records valued the mills at $4000, the brick house at $275; with the 200 acres, the total value of the property came to $8875, a substantial sum.<sup>1</sup> In 1850, Samuel Austin, another son, farmed the land adjacent to the mill complex. Census records value the property at $5000, and show that he owned 200 improved acres, seven horses, six milk cows, six sheep and 25 swine. He produced 50 bushels of rye, 800 bushels of Indian corn, and 500 pounds of butter (U.S. Census, Nonpopulation Census, Agricultural Schedule, Oxford Township, Butler County, OH, 1850). During the first half of the 19th century, Austin and his sons oversaw a multifaceted commercial enterprise whose products—flour, animal feed, lumber, hogs, and butter—were traded and used throughout the region. Austin’s success is still evident in the design and craft of his house. The last farmer who lived there, Felix Fryman, lovingly detailed its features: “thick walls, eleven-foot ceilings, . . . three wood-burning fireplaces . . . . The large hall, and winding staircase with landing, made its beauty complete, and gave one the feeling, that the person who designed it so long ago, really knew what living meant” (Fryman 1971, 79).</p>
-      <p className={classes.pullQuote1}>" The large hall, and winding staircase with landing, made its beauty complete, and gave one the feeling, that the person who designed it so long ago, really knew what living meant "</p>
+      <p className={classes.pullQuote}>" thick walls, eleven-foot ceilings, . . . three wood-burning fireplaces . . . . The large hall, and winding staircase with landing, made its beauty complete, and gave one the feeling, that the person who designed it so long ago, really knew what living meant "</p>
       <div className={classes.figureContainer}>
         <figure
           className={[classes.figure, classes.figureOverride].join(" ")}
@@ -165,7 +165,7 @@ const styles = {
     borderBottom: '4px solid #F05A28',
     margin: '50px auto'
   },
-  pullQuote1: {
+  pullQuote: {
     color: '#F05A28',
     width: '75%',
     margin: '50px auto',
@@ -175,13 +175,6 @@ const styles = {
     lineHeight: '1.5em',
 
   },
-  pullQuote2: {
-    backgroundColor: '#F05A28',
-    padding: 20,
-    color: '#ffffff',
-    width: '75%',
-    margin: '50px auto',
-  }
 }
 
 export default injectSheet(styles)(AustinMagieFarmWithClasses);

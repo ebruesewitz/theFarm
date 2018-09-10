@@ -8,20 +8,24 @@ const WeBelieveWithClasses = ({
 }) => (
   <EssayPage 
     articleTitle='We Believe . . .'
+    className={classes.essayOverrides}
+    mapPageLink="/explore/earth"
   >
     <p>At the Institute for Food Design Charrette held on January 29-30, 2016, participants were asked to complete the statement, “We believe in an Institute for Food . . .”</p>
-    <img
-      src={WeBelieveStatements} 
-      alt="We believe statements"
-      className={classes.image}
-    />
+    <div className={classes.figure}>
+      <img
+        src={WeBelieveStatements} 
+        alt="We believe statements"
+        className={classes.image}
+      />
+    </div>
       <p>Here are the compiled results . . .</p>
       <p className={classes.weBelieveStatement}>We believe in an Institute for Food so that we can be responsible citizens of the earth.</p>
       <p className={classes.weBelieveStatement}>We believe the Institute for Food will make a difference and change the lives of all involved; it shows students, faculty, and community members how to work with and learn from all those who have varying interests, talents, skill sets, and backgrounds; it can redefine how the world views sustainability; and it creates lasting friendships and relationships, a knowledge base and skill set, which all involved can take with them into their future endeavors. </p>
       <p className={classes.weBelieveStatement}>We believe in an Institute for Food that educates both Miami students and the surrounding Oxford community about the meaning of health, sustainability, and long-term collaboration.</p>
       <p className={classes.weBelieveStatement}>We believe in an Institute for Food that embodies and emphasizes educational values and sustainable practices in order to make a difference one tomato at a time.</p>
       <p className={classes.weBelieveStatement}>We believe in an Institute for Food that engages people with a variety of interests in practices that promote community health now and into the future.</p>
-      <p className={classes.weBelieveStatement}>We believe in an Institute for Food that creates and changes a regional economy based on cooperation, democratic participation, justice and good health for all—an institute that brings young and old folks from all parts of the community together in mutual support.</p>
+      <p className={classes.pullQuote}>We believe in an Institute for Food that creates and changes a regional economy based on cooperation, democratic participation, justice and good health for all—an institute that brings young and old folks from all parts of the community together in mutual support.</p>
       <p className={classes.weBelieveStatement}>We believe we can uplIFt students, faculty and the community by growing delicious, healthy food and initiating sustainable practices and embodying healthy lifestyles.</p>
       <p className={classes.weBelieveStatement}>We believe the Institute for Food at Miami University will be able to reach beyond the existing boundaries connecting communities, promote health, and ideally help feed those who are not able to feed themselves.</p>
       <p className={classes.weBelieveStatement}>We believe in an Institute for Food that will create community awareness about the importance of caring for our land in a way that can also benefit us by providing healthy food.</p>
@@ -86,13 +90,51 @@ const WeBelieveWithClasses = ({
 );
 
 const styles = {
-  image: {
-    width: '75%',
-    height: 'auto',
+  essayOverrides: {
+    lineHeight: 1.7,
+    '& sup': {
+      fontSize: '.7em',
+      color: '#F05A28',
+    },
   },
-  weBelieveStatement: {
-    fontStyle: 'italic',
-  }
+  headerOverride: {
+    fontSize: 80,
+    '@media (max-width: 760px)': {
+      fontSize: 60,
+    }
+  },
+  blockQuote: {
+    width: '75%',
+    margin: 'auto',
+  },
+  image: {
+    width: '100%',
+    height: 'auto',
+    margin: '15px auto'
+  },
+  figure: {
+    margin: '50px auto',
+    textAlign: 'center',
+    width: '60%',
+    '& figcaption': {
+      fontSize: '.7em',
+      letterSpacing: '0.2em',
+      fontFamily: 'komu-b'
+    }
+  },
+  figureOverride: {
+    width: 'calc(70% - 100px)',
+  },
+  pullQuote: {
+    color: '#F05A28',
+    width: '75%',
+    margin: '50px auto',
+    fontSize: '2em',
+    fontFamily: 'komu-b',
+    textAlign: 'justify',
+    lineHeight: '1.5em',
+
+  },
 }
 
 export default injectSheet(styles)(WeBelieveWithClasses);

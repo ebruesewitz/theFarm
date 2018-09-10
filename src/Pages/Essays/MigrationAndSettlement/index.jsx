@@ -16,6 +16,9 @@ const MigrationAndSettlementWithClasses = ({
     <EssayPage
       articleTitle='Early Anglo-American Settlement in the Miami Valley'
       authorName='Timothy G. Anderson'
+      className={classes.essayOverrides}
+      headerClassName={classes.headerOverride}
+      mapPageLink="/explore/ohiorivervalley"
       references={
         [
           <p>Crane, John. 1855. “Map of Butler County Ohio.”. Butler County Historical Society: <a href="http://bchistoricalsociety.com/main/wp-content/uploads/2015/06/1-Oxford-f.jpg" target="blank" >http://bchistoricalsociety.com/main/wp-content/uploads/2015/06/1-Oxford-f.jpg</a></p>,
@@ -32,7 +35,9 @@ const MigrationAndSettlementWithClasses = ({
       ]}
     >
       <p>During the Early National Era (roughly 1790-1840), thousands of migrants from the American East Coast, as well as large numbers of immigrants from Europe, flooded into the Ohio Country via routes such as the National Road and the Ohio River. Data from the 1850 federal population census schedules reveal that the population of the state had already reached nearly two million by that date, reflecting both heavy in-migration into the state and relatively high birth rates (Fig. 1).</p>
-      <img src={Figure1} className={[classes.image, classes.figure].join(" ")} alt="Figure 1: Ohio Nativity in 1850"/>
+      <div className={classes.figure}>
+        <img src={Figure1} className={classes.image} alt="Figure 1: Ohio Nativity in 1850"/>
+      </div>
       <p>In 1850 just over 66% of Ohio’s population had been born in the state. Those who were not born in Ohio hailed from three primary areas: the Mid-Atlantic Region, the Upland South and New England. Just over 7% of the state’s population consisted of recent immigrants from outside the country, primarily the German lands and Ireland. Further, when these nativity data are mapped at the civil township level it is clear that early Anglo-American migration into Ohio was not geographically random (Fig. 2).</p>
       <figure
         className={classes.figure}
@@ -64,7 +69,7 @@ const MigrationAndSettlementWithClasses = ({
       </figure>
       <p>As a result of the cession of indigenous tribal lands to the federal government in the Greenville Treaty of 1795, Butler County became part of the federal “Public Domain” (also known as Congress Lands) in 1796. Two years later Butler County lands were surveyed under the auspices of the Public Lands Survey System employing a rectilinear “township and range” survey system. Most of what is now Butler County was surveyed under the so-called “Miami River Survey” beginning in 1798 (Fig. 6).</p> 
       <figure
-        className={classes.figure}
+        className={[classes.figure, classes.figureOverride].join(" ")}
       >
         <img src={Figure6} className={classes.image} alt=""/>
         <figcaption>Fig. 6: The Miami River Survey (1798)</figcaption>
@@ -77,11 +82,12 @@ const MigrationAndSettlementWithClasses = ({
         <figcaption>Fig. 7: Original Land Patent, Section 14, Township 5 North, Range 1 East, Miami River Survey (Government Land Office Records, Bureau of Land Management: https://glorecords.blm.gov/details/patent/default.aspx?accession=0006-009&docClass=CV&sid=rnzbv3to.4gd)</figcaption>
       </figure>
       <p>On June 7, 1808 the original land owner, Matthew Hueston, assigned an entire half section of land (320 acres) to one John Miller, after which it can be assumed that Miller assumed payments to the government under the terms of a credit system introduced by the federal government in 1800 that allowed buyers five years to complete the purchase of their chosen lot.</p>
+      <p className={classes.pullQuote}>These migrants from southeastern Pennsylvania and adjacent regions of the Mid-Atlantic brought with them a distinctive regional subculture, characterized most readily by a commercially-oriented and diversified agricultural economy focused on both crop production and livestock rearing.</p>
       <p>The southwest quarter (160 acres) of Section 14, the present location of the Austin- Magie site, was eventually purchased by Aaron Austin in 1845. This land was bordered on the north by land owned by John and D. Magie (probably David Magie) and to the east by a quarter section owned by David Magie, one of Ohio’s most prominent early swine breeders (Fig. 8).</p>
       <figure
         className={classes.figure}
       >
-        <img src={Figure8} className={classes.image} alt=""/>
+        <img src={Figure8} className={[classes.figure, classes.figureOverride].join(" ")} alt=""/>
         <figcaption>Fig. 8: Detail of Section 14, Township 5 North, Range 1 East of the Miami River Survey, 1855 (John Crane, “Map of Butler County Ohio”, 1855 Butler County Historical Society: http://bchistoricalsociety.com/main/wp- content/uploads/2015/06/1-Oxford-f.jpg)</figcaption>
       </figure>
       <p>Crane’s 1855 map clearly shows the flour and saw mills and the accompanying mile-long millrace just northeast of Oxford. Together with the extant 1841 federal-style brick farmhouse, the story of the Austin-Magie site embodies a number of important themes with regard to the early settlement of Ohio and the Corn Belt, and indeed of the Midwest itself.</p>
@@ -89,17 +95,50 @@ const MigrationAndSettlementWithClasses = ({
   );
 
 const styles = {
+  essayOverrides: {
+    lineHeight: 1.7,
+    '& sup': {
+      fontSize: '.7em',
+      color: '#F05A28',
+    },
+  },
+  headerOverride: {
+    fontSize: 80,
+    '@media (max-width: 760px)': {
+      fontSize: 60,
+    }
+  },
   blockQuote: {
     width: '75%',
     margin: 'auto',
   },
   image: {
-    width: '75%',
+    width: '100%',
     height: 'auto',
-    margin: '15px 0px'
+    margin: '15px auto'
   },
   figure: {
-    margin: '50px 0px',
+    margin: '50px auto',
+    textAlign: 'center',
+    width: '75%',
+    '& figcaption': {
+      fontSize: '.7em',
+      letterSpacing: '0.2em',
+      fontFamily: 'komu-b'
+    }
+  },
+  figureOverride: {
+    width: 'calc(70% - 100px)',
+  },
+  pullQuote: {
+    color: '#F05A28',
+    width: '75%',
+    margin: '50px auto',
+    fontSize: '2em',
+    fontFamily: 'komu-b',
+    textAlign: 'justify',
+    lineHeight: '1.5em',
+
   },
 }
 

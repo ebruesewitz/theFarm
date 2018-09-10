@@ -10,6 +10,9 @@ const SoilsWithClasses = ({
     <EssayPage
       articleTitle='Soils of Four Mile Creek, Ohio, and the Austin-Magie Farm'
       authorName='Jason A. Rech'
+      className={classes.essayOverrides}
+      headerClassName={classes.headerOverride}
+      mapPageLink="/explore/region"
       references={
         [
           <p>Jenny, H. 1941. Factors of Soil Formation. A System of Quantitative Pedology. New York: McGraw-Hill Book Company, Inc.</p>,
@@ -25,6 +28,7 @@ const SoilsWithClasses = ({
       <p>Soils are the foundation of modern society, yet most people don’t think twice about what makes a good soil, or if we are doing enough to preserve this natural resource. As David Montgomery put it, we treat soil like ‘dirt’ (Montgomery, 2007a), when in fact it is far more valuable to us than gold. It is fascinating that humans turned to this valuable resource and agriculture at about the same time all over the world!  Around ten thousand years ago people in the Middle East, China, and South America all transitioned from hunter-gatherer to agrarian societies, independently. Why? There is only one good reason for this transition occurring separately at around the same time; human populations exceeded the carrying capacity of the land for hunter-gatherer societies and humans were forced to agriculture (Montgomery, 2007a). Now, after societies all over the world have turned to agriculture, we can’t go back, as the only way to support the large global population of today is through widespread agriculture</p>
       <p>The archaeological and historic records, however, also allow us to examine the relationship between societies and how they treat their soil. Time and time again societies started farming in fertile, flat floodplains and then transitioned to farming hillslopes and uplands when populations increased. Rapid rates of soil erosion then stripped a society of its agricultural base, leading Montgomery to suggest the average lifetime of a society of ~ 1,000 years is largely a consequence of this boom and bust agricultural cycle (Montgomery, 2007a).</p>
       <p>To date, the U.S. has largely repeated this cycle. With European occupation of North America, forests were cleared, wetlands were drained, and soils were plowed for agriculture. Increased industrialization and mechanization of the farming industry in the 20th century led to the rapid expansion of agriculture and continued plowing of almost all arable land. The key problem with large-scale industrialized agriculture is quite simple; agricultural soil erosion rates are orders of magnitude higher than soil production rates. Global soil production rates are ~0.06 to 0.08 mm/yr., whereas average erosion rates with ‘good’ agricultural practices are about ten times higher at ~0.6 mm/yr. (Montgomery, 2007b). Bad agricultural practices can easily produce soil erosion rates a hundred or a thousand times greater than soil production rates, undermining the agricultural base of a society. In other words, modern farming is unsustainable. Many have argued that the best way to break this boom and bust cycle of agriculture is to switch from large-scale industrialized agriculture to small family-owned organic farms and community supported agriculture (CSA) (e.g., Montgomery, 2007b).</p>
+      <p className={classes.pullQuote}>Bad agricultural practices can easily produce soil erosion rates a hundred or a thousand times greater than soil production rates, undermining the agricultural base of a society.</p>
       <p>In 2016 the Institute for Food at Miami University opened a small 8-acre CSA on the floodplains of Four Mile Creek on part of the historic Austin-Magie 30-acre farmstead. So why was this location chosen, and why are the soils here so good for agriculture? To answer these questions it is important to understand that soils are a product of their environment, with climate, organisms, topographic relief, parent material, and time being the dominant environmental factors (Jenny, 1941). </p>
       <figure
         className={classes.figure}
@@ -46,19 +50,52 @@ const SoilsWithClasses = ({
     </ EssayPage>
   );
 
-const styles = {
-  blockQuote: {
-    width: '75%',
-    margin: 'auto',
-  },
-  image: {
-    width: '75%',
-    height: 'auto',
-    margin: '15px 0px'
-  },
-  figure: {
-    margin: '50px 0px',
-  },
-}
+  const styles = {
+    essayOverrides: {
+      lineHeight: 1.7,
+      '& sup': {
+        fontSize: '.7em',
+        color: '#F05A28',
+      },
+    },
+    headerOverride: {
+      fontSize: 80,
+      '@media (max-width: 760px)': {
+        fontSize: 60,
+      }
+    },
+    blockQuote: {
+      width: '75%',
+      margin: 'auto',
+    },
+    image: {
+      width: '100%',
+      height: 'auto',
+      margin: '15px auto'
+    },
+    figure: {
+      margin: '50px auto',
+      textAlign: 'center',
+      width: '75%',
+      '& figcaption': {
+        fontSize: '.7em',
+        letterSpacing: '0.2em',
+        fontFamily: 'komu-b'
+      }
+    },
+    figureOverride: {
+      width: 'calc(70% - 100px)',
+    },
+    pullQuote: {
+      color: '#F05A28',
+      width: '75%',
+      margin: '50px auto',
+      fontSize: '2em',
+      fontFamily: 'komu-b',
+      textAlign: 'justify',
+      lineHeight: '1.5em',
+  
+    },
+  }
 
 export default injectSheet(styles)(SoilsWithClasses);

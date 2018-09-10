@@ -13,6 +13,9 @@ const LocalFoodWithClasses = ({
     <EssayPage
       articleTitle='Local Food: Oxford Farmers Market Uptown and MOON Co-op Grocery'
       authorName='James Rubinstein'
+      className={classes.essayOverrides}
+      headerClassName={classes.headerOverride}
+      mapPageLink="/explore/oxford"
       resources={[
         <a target="blank" href="http://www.mooncoop.coop/"><p>Moon Co-Op</p></a>,
         <a target="blank" href="https://oxfordfarmersmarket.com/"><p>Oxford Farmer’s Market</p></a>,
@@ -44,6 +47,7 @@ const LocalFoodWithClasses = ({
         <figcaption>Locust Run Farm’s Harv Roehling with certified organic lettuce at Oxford Farmers Market Uptown (photo by James Rubinstein)</figcaption>
       </figure>
       <p>Miami Oxford Organic Network (MOON) Cooperative Services Inc. was incorporated in 2004 for the purpose of opening a locally owned, operated, and stocked grocery store. Many of the folks working to open a store were vendors at the Farmers Market. They recognized the need for a place to sell what they made and grew and raised seven days a week. The big box supermarkets didn’t want them, so they decided to open their own store. Co-op grocery stores are common in the Upper Midwest and New England, but when MOON opened in 2011 it was the first co-op in Ohio in 45 years. The co-op is owned by around 880 households, including 650 who live in and around Oxford. However, anyone can shop in the store.</p>
+      <p className={classes.pullQuote}>“ The food here tastes like it’s supposed to taste. ”</p>
       <p>Folks become member-owners through a $150 purchase of a share of common stock in the cooperative. Around 120 of the owners have invested further in the store through purchase of preferred shares and loans. In addition, the co-op received loans from the City of Oxford’s Community Improvement Corporation and from Cooperative Development Services.</p>
       <p>MOON emphasizes local, organic, and Fair Trade products. The store has around 50 vendors within 50 miles of Oxford who supply local meat, dairy, and grocery items, not just produce. For example, the beef, chicken, lamb, and pork sold in the store are raised on four Oxford-area farms—Harris-Miller Farm, Jericho Run Farm, Morning Sun Farm, and Reserve Run Farm. The soap comes from Oxford-area soap-makers Artistry Farm’s Debra Bowles and Tapaahsia Farm’s Karen Baldwin.</p>
       <figure
@@ -64,19 +68,49 @@ const LocalFoodWithClasses = ({
     </ EssayPage>
   );
 
-const styles = {
-  blockQuote: {
-    width: '75%',
-    margin: 'auto',
-  },
-  image: {
-    width: '75%',
-    height: 'auto',
-    margin: '15px 0px'
-  },
-  figure: {
-    margin: '50px 0px',
-  },
-}
+  const styles = {
+    essayOverrides: {
+      lineHeight: 1.7,
+      '& sup': {
+        fontSize: '.7em',
+        color: '#F05A28',
+      },
+    },
+    headerOverride: {
+      fontSize: 80,
+      '@media (max-width: 760px)': {
+        fontSize: 60,
+      }
+    },
+    blockQuote: {
+      width: '75%',
+      margin: 'auto',
+    },
+    image: {
+      width: '100%',
+      height: 'auto',
+      margin: '15px auto'
+    },
+    figure: {
+      margin: '50px auto',
+      textAlign: 'center',
+      width: '75%',
+      '& figcaption': {
+        fontSize: '.7em',
+        letterSpacing: '0.2em',
+        fontFamily: 'komu-b'
+      }
+    },
+    pullQuote: {
+      color: '#F05A28',
+      width: '75%',
+      margin: '50px auto',
+      fontSize: '2em',
+      fontFamily: 'komu-b',
+      textAlign: 'justify',
+      lineHeight: '1.5em',
+  
+    },
+  }
 
 export default injectSheet(styles)(LocalFoodWithClasses);

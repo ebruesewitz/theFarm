@@ -12,6 +12,9 @@ const SustainableFoodWithClasses = ({
     <EssayPage
       articleTitle='Defining Sustainable Local Agriculture: Converging Paths, Permaculture Principles, and Cities within Civic Concentric Circles'
       authorName='Alan Wight (with Charlie Gonzalez and Braden Trauth)'
+      className={classes.essayOverrides}
+      headerClassName={classes.headerOverride}
+      mapPageLink="/explore/ohiorivervalley"
       references={
         [
           <p>Alonso, W. 1964. Location and land use. Toward a general theory of land rent. <i>Location and land use. Toward a general theory of land rent.</i></p>,
@@ -69,6 +72,7 @@ const SustainableFoodWithClasses = ({
     >
       <p>There are many paths leading towards sustainable agriculture. In 1978, Wes Jackson argued that our farming practices should emulate natural ecosystems, given that these have stood the test of time. The past 40 years has seen incredible growth in the number of conversations, definitions, and practices around sustainable practices. Different groups approach this debate from varying historical, cultural, geographical (including climate and biological factors), and epistemological perspectives. The majority of agronomists, including John Elkington (1997), John Ikerd (1993), and Thomas Lyson (2000), have built their definitions on the pillars of ecology (environment), economics, and social well-being. These pillars provide a starting point for exploring sustainable agriculture’s definitions. Yet, as Ikerd (2005) has pointed out, it is the real stories and practices of farmers developing sustainable agriculture systems that matter. These stories root agriculture in the microclimate and soils of local settings. This essay argues that we are at a convergence in our definitions of sustainable agriculture and just need to incorporate Permaculture. Second, this essay advances the sustainable agriculture conversation by revisiting Johann Heinrich von Thünen’s (1826 (1966)) city planning model and Ebenezer Howard’s <i>Garden Cities of To-morrow</i> (1902), as we define <i>Sustainable Local Agriculture</i> (SLA) within this current discussion.</p>
       <p>Scholars and practitioners across disciplines debate what kinds of agriculture get included in the sustainable agriculture definition, often with words such as <i>industrial, global, chemical, conventional</i>, and <i>commodity</i> on one side, and <i>sustainable, local, ecological, regenerative, alternative</i>, and <i>civic</i> on the other (Dunlap, Beus, Howell, &amp; Waud, 1993; Ikerd, 1993; Lyson 2000). The conventional side is associated with agribusiness, green revolution technologies, petrochemical inputs (synthetic fertilizers and pesticides), Genetically Modified Organisms (GMOs), large-scale tillage, erosion, eutrophication, and monocultures. The sustainable side is associated with biodynamics; certified naturally grown; holistic management, low-input; no till or precision agriculture; agroecology; integrated pest management (IPM), Permaculture, and the historic definition of organic agriculture. Sustainable agriculture emphasizes closed-loop farm systems that restore and enhance biodiversity and soil health (structure, carbon content, microbial and fungal life). While these ideal types (Weber, 1949) are helpful, they are also divisive. It is best to think about agriculture on a continuum, as a range of practices, rather than distinct sides. Simply put, we need aspects from the entire spectrum as we seek to “meet the needs of the present without compromising the ability of future generations to meet their own needs” (Brundtland Report, 1987, 1.). </p>
+      <div className={classes.sectionDivider} />
       <p>In looking across the approximately 43 existing characterizations, explanations, and definitions of sustainable agriculture as catalogued by the United States Department of Agriculture (Gold, 2007), there are far more similarities than differences. Under U.S. law (United States Farm Bill, 1990), the term <i>sustainable agriculture</i> refers to an integrated system of plant and animal production practices that:</p>
       <p>
         <ul>
@@ -107,6 +111,7 @@ const SustainableFoodWithClasses = ({
       <p>Developed by Thomas Lyson (2000), <i>Civic Agriculture</i> is composed of small(er) farms; community-supported agriculture programs; community, school, and backyard gardens and orchards; food cooperatives; food hubs; communally shared food-production practices; farmers markets; and other agrifood organizations that are focused on, and rooted in a geographic place. Civic Agriculture is local production, distribution, consumption, and composting (nutrient management), based on best ecological, social, economic and bioregion practices, that are by the people, and for the people in that community/region (Lyson, 2000; Lyson &amp; Guptil, 2004). Second, Lynch’s (1984) work on city elements, specifically: nodes, paths, edges, districts, and landmarks, combined with an understanding of geographic size and development composition (urban, suburban, and exurban), total population, population density, and existing food system infrastructure—leads us to conclude that SLA will be different for different settlements.</p>
       <p>By applying permaculture principles to city contexts, we outline appropriate agricultural practices for the urban-rural transect. Toby Hemenway’s (2015) recent book, <i>The Permaculture City</i>, broadly applies Permaculture methodologies to our existing urban systems. This work also highlights the significant overlap between Lynch’s (1984) city elements and those identified within Permaculture design, providing a valuable opportunity to superimpose agriculture upon our existing urban design frameworks at the metropolitan/regional scale. Hemenway identifies “local” with the extent to which the influence of one’s voice can be heard, where one is still a person rather than a demographic. This definition associates “local” with the leverage to build resilience through community participation, which also relates to Lyson’s (2000) emphasis on civic participation in one’s local agrifood system. </p>
       <p>By emphasizing local and context-driven appropriateness as core tenets of SLA, we tie agricultural production to each unique metropolis and the bioregion it is embedded within. This strengthens local economies, builds social capital, and restores the connection between people and their environment. With the recent surge in urban agriculture, and the continuing consumption of farmland by sprawling development, it is essential to develop policies and economies of scale that balance local needs, bioregional contexts, and our global ecological footprint. As we theorize on the convergence of definitions regarding SLA, we argue it is time to incorporate the emerging practices of intensive suburban and urban agriculture, and forge an equitable relationship between urban markets and rural communities, all within the context of Permaculture and bioregional ecologies.</p>
+      <p className={classes.pullQuote}>With the recent surge in urban agriculture, and the continuing consumption of farmland by sprawling development, it is essential to develop policies and economies of scale that balance local needs, bioregional contexts, and our global ecological footprint.</p>
       <p>In closing, we offer a definition of SLA, based on the USDA’s language, with an integration of Permaculture principals, and the goal of incorporating cities within civic concentric circles. Sustainable Local Agriculture is an integrated system of plant and animal production practices that:</p>
       <p>
         <ul>
@@ -123,17 +128,54 @@ const SustainableFoodWithClasses = ({
 );
 
 const styles = {
+  essayOverrides: {
+    lineHeight: 1.7,
+    '& sup': {
+      fontSize: '.7em',
+      color: '#F05A28',
+    },
+  },
+  headerOverride: {
+    fontSize: 80,
+    '@media (max-width: 760px)': {
+      fontSize: 60,
+    }
+  },
   blockQuote: {
     width: '75%',
     margin: 'auto',
   },
   image: {
-    width: '75%',
+    width: '100%',
     height: 'auto',
-    margin: '15px 0px'
+    margin: '15px auto'
   },
   figure: {
-    margin: '50px 0px',
+    margin: '50px auto',
+    textAlign: 'center',
+    width: '75%',
+    '& figcaption': {
+      fontSize: '.7em',
+      letterSpacing: '0.2em',
+      fontFamily: 'komu-b'
+    }
+  },
+  figureOverride: {
+    width: 'calc(70% - 100px)',
+  },
+  pullQuote: {
+    color: '#F05A28',
+    width: '75%',
+    margin: '50px auto',
+    fontSize: '2em',
+    fontFamily: 'komu-b',
+    textAlign: 'justify',
+    lineHeight: '1.5em',
+  },
+  sectionDivider: {
+    width: '30%',
+    borderBottom: '4px solid #F05A28',
+    margin: '50px auto'
   },
 }
 
