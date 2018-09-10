@@ -5,9 +5,6 @@ import OhioRiverValleyImage from '../images/ohiorivervalley.jpg';
 
 import MigrationandSettlementIcon from '../images/MigrationandSettlementIcon.png';
 import MigrationAndSettlementThumbnail01 from './Essays/MigrationAndSettlement/images/thumbnails/thumbnail01.jpg';
-import MigrationAndSettlementThumbnail02 from './Essays/MigrationAndSettlement/images/thumbnails/thumbnail02.jpg';
-import MigrationAndSettlementThumbnail03 from './Essays/MigrationAndSettlement/images/thumbnails/thumbnail03.jpg';
-import MigrationAndSettlementThumbnail04 from './Essays/MigrationAndSettlement/images/thumbnails/thumbnail04.jpg';
 
 import SustainableFoodIcon from '../images/SustainableFoodIcon.png';
 import SustainableFoodThumbnail01 from './Essays/SustainableFood/images/thumbnails/thumbnail01.jpg';
@@ -38,7 +35,7 @@ const OhioRiverValleyMapWithClasses = ({
           articleTitle: "Early Anglo-American Settlement in the Miami Valley",
           articleContent: "By 1850, the Ohio country was quintessentially American, with two-thirds of its two million inhabitants native-born, in contrast to the rest of the United States. The migrant population into southwest Ohio brought a distinctive regional Pennsylvania-German subculture, characterized most readily by a commercially-oriented and diversified agricultural econony focused on both crop production and livestock rearing. The Austin-Magie site thus embodies a number of important themes with regard to the early settlement of Ohio and the Corn Belt, and indeed of the Midwest itself.",
           articleLink: "/essays/migrationandsettlement",
-          thumbnails: [MigrationAndSettlementThumbnail01, MigrationAndSettlementThumbnail02, MigrationAndSettlementThumbnail03, MigrationAndSettlementThumbnail04],
+          thumbnails: [MigrationAndSettlementThumbnail01],
         },
       }}
     >

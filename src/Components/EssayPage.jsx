@@ -10,6 +10,12 @@ class EssayPageWithClasses extends Component {
     this.state = {areLinksOpen: false}
   }
 
+  componentDidMount(){
+    if(window.innerWidth > 760){
+      this.setState({areLinksOpen: true})
+    }
+  }
+
   toggleMenu = () => {
     this.setState({areLinksOpen: !this.state.areLinksOpen})
   }
@@ -61,7 +67,7 @@ class EssayPageWithClasses extends Component {
             }
           </div>
         }
-        <img src={ArticleBackgroundImage} alt="" className={classes.backgroundImage}/>
+        {/* <img src={ArticleBackgroundImage} alt="" className={classes.backgroundImage}/> */}
         <div className={classes.homePage}>
           { articleTitle &&
             <h1 className={[classes.bannerText, headerClassName].join(" ")}>{articleTitle}</h1>
@@ -111,7 +117,7 @@ const styles = {
   linksContainer: {
     width: '20vw',
     height: '100vh',
-    zIndex: '100',
+    zIndex: '99',
     position: 'fixed',
     top: '0',
     padding: 15,
@@ -120,8 +126,10 @@ const styles = {
     right: 50,
     backgroundColor: '#ffffff',
     borderRight: '2px solid #e4e4e4',
+    // borderLeft: '2px solid #e4e4e4',
     textAlign: 'left',
     boxSizing: 'border-box',
+    boxShadow: '-4px 0px 10px 1px rgba(0, 0, 0, .2)',
     '& h2': {
       fontFamily: 'komu-b',
       textAlign: 'center',

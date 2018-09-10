@@ -44,10 +44,10 @@ class MapPageWithClasses extends Component {
             <div className={classes.imageContainer}>
               <img src={mapImage} className={[classes.map, mapClassName].join(" ")} />
             </div>
-            {
+            {/* {
               previousPageTitle &&
               <h1 className={[classes.bannerText, classes.previousTitle].join(" ")}>{previousPageTitle}</h1>
-            }
+            } */}
             <h1 className={classes.bannerText}>{pageTitle}</h1>
             {
               React.Children.map(children, child =>
@@ -83,7 +83,7 @@ class MapPageWithClasses extends Component {
               {
                 nextPageTitle ?
                   <div className={classes.zoomIconAndText}>
-                    <div className={classes.zoomText}>Zoom in to {nextPageTitle}</div>
+                    <div className={classes.zoomText}>Zoom in to <b className={classes.zoomTextTitle}>{nextPageTitle}</b></div>
                     <Link to={nextPageLink}>
                       <div className={classes.iconContainer}>
                         <img src={ZoomIn} alt="" />
@@ -100,7 +100,7 @@ class MapPageWithClasses extends Component {
               {
                 previousPageTitle ?
                   <div className={classes.zoomIconAndText}>
-                    <div className={classes.zoomText}>Zoom out to {previousPageTitle}</div>
+                    <div className={classes.zoomText}>Zoom out to <b className={classes.zoomTextTitle}>{previousPageTitle}</b></div>
                     <Link to={previousPageLink}>
                       <div className={classes.iconContainer}>
                         <img src={ZoomOut} alt="" />
@@ -216,10 +216,10 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-around',
     '& div': {
-      width: '20%',
+      maxHeight: 55,
     },
     '& img': {
-      width: '100%',
+      height: '100%',
     }
   },
   readMoreButton: {
@@ -251,9 +251,11 @@ const styles = {
     color: 'rgba(0,0,0,.23)',
     fontWeight: 'bold',
     paddingRight: 20,
-    '@media (max-width: 760px)': {
-      display: 'none',
-    }
+  },
+  zoomTextTitle: {
+    color: 'black',
+    fontSize: 16,
+    paddingLeft: 5,
   },
   iconContainer: {
     backgroundColor: '#ffffff',
@@ -267,7 +269,7 @@ const styles = {
     '@media (max-width: 760px)': {
       padding: 15,
       '& img': {
-        width: 15,
+        width: 20,
         height: 'auto',
       }
     }

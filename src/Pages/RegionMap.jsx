@@ -2,19 +2,19 @@ import React from 'react';
 import injectSheet from 'react-jss';
 import MapPage from '../Components/MapPage';
 import RegionImage from '../images/region.jpg';
+
 import PigsIcon from '../images/PigsIcon.png';
+import PorkopolisThumbnail01 from './Essays/Porkopolis/images/thumbnails/thumbnail01.jpg';
+import PorkopolisThumbnail02 from './Essays/Porkopolis/images/thumbnails/thumbnail02.jpg';
 
 import SoilIcon from '../images/SoilIcon.png';
 import SoilsThumbnail01 from './Essays/Soils/images/thumbnails/thumbnail01.jpg';
-import SoilsThumbnail02 from './Essays/Soils/images/thumbnails/thumbnail02.jpg';
 
 
 // import ArchaeologyIcon from '../images/ArchaeologyIcon.png';
 
 import WaterIcon from '../images/WaterIcon.png';
 import GroundwaterThumbnail01 from './Essays/Groundwater/images/thumbnails/thumbnail01.jpg';
-import GroundwaterThumbnail02 from './Essays/Groundwater/images/thumbnails/thumbnail02.jpg';
-import GroundwaterThumbnail03 from './Essays/Groundwater/images/thumbnails/thumbnail03.jpg';
 
 // import FloraandFaunaIcon from '../images/FloraandFaunaIcon.png';
 
@@ -35,18 +35,19 @@ const RegionMapWithClasses = ({
           articleTitle: "Groundwater Flow and Quality ",
           articleContent: "The Institute for Food farm is surrounded by conventionally-cultivated farmland, making it an excellent site to study the potential benefits to groundwater quality of abstaining from application of artificial fertilizer and pesticides. Seven small wells were installed around the IF farm to measure groundwater pressure, flow, and quality. Nitrate sampling will continue, to better discern the spatial patterns and perhaps observe the positive impact of sustainable farming on groundwater quality. We also hope to expand our field work to include sampling and analysis for atrazine as well as nitrate.",
           articleLink: "/essays/groundwater",
-          thumbnails: [GroundwaterThumbnail01, GroundwaterThumbnail02, GroundwaterThumbnail03],
+          thumbnails: [GroundwaterThumbnail01],
         },
         [SoilIcon]: {
           articleTitle: "Soils of Four Mile Creek, Ohio, and the Austin-Magie Farm",
           articleContent: "Soils are the foundation of modern society, and humans all over the world turned to agriculture at about the same time ten thousand years ago; humans will not be turning back from agriculture any time soon. But soil is also more often abused than cared for as a precious resource, threatening the very foundation of a healthy society. The US is no exception. And yet, the soils of the Institute for Food Farm are exceptional, the small-scale farming practices employed are the best available for mitigating soil erosion loss, and the diversity of soils bodes well for sustainability and resilience in the future. ",
           articleLink: "/essays/soils",
-          thumbnails: [SoilsThumbnail01, SoilsThumbnail02],
+          thumbnails: [SoilsThumbnail01],
         },
         [PigsIcon]: {
           articleTitle: "Porkopolis and the Austin-Magie Farm",
           articleContent: "The Austin-Magie Farm was an important part of the economy of the Miami River Valley in the nineteenth century, but also connected the community to Cincinnati, the rest of the country, and the globe. The farm did this through the region’s primary agricultural product–pigs. Supplying Porkopolis with pigs for a range of products, made from every part of the animal, required the development of suitable breeds. One of the most successful breeders was David Magie, who developed the “Magie Hog” in the 1840s, the origins of the Poland-China hog, the first great American commercial breed.",
           articleLink: "/essays/porkopolis",
+          thumbnails: [PorkopolisThumbnail01, PorkopolisThumbnail02],
         },
       }}
     >

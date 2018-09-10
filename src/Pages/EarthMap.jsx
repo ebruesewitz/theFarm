@@ -4,7 +4,6 @@ import MapPage from '../Components/MapPage';
 import EarthImage from '../images/earth.jpg';
 
 import WeBelieveIcon from '../images/WeBelieveIcon.png';
-import WeBelieveThumbnail01 from './Essays/WeBelieve/images/thumbnails/thumbnail01.jpg';
 
 
 
@@ -27,7 +26,6 @@ const EarthMapWithClasses = ({
             " (fill in the blank).” Here are the somber, serious, playful, joyous, imaginative" + 
             " results—a snapshot of spontaneous collective wisdom.",
           articleLink: "/essays/webelieve",
-          thumbnails: [WeBelieveThumbnail01],
         },
       }}
     >

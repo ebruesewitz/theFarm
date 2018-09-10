@@ -12,9 +12,6 @@ import BeesThumbnail04 from './Essays/Bees/images/thumbnails/thumbnail04.jpg';
 // import FoodSecurityIcon from '../images/FoodSecurityIcon.png';
 import LocalFoodIcon from '../images/LocalFoodIcon.png';
 import LocalFoodThumbnail01 from './Essays/LocalFood/images/thumbnails/thumbnail01.jpg';
-import LocalFoodThumbnail02 from './Essays/LocalFood/images/thumbnails/thumbnail02.jpg';
-import LocalFoodThumbnail03 from './Essays/LocalFood/images/thumbnails/thumbnail03.jpg';
-import LocalFoodThumbnail04 from './Essays/LocalFood/images/thumbnails/thumbnail04.jpg';
 
 const OxfordMapWithClasses = ({
   classes
@@ -39,7 +36,7 @@ const OxfordMapWithClasses = ({
           articleTitle: "Local Food",
           articleContent: "Oxford’s local food scene, anchored by Oxford Farmers Market Uptown and MOON Co-op Grocery, is “hyper-local.” The farmer’s market has been in operation since around 1979, and especially emphasizes quality and building community. MOON (Miami Oxford Organic Network) Co-op was incorporated in 2004, largely as a result of the effort of vendors at the farmer’s market who saw the need for a place to sell what they made and grew and raised seven days a week.",
           articleLink: "/essays/localfood",
-          thumbnails: [LocalFoodThumbnail01, LocalFoodThumbnail02, LocalFoodThumbnail03, LocalFoodThumbnail04],
+          thumbnails: [LocalFoodThumbnail01],
         },
       }}
     >

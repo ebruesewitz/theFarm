@@ -7,7 +7,6 @@ import AustinMagieIcon from '../images/AustinMagieIcon.png';
 import AustinMagieFarmThumbnail01 from './Essays/AustinMagieFarm/images/thumbnails/thumbnail01.jpg';
 import AustinMagieFarmThumbnail02 from './Essays/AustinMagieFarm/images/thumbnails/thumbnail02.jpg';
 import AustinMagieFarmThumbnail03 from './Essays/AustinMagieFarm/images/thumbnails/thumbnail03.jpg';
-import AustinMagieFarmThumbnail04 from './Essays/AustinMagieFarm/images/thumbnails/thumbnail04.jpg';
 
 import AustinMillComplexIcon from '../images/AustinMillComplexIcon.png';
 import AustinsMillsThumbnail01 from './Essays/AustinsMills/images/thumbnails/thumbnail01.jpg';
@@ -47,7 +46,7 @@ const Section14MapWithClasses = ({
           articleTitle: "Austin-Magie Farm",
           articleContent: "Over the course of the 19th century, the Austin Magie Farm & Mill District was a flourishing commercial enterprise and one of the most successful farms in Butler County. From 1815-1863, the farm was owned by Aaron Austin, who built Oxford Township’s largest mill complex, which included a flourmill and a sawmill. The subsequent owner, David M. Magie, was one of Ohio’s most prominent 19th century stock farmers and swine breeders. The farm was a thriving agricultural landscape where natural resources—soil, water, trees, and land—were transformed through labor and skill into flour, lumber, and pork which became integral to an expanding supply chain that shipped products across the region, throughout the United States, and eventually around the world.",
           articleLink: "/essays/austinmagiefarm",
-          thumbnails: [AustinMagieFarmThumbnail01, AustinMagieFarmThumbnail02, AustinMagieFarmThumbnail03, AustinMagieFarmThumbnail04],
+          thumbnails: [AustinMagieFarmThumbnail01, AustinMagieFarmThumbnail02, AustinMagieFarmThumbnail03],
         },
       }}
     >
