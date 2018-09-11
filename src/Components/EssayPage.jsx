@@ -10,11 +10,11 @@ class EssayPageWithClasses extends Component {
     this.state = {areLinksOpen: false}
   }
 
-  componentDidMount(){
-    if(window.innerWidth > 760){
-      this.setState({areLinksOpen: true})
-    }
-  }
+  // componentDidMount(){
+  //   if(window.innerWidth > 760){
+  //     this.setState({areLinksOpen: true})
+  //   }
+  // }
 
   toggleMenu = () => {
     this.setState({areLinksOpen: !this.state.areLinksOpen})

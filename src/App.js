@@ -32,9 +32,12 @@ import LandscapeChoreography from './Pages/Essays/LandscapeChoreography';
 import BreakingGround from './Pages/Essays/BreakingGround';
 import InstituteForFood from './Pages/Essays/InstituteForFood';
 import EducatingFromTheGroundUp from './Pages/Essays/EducatingFromTheGroundUp';
+import Harvest from './Pages/Essays/Harvest';
+import FoodSecurity from './Pages/Essays/FoodSecurity';
+import FloraAndFauna from './Pages/Essays/FloraAndFauna';
 
 const Routes = () => (
-  <Router basename={'/'}>
+  <Router basename={'/farmsitepreview'}>
     <div>
       <Route
         render={
@@ -56,6 +59,7 @@ const Routes = () => (
                   <Route exact path="/essays/landscapechoreography" component={LandscapeChoreography} />
                   <Route exact path="/essays/breakingground" component={BreakingGround} />
                   <Route exact path="/essays/instituteforfood" component={InstituteForFood} />
+                  <Route exact path="/essays/harvest" component={Harvest} />
             
                   <Route exact path="/explore/section14" component={Section14Map} />
                   <Route exact path="/essays/blackcoveredbridge" component={BlackCoveredBridge} />
@@ -66,11 +70,13 @@ const Routes = () => (
                   <Route exact path="/explore/oxford" component={OxfordMap} />
                   <Route exact path="/essays/bees" component={Bees} />
                   <Route exact path="/essays/localfood" component={LocalFood} />
+                  <Route exact path="/essays/foodsecurity" component={FoodSecurity} />
             
                   <Route exact path="/explore/region" component={RegionMap} />
                   <Route exact path="/essays/groundwater" component={Groundwater} />
                   <Route exact path="/essays/soils" component={Soils} />
                   <Route exact path="/essays/porkopolis" component={Porkopolis} />
+                  <Route exact path="/essays/floraandfauna" component={FloraAndFauna} />
                   
                   <Route exact path="/explore/ohiorivervalley" component={OhioRiverValleyMap} />
                   <Route exact path="/essays/sustainableagriculture" component={SustainableFood} />
