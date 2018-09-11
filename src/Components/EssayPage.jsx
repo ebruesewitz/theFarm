@@ -43,7 +43,7 @@ class EssayPageWithClasses extends Component {
           <div className={classes.linksMenu} onClick={this.toggleMenu}>Resources &amp; References</div>
         }
         {
-          this.state.areLinksOpen &&
+          (resources || references || footNotes) && this.state.areLinksOpen &&
           <div className={classes.linksContainer}>
             {
               footNotes && 
