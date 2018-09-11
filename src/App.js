@@ -37,7 +37,7 @@ import FoodSecurity from './Pages/Essays/FoodSecurity';
 import FloraAndFauna from './Pages/Essays/FloraAndFauna';
 
 const Routes = () => (
-  <Router basename={'/farmsitepreview'}>
+  <Router basename={'/'}>
     <div>
       <Route
         render={
