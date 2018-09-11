@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import EssayPage from '../../../Components/EssayPage';
+import ArticleBackgroundImage from '../../../images/EssayBackground5.jpg';
 import PrinterofPlates from './images/printerofplates.jpg';
 import DowntownCincinnati from './images/downtowncincinnati.jpg';
 
@@ -10,6 +11,7 @@ const NewRuralismWithClasses = ({
   <EssayPage 
     articleTitle='Education for Healing the Rural-Urban Divide'
     authorName="Kathleen R. Smythe"
+    articleBackgroundImage={ArticleBackgroundImage}
     className={classes.essayOverrides}
     headerClassName={classes.headerOverride}
     mapPageLink="/explore/unitedstates"

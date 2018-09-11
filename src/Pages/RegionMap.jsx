@@ -16,13 +16,13 @@ import SoilsThumbnail01 from './Essays/Soils/images/thumbnails/thumbnail01.jpg';
 import WaterIcon from '../images/WaterIcon.png';
 import GroundwaterThumbnail01 from './Essays/Groundwater/images/thumbnails/thumbnail01.jpg';
 
-// import FloraandFaunaIcon from '../images/FloraandFaunaIcon.png';
+import FloraandFaunaIcon from '../images/FloraandFaunaIcon.png';
 
 const RegionMapWithClasses = ({
   classes
 }) => (
     <MapPage
-      iconImages={[PigsIcon, SoilIcon, WaterIcon, /*  ArchaeologyIcon */, /* FloraandFaunaIcon */]}
+      iconImages={[PigsIcon, SoilIcon, WaterIcon, /*  ArchaeologyIcon */, FloraandFaunaIcon]}
       mapImage={RegionImage}
       previousPageTitle="Ohio River Valley"
       previousPageLink="/explore/ohiorivervalley"
@@ -49,13 +49,17 @@ const RegionMapWithClasses = ({
           articleLink: "/essays/porkopolis",
           thumbnails: [PorkopolisThumbnail01, PorkopolisThumbnail02],
         },
+        [FloraandFaunaIcon]: {
+          articleTitle: "Gaining a Sense of Place through the Interpretation of Vegetation Patterns",
+          articleLink: "/essays/floraandfauna",
+        }
       }}
     >
       <img id={PigsIcon} src={PigsIcon} className={[classes.pigsIcon, classes.mapIcons].join(" ")} alt="" />
       <img id={SoilIcon} src={SoilIcon} className={[classes.soilIcon, classes.mapIcons].join(" ")} alt="" />
       {/* <img id={ArchaeologyIcon} src={ArchaeologyIcon} className={[classes.archaeologyIcon, classes.mapIcons].join(" ")} alt="" /> */}
       <img id={WaterIcon} src={WaterIcon} className={[classes.waterIcon, classes.mapIcons].join(" ")} alt="" />
-      {/* <img id={FloraandFaunaIcon} src={FloraandFaunaIcon} className={[classes.floraandFaunaIcon, classes.mapIcons].join(" ")} alt="" /> */}
+      <img id={FloraandFaunaIcon} src={FloraandFaunaIcon} className={[classes.floraandFaunaIcon, classes.mapIcons].join(" ")} alt="" />
     </MapPage>
   );
 

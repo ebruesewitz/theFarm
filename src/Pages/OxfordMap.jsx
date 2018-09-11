@@ -9,7 +9,12 @@ import BeesThumbnail02 from './Essays/Bees/images/thumbnails/thumbnail02.jpg';
 import BeesThumbnail03 from './Essays/Bees/images/thumbnails/thumbnail03.jpg';
 import BeesThumbnail04 from './Essays/Bees/images/thumbnails/thumbnail04.jpg';
 
-// import FoodSecurityIcon from '../images/FoodSecurityIcon.png';
+import FoodSecurityIcon from '../images/FoodSecurityIcon.png';
+import FoodSecurityThumbnail01 from './Essays/FoodSecurity/images/thumbnails/thumbnail01.jpg';
+import FoodSecurityThumbnail02 from './Essays/FoodSecurity/images/thumbnails/thumbnail02.png';
+import FoodSecurityThumbnail03 from './Essays/FoodSecurity/images/thumbnails/thumbnail03.jpg';
+import FoodSecurityThumbnail04 from './Essays/FoodSecurity/images/thumbnails/thumbnail04.png';
+
 import LocalFoodIcon from '../images/LocalFoodIcon.png';
 import LocalFoodThumbnail01 from './Essays/LocalFood/images/thumbnails/thumbnail01.jpg';
 
@@ -17,7 +22,7 @@ const OxfordMapWithClasses = ({
   classes
 }) => (
     <MapPage
-      iconImages={[BeesIcon, /* FoodSecurityIcon */, LocalFoodIcon]}
+      iconImages={[BeesIcon, FoodSecurityIcon, LocalFoodIcon]}
       mapImage={OxfordImage}
       previousPageTitle="The Region"
       previousPageLink="/explore/region"
@@ -38,10 +43,15 @@ const OxfordMapWithClasses = ({
           articleLink: "/essays/localfood",
           thumbnails: [LocalFoodThumbnail01],
         },
+        [FoodSecurityIcon]: {
+          articleTitle: "Miami University Institute for Food Outreach Program",
+          articleLink: "/essays/foodsecurity",
+          thumbnails: [FoodSecurityThumbnail01, FoodSecurityThumbnail02, FoodSecurityThumbnail03, FoodSecurityThumbnail04]
+        }
       }}
     >
       <img id={BeesIcon} src={BeesIcon} className={[classes.beesIcon, classes.mapIcons].join(" ")} alt="" />
-      {/* <img id={FoodSecurityIcon} src={FoodSecurityIcon} className={[classes.foodSecurityIcon, classes.mapIcons].join(" ")} alt="" /> */}
+      <img id={FoodSecurityIcon} src={FoodSecurityIcon} className={[classes.foodSecurityIcon, classes.mapIcons].join(" ")} alt="" />
       <img id={LocalFoodIcon} src={LocalFoodIcon} className={[classes.localFoodIcon, classes.mapIcons].join(" ")} alt="" />
     </MapPage>
   );

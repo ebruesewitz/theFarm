@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import EssayPage from '../../../Components/EssayPage';
+import ArticleBackgroundImage from '../../../images/EssayBackground2.jpg';
 import Journeytotheslaughterhouse from './images/journeytotheslaughterhouse.jpg';
 import PorkPackinginCincinnati from './images/PorkPackinginCincinnati.jpg';
 import Polandchinahog from './images/Polandchinahog.jpg';
@@ -13,6 +14,7 @@ const PorkopolisWithClasses = ({
     <EssayPage
       articleTitle='Porkopolis and the Austin-Magie Farm'
       authorName='Rob Gioielli'
+      articleBackgroundImage={ArticleBackgroundImage}
       className={classes.essayOverrides}
       mapPageLink="/explore/region"
       references={

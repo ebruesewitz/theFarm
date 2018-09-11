@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import EssayPage from '../../../Components/EssayPage';
+import ArticleBackgroundImage from '../../../images/EssayBackground1.jpg';
 import BlackCoveredBridge from './images/BlackCoveredBridge.jpg';
 import OxfordMuseumAssociationBlackCoveredBridgeFlier from './images/OxfordMuseumAssociationBlackCoveredBridgeFlier.pdf';
 
@@ -10,6 +11,7 @@ const BlackCoveredBridgeWithClasses = ({
     <EssayPage
       articleTitle='Black (Pugh’s Mill) Covered Bridge'
       authorName='Ben Jacks'
+      articleBackgroundImage={ArticleBackgroundImage}
       className={classes.essayOverrides}
       mapPageLink="/explore/section14"
       resources={[

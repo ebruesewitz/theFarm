@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import EssayPage from '../../../Components/EssayPage';
+import ArticleBackgroundImage from '../../../images/EssayBackground3.jpg';
 import AustinMagiefarmhouse1841 from './images/AustinMagiefarmhouse1841.jpg';
 import Blackcoveredbridge from './images/Blackcoveredbridge.jpg';
 import ACallforNewRuralism from './images/ACallforNewRuralism.pdf';
@@ -15,6 +16,7 @@ const EducatingFromTheGroundUpWithClasses = ({
     <EssayPage
       articleTitle='Educating from the Ground Up'
       authorName='Ben Jacks & Marguerite S. Shaffer'
+      articleBackgroundImage={ArticleBackgroundImage}
       className={classes.essayOverrides}
       mapPageLink="/"
       mapTextOverride="Return To Home Page"

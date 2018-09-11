@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import EssayPage from '../../../Components/EssayPage';
+import ArticleBackgroundImage from '../../../images/EssayBackground5.jpg';
 import LangstrothCottage from './images/langstrothcottage.jpg';
 import AdvertisementLangstrothHive from './images/advertisementlangstrothhive.jpg';
 import LangstrothLindenTrees from './images/langstrothlindentrees.jpg';
@@ -18,6 +19,7 @@ const BeesWithClasses = ({
     <EssayPage
       articleTitle='Lorenzo Langstroth and the Birth of American Beekeeping'
       authorName='Adam Ebert'
+      articleBackgroundImage={ArticleBackgroundImage}
       className={classes.essayOverrides}
       headerClassName={classes.headerOverride}
       mapPageLink="/explore/oxford"

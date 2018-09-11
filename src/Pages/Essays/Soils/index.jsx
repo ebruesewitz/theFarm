@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import EssayPage from '../../../Components/EssayPage';
+import ArticleBackgroundImage from '../../../images/EssayBackground3.jpg';
 import GlacialOhio from './images/glacialohio.png';
 import SoilsMap from './images/soilsmap.png';
 
@@ -10,6 +11,7 @@ const SoilsWithClasses = ({
     <EssayPage
       articleTitle='Soils of Four Mile Creek, Ohio, and the Austin-Magie Farm'
       authorName='Jason A. Rech'
+      articleBackgroundImage={ArticleBackgroundImage}
       className={classes.essayOverrides}
       headerClassName={classes.headerOverride}
       mapPageLink="/explore/region"

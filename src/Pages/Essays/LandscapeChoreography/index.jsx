@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import EssayPage from '../../../Components/EssayPage';
+import ArticleBackgroundImage from '../../../images/EssayBackground1.jpg';
 import LC1 from './images/LC1.jpg';
 import LC2 from './images/LC2.jpg';
 import LC3 from './images/LC3.jpg';
@@ -37,6 +38,7 @@ const LandscapeChoreographyWithClasses = ({
     <EssayPage
       articleTitle='Landscape Choreography'
       authorName='Ben Jacks (Photographs by Elisa Serra)'
+      articleBackgroundImage={ArticleBackgroundImage}
       className={classes.essayOverrides}
       mapPageLink="/explore/farm"
       references={

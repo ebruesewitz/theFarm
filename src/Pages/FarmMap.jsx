@@ -2,7 +2,12 @@ import React from 'react';
 import injectSheet from 'react-jss';
 import MapPage from '../Components/MapPage';
 import FarmImage from '../images/farm.jpg';
-// import HarvestIcon from '../images/HarvestIcon.png';
+
+import HarvestIcon from '../images/HarvestIcon.png';
+import HarvestThumbnail01 from './Essays/Harvest/images/thumbnails/thumbnail01.jpg';
+import HarvestThumbnail02 from './Essays/Harvest/images/thumbnails/thumbnail02.jpg';
+import HarvestThumbnail03 from './Essays/Harvest/images/thumbnails/thumbnail03.jpg';
+import HarvestThumbnail04 from './Essays/Harvest/images/thumbnails/thumbnail04.jpg';
 
 import BreakingGroundIcon from '../images/BreakingGroundIcon.png';
 import BreakingGroundThumbnail01 from './Essays/BreakingGround/images/thumbnails/thumbnail01.jpg';
@@ -28,7 +33,7 @@ const FarmMapWithClasses = ({
   classes
 }) => (
   <MapPage
-    iconImages={[/* HarvestIcon */, BreakingGroundIcon, InstituteforFoodIcon, LandscapeChoreographyIcon, StudentReflectionsIcon]}
+    iconImages={[HarvestIcon, BreakingGroundIcon, InstituteforFoodIcon, LandscapeChoreographyIcon, StudentReflectionsIcon]}
     mapImage={FarmImage}
     previousPageTitle="Section 14"
     previousPageLink="/explore/section14"
@@ -58,9 +63,14 @@ const FarmMapWithClasses = ({
         articleLink: "/essays/instituteforfood",
         thumbnails: [InstituteForFoodThumbnail01, InstituteForFoodThumbnail02],
       },
+      [HarvestIcon]: {
+        articleTitle: "The Need for Community Support of Local Agriculture",
+        articleLink: "/essays/harvest",
+        thumbnails: [HarvestThumbnail01, HarvestThumbnail02, HarvestThumbnail03, HarvestThumbnail04],
+      }
     }}
   >
-    {/* <img id={HarvestIcon} src={HarvestIcon} className={[classes.harvestIcon, classes.mapIcons].join(" ")} alt=""/> */}
+    <img id={HarvestIcon} src={HarvestIcon} className={[classes.harvestIcon, classes.mapIcons].join(" ")} alt=""/>
     <img id={BreakingGroundIcon} src={BreakingGroundIcon} className={[classes.breakingGroundIcon, classes.mapIcons].join(" ")} alt=""/>
     <img id={InstituteforFoodIcon} src={InstituteforFoodIcon} className={[classes.instituteforFoodIcon, classes.mapIcons].join(" ")} alt=""/>
     <img id={LandscapeChoreographyIcon} src={LandscapeChoreographyIcon} className={[classes.landscapeChoreographyIcon, classes.mapIcons].join(" ")} alt=""/>

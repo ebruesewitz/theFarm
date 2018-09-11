@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import EssayPage from '../../../Components/EssayPage';
+import ArticleBackgroundImage from '../../../images/EssayBackground3.jpg';
 import WeBelieveStatements from './images/webelievestatements.jpg';
 
 const WeBelieveWithClasses = ({
@@ -8,6 +9,7 @@ const WeBelieveWithClasses = ({
 }) => (
   <EssayPage 
     articleTitle='We Believe . . .'
+    articleBackgroundImage={ArticleBackgroundImage}
     className={classes.essayOverrides}
     mapPageLink="/explore/earth"
   >

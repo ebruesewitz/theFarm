@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import EssayPage from '../../../Components/EssayPage';
+import ArticleBackgroundImage from '../../../images/EssayBackground3.jpg';
 import Webelievepopup from './images/Webelievepopup.jpg';
 import Charette1 from './images/Charette1.jpg';
 import Charette2 from './images/Charette2.jpg';
@@ -26,6 +27,7 @@ const BreakingGroundWithClasses = ({
     <EssayPage
       articleTitle='Breaking Ground'
       authorName='Ben Jacks'
+      articleBackgroundImage={ArticleBackgroundImage}
       className={classes.essayOverrides}
       mapPageLink="/explore/farm"
       references={

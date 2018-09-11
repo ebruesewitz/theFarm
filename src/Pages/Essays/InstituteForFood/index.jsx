@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import EssayPage from '../../../Components/EssayPage';
+import ArticleBackgroundImage from '../../../images/EssayBackground5.jpg';
 import InstituteforFood from './images/InstituteforFood.jpg';
 import LoadedTruck from './images/LoadedTruck.jpg';
 import CSABoxNov from './images/CSABoxNov.jpg';
@@ -19,6 +20,7 @@ const InstituteForFoodWithClasses = ({
     <EssayPage
       articleTitle='The Institute for Food: IF Miami'
       authorName='Marguerite S. Shaffer'
+      articleBackgroundImage={ArticleBackgroundImage}
       className={classes.essayOverrides}
       mapPageLink="/explore/farm"
       references={

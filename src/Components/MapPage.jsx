@@ -216,6 +216,8 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-around',
     '& div': {
+      height: 55,
+      width: 'auto',
       maxHeight: 55,
     },
     '& img': {

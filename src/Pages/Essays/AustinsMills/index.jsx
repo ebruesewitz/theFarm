@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import EssayPage from '../../../Components/EssayPage';
+import ArticleBackgroundImage from '../../../images/EssayBackground2.jpg';
 import CBarrows from './images/CBarrows.jpg';
 import Evansgristmillplan from './images/Evansgristmillplan.jpg';
 import PughsMill from './images/PughsMill.jpg';
@@ -14,6 +15,7 @@ const AustinsMillsWithClasses = ({
     <EssayPage
       articleTitle='Austin’s Mills'
       authorName='Stephen Gordon'
+      articleBackgroundImage={ArticleBackgroundImage}
       className={classes.essayOverrides}
       mapPageLink="/explore/section14"
       references={

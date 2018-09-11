@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import EssayPage from '../../../Components/EssayPage';
+import ArticleBackgroundImage from '../../../images/EssayBackground5.jpg';
 import Picture1 from './images/picture1.png';
 import Picture2 from './images/picture2.png';
 import Picture3 from './images/picture3.png';
@@ -12,6 +13,7 @@ const SustainableFoodWithClasses = ({
     <EssayPage
       articleTitle='Defining Sustainable Local Agriculture: Converging Paths, Permaculture Principles, and Cities within Civic Concentric Circles'
       authorName='Alan Wight (with Charlie Gonzalez and Braden Trauth)'
+      articleBackgroundImage={ArticleBackgroundImage}
       className={classes.essayOverrides}
       headerClassName={classes.headerOverride}
       mapPageLink="/explore/ohiorivervalley"

@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import injectSheet from 'react-jss';
 import { Link } from 'react-router-dom'
-import ArticleBackgroundImage from '../images/articlebackground.jpg';
 import SmartMenu from '../Components/SmartMenu';
+import DefaultBackgroundImage from '../images/EssayBackground5.jpg';
 
 class EssayPageWithClasses extends Component {
   constructor(){
@@ -24,6 +24,7 @@ class EssayPageWithClasses extends Component {
     const {
       articleTitle,
       authorName,
+      articleBackgroundImage=DefaultBackgroundImage,
       references,
       footNotes,
       resources,
@@ -67,7 +68,7 @@ class EssayPageWithClasses extends Component {
             }
           </div>
         }
-        {/* <img src={ArticleBackgroundImage} alt="" className={classes.backgroundImage}/> */}
+        { articleBackgroundImage && <img src={articleBackgroundImage} alt="" className={classes.backgroundImage}/>}
         <div className={classes.homePage}>
           { articleTitle &&
             <h1 className={[classes.bannerText, headerClassName].join(" ")}>{articleTitle}</h1>

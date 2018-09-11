@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import EssayPage from '../../../Components/EssayPage';
+import ArticleBackgroundImage from '../../../images/EssayBackground3.jpg';
 import MagieWithSquash from './images/MagieWithSquash.jpg';
 import DrewCharles from './images/DrewCharles.jpg';
 import FarmPanorama from './images/FarmPanorama.jpg';
@@ -20,6 +21,7 @@ const StudentReflectionsWithClasses = ({
     <EssayPage
       articleTitle='Student Reflections 2016-2018'
       className={classes.essayOverrides}
+      articleBackgroundImage={ArticleBackgroundImage}
       headerClassName={classes.headerOverride}
       mapPageLink="/explore/farm"
     >

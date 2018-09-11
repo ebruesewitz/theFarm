@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import EssayPage from '../../../Components/EssayPage';
+import ArticleBackgroundImage from '../../../images/EssayBackground2.jpg';
 import Figure1 from './images/figure1.png';
 import PopulationCensus from './images/1850populationcensus.png';
 import Figure3 from './images/figure3.png';
@@ -16,6 +17,7 @@ const MigrationAndSettlementWithClasses = ({
     <EssayPage
       articleTitle='Early Anglo-American Settlement in the Miami Valley'
       authorName='Timothy G. Anderson'
+      articleBackgroundImage={ArticleBackgroundImage}
       className={classes.essayOverrides}
       headerClassName={classes.headerOverride}
       mapPageLink="/explore/ohiorivervalley"

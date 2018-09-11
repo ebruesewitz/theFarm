@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import EssayPage from '../../../Components/EssayPage';
+import ArticleBackgroundImage from '../../../images/EssayBackground1.jpg';
 import FarmAndWells from './images/farmandwells.png';
 import Figure2 from './images/figure2.png';
 import Figure3 from './images/figure3.png';
@@ -16,6 +17,7 @@ const GroundwaterWithClasses = ({
     <EssayPage
       articleTitle='Assessment of Groundwater Flow and Quality at the Miami University Organic Farm'
       authorName='Jonathan Levy, Patrick Shanahan, Erin Pickford'
+      articleBackgroundImage={ArticleBackgroundImage}
       className={classes.essayOverrides}
       headerClassName={classes.headerOverride}
       mapPageLink="/explore/region"

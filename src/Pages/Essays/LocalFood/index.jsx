@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import EssayPage from '../../../Components/EssayPage';
+import ArticleBackgroundImage from '../../../images/EssayBackground5.jpg';
 import OxfordFarmersMarketUptownJuly2018 from './images/OxfordFarmersMarketUptownJuly2018.jpg';
 import FreedomFarmsJohnBigham from './images/FreedomFarmsJohnBigham.jpg';
 import LocustRunFarmsHarvRoehling from './images/LocustRunFarmsHarvRoehling.jpg';
@@ -13,6 +14,7 @@ const LocalFoodWithClasses = ({
     <EssayPage
       articleTitle='Local Food: Oxford Farmers Market Uptown and MOON Co-op Grocery'
       authorName='James Rubinstein'
+      articleBackgroundImage={ArticleBackgroundImage}
       className={classes.essayOverrides}
       headerClassName={classes.headerOverride}
       mapPageLink="/explore/oxford"

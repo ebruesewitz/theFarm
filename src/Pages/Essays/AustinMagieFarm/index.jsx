@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import EssayPage from '../../../Components/EssayPage';
+import ArticleBackgroundImage from '../../../images/EssayBackground1.jpg';
 import Oxfordtownship1855 from './images/Oxfordtownship1855.jpg';
 import Oxfordtownship1875 from './images/Oxfordtownship1875.jpg';
 import Oxfordtownship1895 from './images/Oxfordtownship1895.jpg';
@@ -21,6 +22,7 @@ const AustinMagieFarmWithClasses = ({
     <EssayPage
       articleTitle='The Austin-Magie Farm'
       authorName='Marguerite S. Shaffer'
+      articleBackgroundImage={ArticleBackgroundImage}
       className={classes.essayOverrides}
       references={
         [

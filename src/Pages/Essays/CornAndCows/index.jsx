@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import EssayPage from '../../../Components/EssayPage';
+import ArticleBackgroundImage from '../../../images/EssayBackground4.jpg';
 import AustinMagieFarm from './images/austinmagiefarm.jpg';
 import FoodMapOfUs from './images/foodmapofus.jpg';
 import HolsteinCows from './images/holsteincows.jpg';
@@ -13,6 +14,7 @@ const CornAndCowsWithClasses = ({
     <EssayPage
       articleTitle='Corn &amp; Cows (The Fryman Farm)'
       authorName='Marguerite S. Shaffer'
+      articleBackgroundImage={ArticleBackgroundImage}
       className={classes.essayOverrides}
       headerClassName={classes.headerOverride}
       mapPageLink="/explore/unitedstates"
