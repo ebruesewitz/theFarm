@@ -23,6 +23,7 @@ const OxfordMapWithClasses = ({
 }) => (
     <MapPage
       iconImages={[BeesIcon, FoodSecurityIcon, LocalFoodIcon]}
+      iconImageTitles={['bees', 'food security', 'local food']}
       mapImage={OxfordImage}
       previousPageTitle="The Region"
       previousPageLink="/explore/region"

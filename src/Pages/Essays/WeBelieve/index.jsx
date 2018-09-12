@@ -11,7 +11,7 @@ const WeBelieveWithClasses = ({
     articleTitle='We Believe . . .'
     articleBackgroundImage={ArticleBackgroundImage}
     className={classes.essayOverrides}
-    mapPageLink="/explore/earth"
+    mapPageLink="/explore/farm"
   >
     <p>At the Institute for Food Design Charrette held on January 29-30, 2016, participants were asked to complete the statement, “We believe in an Institute for Food . . .”</p>
     <div className={classes.figure}>

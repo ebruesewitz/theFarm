@@ -18,6 +18,7 @@ const EducatingFromTheGroundUpWithClasses = ({
       authorName='Ben Jacks & Marguerite S. Shaffer'
       articleBackgroundImage={ArticleBackgroundImage}
       className={classes.essayOverrides}
+      hasMapButton
       mapPageLink="/"
       mapTextOverride="Return To Home Page"
       references={

@@ -20,7 +20,8 @@ class MapPageWithClasses extends Component {
   render(){
     const {
       children,
-      iconImages,
+      iconImages, 
+      iconImageTitles, 
       iconInformationMap,
       mapImage,
       mapClassName,
@@ -36,6 +37,7 @@ class MapPageWithClasses extends Component {
       <div>
         <SmartMenu 
           iconImages={iconImages} 
+          iconImageTitles={iconImageTitles}
           selectedIcon={this.state.selectedIcon}
           setSelectedIcon={this.setSelectedIcon}
         />
@@ -72,11 +74,13 @@ class MapPageWithClasses extends Component {
                   </div>
                 }
                 <p>{iconInformationMap[this.state.selectedIcon].articleContent}</p>
-                <Link to={iconInformationMap[this.state.selectedIcon].articleLink}>
-                  <div className={classes.readMoreButton}>
-                    Read More
-                  </div>
-                </Link>
+                {iconInformationMap[this.state.selectedIcon].articleLink && 
+                  <Link to={iconInformationMap[this.state.selectedIcon].articleLink}>
+                    <div className={classes.readMoreButton}>
+                      Read More
+                    </div>
+                  </Link>
+                }
               </div>
             }
             <div className={classes.zoomControls}>

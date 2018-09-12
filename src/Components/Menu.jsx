@@ -3,15 +3,17 @@ import injectSheet from 'react-jss'
 import {
   Link
 } from 'react-router-dom'
-import Logo from '../images/Logo_Small.png';
+import Logo from '../images/logo.1.svg';
 import Menu from '../images/Menu.svg';
 import ExitMenu from '../images/exitMenu.svg';
 import DownArrow from '../images/downArrow.svg';
+import Button from '../Components/Button';
 
 const MenuWithClasses = ({
   classes, 
   isOpen,
   iconImages,
+  iconImageTitles,
   onMenuClick,
   onArrowClick,
   selectedIcon,
@@ -40,7 +42,7 @@ const MenuWithClasses = ({
       {
         iconImages && iconImages.length > 0 &&
           <div onClick={onArrowClick} className={[classes.logoContainer, classes.iconContainer].join(' ')}>
-            {iconImages.map((iconImage)=>(
+            {iconImages.map((iconImage, index)=>(
               <div>
                 <img 
                   id={iconImage}
@@ -49,6 +51,7 @@ const MenuWithClasses = ({
                   onClick={setSelectedIcon}
                   className={classes.mapIcon}
                 />
+                <p className={classes.iconTitle}>{iconImageTitles[index]}</p>
               </div>
             ))}
           </div>
@@ -62,7 +65,11 @@ const MenuWithClasses = ({
             <Link to={`/contact`}>CONTACT</Link>
             {children}
           </div>
-          <div className={[classes.downArrowContainer, classes.exploreLink].join(" ")}><Link to={`/explore/farm`}>EXPLORE THE MAP</Link></div>
+          <div>
+            <Link to="/explore/earth">
+              <Button className={classes.button} buttonText="EXPLORE THE MAP"/>
+            </Link>
+          </div>
         </div>
         <div className={classes.blurContent}/>
       </div>
@@ -83,6 +90,10 @@ const styles = {
       flexDirection: 'column',
       width: '100vw',
     }
+  },
+  button: {
+    width: '80%',
+    margin: 'auto'
   },
   rotate: {
     transform: 'rotate(180deg)',
@@ -235,7 +246,7 @@ const styles = {
     maxHeight: 'calc(100vh - 220px)',
     overflow: 'scroll',
     '& img': {
-      padding: '15px 0px',
+      padding: '15px 0px 0px 0px',
       height: 50,
       width: 'auto',
       '@media (max-width: 760px)': {
@@ -261,10 +272,20 @@ const styles = {
       },
     }
   },
+  iconTitle: {
+    color: 'rgba(0,0,0,.23)',
+    fontSize: 12,
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    marginTop: 0,
+    '@media (max-width: 760px)': {
+      display: 'none',
+    }
+  },
   exploreLink: {
     fontSize: 22,
     margin: '5px 0px',
-    paddingLeft: 50,
+    padding: '37px 0px 37px 50px',
     boxSizing: 'border-box',
     '@media (max-width: 760px)': {
       width: 'auto',

@@ -22,7 +22,7 @@ const InstituteForFoodWithClasses = ({
       authorName='Marguerite S. Shaffer'
       articleBackgroundImage={ArticleBackgroundImage}
       className={classes.essayOverrides}
-      mapPageLink="/explore/farm"
+      mapPageLink="/explore/earth"
       references={
         [
           <p>Dusselier, Jane. 2009. “Understanding Food as Culture.” Environmental History, 14, no. 2, April: 331-338.</p>,

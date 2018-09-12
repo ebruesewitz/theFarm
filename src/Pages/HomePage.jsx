@@ -3,7 +3,7 @@ import injectSheet from 'react-jss';
 import Marquee from 'react-marquees';
 import { Link } from 'react-router-dom'
 import OxfordMapImage from '../images/ButlerCoAtlas1875OxfordTwnspMap.png';
-import LargeLogoImage from '../images/Logo_Large.png';
+import LargeLogoImage from '../images/Logo_Large.svg';
 import SmartMenu from '../Components/SmartMenu';
 import Button from '../Components/Button';
 
@@ -23,7 +23,10 @@ const HomePageWithClasses = ({classes}) => (
       <div className={classes.pageContainer}>
         <h2 className={[classes.sectionTwoText, classes.headingText].join(" ")}>Educating From The Ground Up</h2>
         <p className={classes.sectionTwoText}>Educating From the Ground Up maps a particular place: a historic farm north of the city of Oxford, Ohio. A micro history that expands out through multiple layers, it explores the intricate connections that link agricultural areas to metropolitan regions—the country and the city—the local and the global. It traces the lay of the land and tracks agricultural development. It documents the economic, ecological, social and cultural value of rural places. And it advocates a vision for the New Ruralism.</p>
-        <Link to="/educatingfromthegroundup"><Button className={[classes.addMargin, classes.button].join(" ")} buttonText="LEARN MORE"/></Link>
+        <p>
+          <Link to="/educatingfromthegroundup" className={classes.learnMoreLink}>LEARN MORE</Link>
+        </p>
+        <Link to="/explore/earth"><Button className={[classes.addMargin, classes.button].join(" ")} buttonText="EXPLORE THE MAP"/></Link>
       </div>
       <div className={classes.marquee}>
         <Marquee
@@ -33,6 +36,8 @@ const HomePageWithClasses = ({classes}) => (
           <p>39°31’40”N 84°43’50”W; 240MAMSL</p>
           <p>Till Plains</p>
           <p>Great Miami River Watershed</p>
+          <p>Miami Valley</p>
+          <p>niiwi tipahaakani meehcaakamiinsi</p>
           <p>Four Mile Creek Basin</p>
           <p>Congress Lands West of Miami River</p>
           <p>Aaron Austin Farm</p>
@@ -58,6 +63,8 @@ const HomePageWithClasses = ({classes}) => (
           <p>39°31’40”N 84°43’50”W; 240MAMSL</p>
           <p>Till Plains</p>
           <p>Great Miami River Watershed</p>
+          <p>Miami Valley</p>
+          <p>niiwi tipahaakani meehcaakamiinsi</p>
           <p>Four Mile Creek Basin</p>
           <p>Congress Lands West of Miami River</p>
           <p>Aaron Austin Farm</p>
@@ -83,6 +90,8 @@ const HomePageWithClasses = ({classes}) => (
           <p>39°31’40”N 84°43’50”W; 240MAMSL</p>
           <p>Till Plains</p>
           <p>Great Miami River Watershed</p>
+          <p>Miami Valley</p>
+          <p>niiwi tipahaakani meehcaakamiinsi</p>
           <p>Four Mile Creek Basin</p>
           <p>Congress Lands West of Miami River</p>
           <p>Aaron Austin Farm</p>
@@ -206,6 +215,14 @@ const styles = {
     },
     '@media (max-width: 760px)': {
       display: 'none',
+    }
+  },
+  learnMoreLink: {
+    fontSize: '1.3em',
+    fontWeight: 800,
+    borderBottom: '2px solid #F05A28',
+    '@media (max-width: 760px)': {
+      marginLeft: '5vw',
     }
   }
 }

@@ -22,6 +22,7 @@ const Section14MapWithClasses = ({
 }) => (
     <MapPage
       iconImages={[AustinMagieIcon, AustinMillComplexIcon, BlackCoveredBridgeIcon]}
+      iconImageTitles={['austin-magie farm', 'austin\'s mills', 'black covered bridge']}
       mapImage={Section14Image}
       previousPageTitle="Oxford"
       previousPageLink="/explore/oxford"

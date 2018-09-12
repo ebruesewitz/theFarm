@@ -3,6 +3,7 @@ import injectSheet from 'react-jss';
 import { Link } from 'react-router-dom'
 import SmartMenu from '../Components/SmartMenu';
 import DefaultBackgroundImage from '../images/EssayBackground5.jpg';
+import Button from './Button';
 
 class EssayPageWithClasses extends Component {
   constructor(){
@@ -25,6 +26,7 @@ class EssayPageWithClasses extends Component {
       articleTitle,
       authorName,
       articleBackgroundImage=DefaultBackgroundImage,
+      hasMapButton,
       references,
       footNotes,
       resources,
@@ -80,6 +82,11 @@ class EssayPageWithClasses extends Component {
           <div className={[classes.childContainer, className].join(" ")}>
             {children}
             {mapPageLink && <Link to={mapPageLink}><p className={classes.mapLink}>{mapTextOverride || 'Return To Map'}</p></Link>}
+            {hasMapButton && 
+              <Link to="/explore/earth">
+                <Button className={classes.addMargin} buttonText="EXPLORE THE MAP"/>
+              </Link>
+            }
           </div>
         </div>
       </div>
@@ -88,6 +95,9 @@ class EssayPageWithClasses extends Component {
 }
 
 const styles = {
+  addMargin: {
+    margin: '50px 0px',
+  },
   linksMenu: {
     width: '100vh',
     height: '50px',

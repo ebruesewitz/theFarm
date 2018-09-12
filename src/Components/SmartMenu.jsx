@@ -51,6 +51,7 @@ export default class SmartMenu extends Component{
       shouldShowArrow,
       children,
       iconImages,
+      iconImageTitles,
       selectedIcon,
       setSelectedIcon, 
     } = this.props;
@@ -58,6 +59,7 @@ export default class SmartMenu extends Component{
     return(
       <Menu
         iconImages={iconImages}
+        iconImageTitles={iconImageTitles}
         onMenuClick={this.toggleMenu}
         onArrowClick={this.onArrowClick}
         arrowDirection={this.state.arrowDirection}

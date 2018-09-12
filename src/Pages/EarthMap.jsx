@@ -3,38 +3,32 @@ import injectSheet from 'react-jss';
 import MapPage from '../Components/MapPage';
 import EarthImage from '../images/earth.jpg';
 
-import WeBelieveIcon from '../images/WeBelieveIcon.png';
-
+import InstituteforFoodIcon from '../images/InstituteforFoodIcon.png';
+import InstituteForFoodThumbnail01 from './Essays/InstituteForFood/images/thumbnails/thumbnail01.jpg';
+import InstituteForFoodThumbnail02 from './Essays/InstituteForFood/images/thumbnails/thumbnail02.jpg';
 
 
 const EarthMapWithClasses = ({
   classes
 }) => (
     <MapPage
-      iconImages={[WeBelieveIcon]}
+      iconImages={[InstituteforFoodIcon]}
+      iconImageTitles={['Institute for Food']}
       mapImage={EarthImage}
       pageTitle="Earth"
       nextPageTitle="United States"
       nextPageLink="/explore/unitedstates"
       classes
       iconInformationMap={{
-        [WeBelieveIcon]: {
-          articleTitle: "We believe...",
-          articleContent: "When we met to envision the Institute for Food Farm in January, 2016," + 
-            " the group of participants—students, faculty, and members of the Oxford" + 
-            " community—responded to the prompt, “We believe in an Institute for Food.." + 
-            " (fill in the blank).” Here are the somber, serious, playful, joyous, imaginative" + 
-            " results—a snapshot of spontaneous collective wisdom.",
-          articleLink: "/essays/webelieve",
+        [InstituteforFoodIcon]: {
+          articleTitle: "The Institute for Food",
+          articleContent: "The Institute for Food is a Provost Interdisciplinary Innovation Initiative to engage the Miami University community around issues of food, health, and sustainable agriculture. The Institute seeks to offer a national model for interdisciplinary food-centered liberal arts education, emphasizing integrative approaches to sustainable agriculture and resilient food systems. Its mission is to foster healthy food, healthy eating, healthy communities, and a healthy planet. ",
+          articleLink: "/essays/instituteforfood",
+          thumbnails: [InstituteForFoodThumbnail01, InstituteForFoodThumbnail02],
         },
       }}
     >
-      <img 
-        alt="" 
-        className={[classes.weBelieveIcon, classes.mapIcons].join(" ")}
-        id={WeBelieveIcon}
-        src={WeBelieveIcon}
-      />
+      <img id={InstituteforFoodIcon} src={InstituteforFoodIcon} className={[classes.instituteforFoodIcon, classes.mapIcons].join(" ")} alt=""/>
     </MapPage>
   );
 
@@ -47,9 +41,9 @@ const styles = {
       opacity: '.7 !important',
     }
   },
-  weBelieveIcon: {
-    top: '43vh',
-    left: 'calc(50vw + 8vh)',
+  instituteforFoodIcon: {
+    top: '29vh',
+    left: 'calc(50vw + 7vh)',
   },
 }
 

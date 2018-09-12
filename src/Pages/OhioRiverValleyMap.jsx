@@ -17,6 +17,7 @@ const OhioRiverValleyMapWithClasses = ({
 }) => (
     <MapPage
       iconImages={[MigrationandSettlementIcon, SustainableFoodIcon]}
+      iconImageTitles={['migration and settlement', 'sustainable agriculture']}
       mapImage={OhioRiverValleyImage}
       previousPageTitle="United States"
       previousPageLink="/explore/unitedstates"

@@ -14,9 +14,7 @@ import BreakingGroundThumbnail01 from './Essays/BreakingGround/images/thumbnails
 import BreakingGroundThumbnail02 from './Essays/BreakingGround/images/thumbnails/thumbnail02.jpg';
 import BreakingGroundThumbnail03 from './Essays/BreakingGround/images/thumbnails/thumbnail03.jpg';
 
-import InstituteforFoodIcon from '../images/InstituteforFoodIcon.png';
-import InstituteForFoodThumbnail01 from './Essays/InstituteForFood/images/thumbnails/thumbnail01.jpg';
-import InstituteForFoodThumbnail02 from './Essays/InstituteForFood/images/thumbnails/thumbnail02.jpg';
+import WeBelieveIcon from '../images/WeBelieveIcon.png';
 
 import LandscapeChoreographyIcon from '../images/LandscapeChoreographyIcon.png';
 import LandscapeChoreographyThumbnail01 from './Essays/LandscapeChoreography/images/thumbnails/thumbnail01.jpg';
@@ -33,7 +31,8 @@ const FarmMapWithClasses = ({
   classes
 }) => (
   <MapPage
-    iconImages={[HarvestIcon, BreakingGroundIcon, InstituteforFoodIcon, LandscapeChoreographyIcon, StudentReflectionsIcon]}
+    iconImages={[HarvestIcon, BreakingGroundIcon, WeBelieveIcon, LandscapeChoreographyIcon, StudentReflectionsIcon]}
+    iconImageTitles={['Community Supported Agriculture', 'Breaking Ground', 'we believe', 'Landscape Choreography', 'student reflections']}
     mapImage={FarmImage}
     previousPageTitle="Section 14"
     previousPageLink="/explore/section14"
@@ -57,11 +56,14 @@ const FarmMapWithClasses = ({
         articleContent: "The Institute for Food Farm project began in February, 2016, with a design charrette—an intensive weekend brainstorming and drawing session—involving sixty-five students in architecture and interior design, some community members and teachers. The results were big dreams, and a smaller, actionable plan for laying out a few acres of abused but excellent soils for beginning production. Design students continued to work throughout the semester to continue to imagine what might be, in the best of all possible worlds, if the University and community would fully embrace a plan for sustainable living and learning.", articleLink: "/essays/breakingground",
         thumbnails: [BreakingGroundThumbnail01, BreakingGroundThumbnail02, BreakingGroundThumbnail03]
       },
-      [InstituteforFoodIcon]: {
-        articleTitle: "The Institute for Food",
-        articleContent: "The Institute for Food is a Provost Interdisciplinary Innovation Initiative to engage the Miami University community around issues of food, health, and sustainable agriculture. The Institute seeks to offer a national model for interdisciplinary food-centered liberal arts education, emphasizing integrative approaches to sustainable agriculture and resilient food systems. Its mission is to foster healthy food, healthy eating, healthy communities, and a healthy planet. ",
-        articleLink: "/essays/instituteforfood",
-        thumbnails: [InstituteForFoodThumbnail01, InstituteForFoodThumbnail02],
+      [WeBelieveIcon]: {
+        articleTitle: "We believe...",
+        articleContent: "When we met to envision the Institute for Food Farm in January, 2016," + 
+          " the group of participants—students, faculty, and members of the Oxford" + 
+          " community—responded to the prompt, “We believe in an Institute for Food.." + 
+          " (fill in the blank).” Here are the somber, serious, playful, joyous, imaginative" + 
+          " results—a snapshot of spontaneous collective wisdom.",
+        articleLink: "/essays/webelieve",
       },
       [HarvestIcon]: {
         articleTitle: "The Need for Community Support of Local Agriculture",
@@ -72,7 +74,7 @@ const FarmMapWithClasses = ({
   >
     <img id={HarvestIcon} src={HarvestIcon} className={[classes.harvestIcon, classes.mapIcons].join(" ")} alt=""/>
     <img id={BreakingGroundIcon} src={BreakingGroundIcon} className={[classes.breakingGroundIcon, classes.mapIcons].join(" ")} alt=""/>
-    <img id={InstituteforFoodIcon} src={InstituteforFoodIcon} className={[classes.instituteforFoodIcon, classes.mapIcons].join(" ")} alt=""/>
+    <img id={WeBelieveIcon} src={WeBelieveIcon} className={[classes.weBelieveIcon, classes.mapIcons].join(" ")} alt=""/>
     <img id={LandscapeChoreographyIcon} src={LandscapeChoreographyIcon} className={[classes.landscapeChoreographyIcon, classes.mapIcons].join(" ")} alt=""/>
     <img id={StudentReflectionsIcon} src={StudentReflectionsIcon} className={[classes.studentReflectionsIcon, classes.mapIcons].join(" ")} alt=""/>
   </MapPage>
@@ -99,10 +101,6 @@ const styles = {
     top: '46vh',
     left: 'calc(50vw - 3vh)',
   },
-  instituteforFoodIcon: {
-    top: '29vh',
-    left: 'calc(50vw + 7vh)',
-  },
   landscapeChoreographyIcon: {
     //1.4
     top: '80vh',
@@ -111,6 +109,10 @@ const styles = {
   studentReflectionsIcon: {
     top: '60vh',
     left: 'calc(50vw + 23vh)',
+  },
+  weBelieveIcon: {
+    top: '46vh',
+    left: 'calc(50vw + 5vh)',
   },
 }
 
