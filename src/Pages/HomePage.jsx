@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 import OxfordMapImage from '../images/ButlerCoAtlas1875OxfordTwnspMap.png';
 import LargeLogoImage from '../images/Logo_Large.svg';
 import SmartMenu from '../Components/SmartMenu';
-import Button from '../Components/Button';
 
 const HomePageWithClasses = ({classes}) => (
   <div>
@@ -26,7 +25,6 @@ const HomePageWithClasses = ({classes}) => (
         <p>
           <Link to="/educatingfromthegroundup" className={classes.learnMoreLink}>LEARN MORE</Link>
         </p>
-        <Link to="/explore/earth"><Button className={[classes.addMargin, classes.button].join(" ")} buttonText="EXPLORE THE MAP"/></Link>
       </div>
       <div className={classes.marquee}>
         <Marquee
