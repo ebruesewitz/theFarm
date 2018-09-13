@@ -74,6 +74,10 @@ const styles = {
   cornandCowsIcon: {
     top: '33vh',
     left: 'calc(50vw + 20vh)',
+    '@media (max-width: 500px)': {
+      left: '53vw',
+      top: '42vh',
+    },
   },
 }
 

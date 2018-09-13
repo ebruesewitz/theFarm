@@ -150,6 +150,9 @@ const styles = {
     alignItems: 'center',
     top: 0,
     left: 0,
+    '@media (max-width: 760px)': {
+      left: '-5vw',
+    }
   },
   map: {
     maxWidth: '100vw',
@@ -186,6 +189,7 @@ const styles = {
   },
   summaryContainer: {
     width: '25vw',
+    zIndex: 50,
     maxHeight: '60vh',
     backgroundColor: '#ffffff',
     overflowY: 'scroll',
@@ -208,13 +212,6 @@ const styles = {
       bottom: '100px',
       height: '40vh',
     },
-    '& p': {
-      '@media (max-width: 760px)': {
-        overflow: 'hidden',
-        height: 'calc(100% - 112px)',
-      }
-    }
-    
   },
   thumbnailContainer: {
     display: 'flex',
