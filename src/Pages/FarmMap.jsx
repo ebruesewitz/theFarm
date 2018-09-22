@@ -67,6 +67,7 @@ const FarmMapWithClasses = ({
       },
       [HarvestIcon]: {
         articleTitle: "The Need for Community Support of Local Agriculture",
+        articleContent: "The story of the first Community Supported Agricultural enterprise begins in the southern mountains of Germany in the early 1980’s. The small farm was failing not for lack of production, but for lack of viable markets. The local townspeople did not want the farm to disappear, for cultural and economic reasons. ",
         articleLink: "/essays/harvest",
         thumbnails: [HarvestThumbnail01, HarvestThumbnail02, HarvestThumbnail03, HarvestThumbnail04],
       }

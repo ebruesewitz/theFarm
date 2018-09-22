@@ -5,6 +5,7 @@ import {
   Switch,
 } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
+import ScrollToTop from './Components/ScrollToTop';
 import HomePage from './Pages/HomePage.jsx';
 import ContactPage from './Pages/ContactPage.jsx';
 import FarmMap from './Pages/FarmMap.jsx';
@@ -37,7 +38,8 @@ import FoodSecurity from './Pages/Essays/FoodSecurity';
 import FloraAndFauna from './Pages/Essays/FloraAndFauna';
 
 const Routes = () => (
-  <Router basename={'/'}>
+  <Router basename={'/farmsitepreview'}>
+    <ScrollToTop>
     <div>
       <Route
         render={
@@ -99,6 +101,7 @@ const Routes = () => (
       />
 
     </div>
+    </ScrollToTop>
   </Router>
 )
 

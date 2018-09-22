@@ -4,8 +4,8 @@ import EssayPage from '../../../Components/EssayPage';
 import ArticleBackgroundImage from '../../../images/EssayBackground3.jpg';
 import Picture1 from './images/Picture1.jpg';
 import Picture3 from './images/Picture3.jpg';
-import Picture2 from './images/Picture2.png';
-import Picture4 from './images/Picture4.png';
+import Picture2 from './images/Picture2.jpg';
+import Picture4 from './images/Picture4.jpg';
 
 const FoodSecurityWithClasses = ({
   classes

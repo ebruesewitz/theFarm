@@ -42,16 +42,17 @@ class EssayPageWithClasses extends Component {
       <div>
         <SmartMenu shouldShowArrow isArrowDirectionFixed/>
         {
-          (resources || references || footNotes) &&
+          (resources || references) &&
           <div className={classes.linksMenu} onClick={this.toggleMenu}>Resources &amp; References</div>
         }
         {
-          (resources || references || footNotes) && this.state.areLinksOpen &&
+          (resources || references) && this.state.areLinksOpen &&
           <div className={classes.linksContainer}>
             {
-              footNotes && 
+              resources && 
               <div>
-                {footNotes}
+                <h2>Resources</h2>
+                {resources}
               </div>
             }
             {
@@ -59,13 +60,6 @@ class EssayPageWithClasses extends Component {
               <div>
                 <h2>References</h2>
                 {references}
-              </div>
-            }
-            {
-              resources && 
-              <div>
-                <h2>Resources</h2>
-                {resources}
               </div>
             }
           </div>
@@ -81,6 +75,14 @@ class EssayPageWithClasses extends Component {
           }
           <div className={[classes.childContainer, className].join(" ")}>
             {children}
+            {
+              footNotes &&
+              <div>
+                <div className={classes.sectionDivider} />
+                {footNotes}
+                <div className={classes.sectionDivider} />
+              </div>
+            }
             {mapPageLink && <Link to={mapPageLink}><p className={classes.mapLink}>{mapTextOverride || 'Return To Map'}</p></Link>}
             {hasMapButton && 
               <Link to="/explore/earth">
@@ -206,7 +208,12 @@ const styles = {
     color: '#F05A28',
     borderBottom: '2px solid #F05A28',
     display: 'inline',
-  }
+  },
+  sectionDivider: {
+    width: '60%',
+    borderBottom: '2px solid #F05A28',
+    margin: '50px auto'
+  },
 }
 
 export default injectSheet(styles)(EssayPageWithClasses);

@@ -46,6 +46,7 @@ const OxfordMapWithClasses = ({
         },
         [FoodSecurityIcon]: {
           articleTitle: "Miami University Institute for Food Outreach Program",
+          articleContent: "A diet rich in fruits and vegetables has been associated with lower risks of chronic diseases such as heart disease, stroke, diabetes and several types of cancers, but not everyone has access to great produce. The Oxford Community Choice Pantry created the Summer Harvest Program to help address the need.",
           articleLink: "/essays/foodsecurity",
           thumbnails: [FoodSecurityThumbnail01, FoodSecurityThumbnail02, FoodSecurityThumbnail03, FoodSecurityThumbnail04]
         }

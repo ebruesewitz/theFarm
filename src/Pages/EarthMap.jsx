@@ -42,8 +42,8 @@ const styles = {
     }
   },
   instituteforFoodIcon: {
-    top: '29vh',
-    left: 'calc(50vw + 7vh)',
+    top: '49vh',
+    left: 'calc(50vw - 2vh)',
     '@media (max-width: 760px)': {
       top: 'calc(29vh + 25px)',
       left: 'calc(50vw - 1vh)',

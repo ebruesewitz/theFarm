@@ -51,6 +51,7 @@ const RegionMapWithClasses = ({
         },
         [FloraandFaunaIcon]: {
           articleTitle: "Gaining a Sense of Place through the Interpretation of Vegetation Patterns",
+          articleContent: "The biogeographic distribution of vegetation types and their ecological composition and structure provide important interpretative clues to a place. Patterns of vegetation diversity offer clues to human-historical processes that modify land-cover change and vegetation dynamics over time.",
           articleLink: "/essays/floraandfauna",
         },
         [ArchaeologyIcon]: {

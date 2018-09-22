@@ -20,7 +20,7 @@ const UnitedStatesMapWithClasses = ({
 }) => (
     <MapPage
       iconImages={[NewRuralismIcon, CornandCowsIcon]}
-      iconImageTitles={['urban-rural divide', 'corn and cows']}
+      iconImageTitles={['rural-urban divide', 'corn and cows']}
       mapImage={UnitedStatesImage}
       previousPageTitle="Earth"
       previousPageLink="/explore/earth"
