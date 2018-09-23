@@ -91,15 +91,15 @@ const styles = {
     }
   },
   harvestIcon: {
-    top: '56vh',
-    left: 'calc(50vw - 17vh)',
+    top: '53vh',
+    left: 'calc(50vw - 15vh)',
     '@media (max-width: 760px)': {
       top: '39.2vh',
       left: 'calc(50vw - 11.9vh)',
     },
   },
   breakingGroundIcon: {
-    top: '46vh',
+    top: '50vh',
     left: 'calc(50vw - 3vh)',
   },
   landscapeChoreographyIcon: {

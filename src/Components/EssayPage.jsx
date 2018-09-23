@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import injectSheet from 'react-jss';
 import { Link } from 'react-router-dom'
 import SmartMenu from '../Components/SmartMenu';
-import DefaultBackgroundImage from '../images/EssayBackground5.jpg';
 import Button from './Button';
 
 class EssayPageWithClasses extends Component {
@@ -25,7 +24,7 @@ class EssayPageWithClasses extends Component {
     const {
       articleTitle,
       authorName,
-      articleBackgroundImage=DefaultBackgroundImage,
+      articleBackgroundImage,
       hasMapButton,
       references,
       footNotes,

@@ -36,6 +36,7 @@ import EducatingFromTheGroundUp from './Pages/Essays/EducatingFromTheGroundUp';
 import Harvest from './Pages/Essays/Harvest';
 import FoodSecurity from './Pages/Essays/FoodSecurity';
 import FloraAndFauna from './Pages/Essays/FloraAndFauna';
+import Contributors from './Pages/Contributors';
 
 const Routes = () => (
   <Router basename={'/farmsitepreview'}>
@@ -55,6 +56,8 @@ const Routes = () => (
                   <Route exact path="/educatingfromthegroundup" component={EducatingFromTheGroundUp} />
             
                   <Route exact path="/contact" component={ContactPage} />
+                  <Route exact path="/contributors" component={Contributors} />
+
                   
                   <Route exact path="/explore/farm" component={FarmMap} />
                   <Route exact path="/essays/studentreflections" component={StudentReflections} />
