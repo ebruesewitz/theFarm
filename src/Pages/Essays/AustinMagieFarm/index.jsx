@@ -42,7 +42,7 @@ const AustinMagieFarmWithClasses = ({
           <p>U.S. Census, Nonpopulation Census, Agricultural Schedule, Oxford Township, Butler County, OH, 1860. Ancestry.Com.</p>,
           <p>U.S. Census, Nonpopulation Census, Industry Schedule, Oxford Township, Butler County, OH, 1870. Ancestry.Com.</p>,
           <p>U.S. Census, Nonpopulation Census, Agricultural Schedule, Oxford Township, Butler County, OH, 1880. Ancestry.Com.</p>,
-          <p>White, Sam. 2011. “From Globalized Pig Breeds to Capitalists Pigs: A Study in Animal Culture in Evolutionary History,” Environmental History 16, No. 1: January: 94-120.</p>,
+          <p>White, Sam. 2011. “From Globalized Pig Breeds to Capitalist Pigs: A Study in Animal Culture in Evolutionary History,” Environmental History 16, No. 1: January: 94-120.</p>,
         ]
       }
       footNotes={[

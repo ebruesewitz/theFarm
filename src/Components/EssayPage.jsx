@@ -50,7 +50,7 @@ class EssayPageWithClasses extends Component {
             {
               resources && 
               <div>
-                <h2>Resources</h2>
+                <h2>Resources & PDFs</h2>
                 {resources}
               </div>
             }
