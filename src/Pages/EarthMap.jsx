@@ -27,6 +27,7 @@ const EarthMapWithClasses = ({
           thumbnails: [InstituteForFoodThumbnail01, InstituteForFoodThumbnail02],
         },
       }}
+      useWhiteText
     >
       <img id={InstituteforFoodIcon} src={InstituteforFoodIcon} className={[classes.instituteforFoodIcon, classes.mapIcons].join(" ")} alt=""/>
     </MapPage>
@@ -42,8 +43,8 @@ const styles = {
     }
   },
   instituteforFoodIcon: {
-    top: '49vh',
-    left: 'calc(50vw - 2vh)',
+    top: '46vh',
+    left: 'calc(50vw + 7vh)',
     '@media (max-width: 760px)': {
       top: 'calc(29vh + 25px)',
       left: 'calc(50vw - 1vh)',

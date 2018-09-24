@@ -4,7 +4,9 @@ import Marquee from 'react-marquees';
 import { Link } from 'react-router-dom'
 import OxfordMapImage from '../images/ButlerCoAtlas1875OxfordTwnspMap.png';
 import LargeLogoImage from '../images/Logo_Large.svg';
+import CarIcon from '../images/CarIcon.png';
 import SmartMenu from '../Components/SmartMenu';
+import SelfGuidedDrivingTourMap from './SelfGuidedDrivingTourMap.pdf';
 import Footer from '../Components/Footer';
 
 const HomePageWithClasses = ({classes}) => (
@@ -26,6 +28,13 @@ const HomePageWithClasses = ({classes}) => (
         <p>
           <Link to="/educatingfromthegroundup" className={classes.learnMoreLink}>LEARN MORE</Link>
         </p>
+        <a href={SelfGuidedDrivingTourMap} target="blank" className={classes.iconLink}>
+          <div className={classes.iconContainer}>
+            <img src={CarIcon} alt="" className={classes.articleIcon}/>
+            <p className={classes.learnMoreLink}>SELF-GUIDED DRIVING TOUR</p>
+          </div>
+        </a>
+        <p className={classes.sectionTwoText}>This self-guided driving tour highlights the links between local food and agricultural history in and around Oxford, Ohio. Each place on the tour is connected to a larger story about the local foodshed. Follow the icons on the website.</p>
       </div>
       <Footer />
       <div className={classes.marquee}>
@@ -224,6 +233,22 @@ const styles = {
     '@media (max-width: 760px)': {
       marginLeft: '5vw',
     }
+  },
+  articleIcon: {
+    height: 50,
+    width: 50,
+    marginRight: 10,
+    cursor: 'pointer',
+    '&:hover': {
+      opacity: '.7 !important',
+    }
+  },
+  iconContainer: {
+    display: 'flex',
+    alignItems: 'center'
+  },
+  iconLink: {
+    marginTop: 50,
   }
 }
 

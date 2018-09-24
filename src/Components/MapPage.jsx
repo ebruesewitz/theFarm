@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import ZoomIn from '../images/zoomin.png';
 import ZoomOut from '../images/zoomout.png';
 import SmartMenu from '../Components/SmartMenu';
+import LandscapeForBees from '../Pages/Essays/LandscapeForBees.pdf';
 
 class MapPageWithClasses extends Component {
   constructor(){
@@ -30,6 +31,7 @@ class MapPageWithClasses extends Component {
       pageTitle,
       nextPageTitle,
       nextPageLink,
+      useWhiteText,
       classes
     } = this.props;
 
@@ -74,12 +76,20 @@ class MapPageWithClasses extends Component {
                   </div>
                 }
                 <p>{iconInformationMap[this.state.selectedIcon].articleContent}</p>
-                {iconInformationMap[this.state.selectedIcon].articleLink && 
-                  <Link to={iconInformationMap[this.state.selectedIcon].articleLink}>
-                    <div className={classes.readMoreButton}>
-                      Read More
-                    </div>
-                  </Link>
+                {iconInformationMap[this.state.selectedIcon].articleLink && (
+                  iconInformationMap[this.state.selectedIcon].isExternalLink ? 
+                    <a href={LandscapeForBees} target="blank">
+                      <div className={classes.readMoreButton}>
+                        Read More
+                      </div>
+                    </a>
+                  :
+                    <Link to={iconInformationMap[this.state.selectedIcon].articleLink}>
+                      <div className={classes.readMoreButton}>
+                        Read More
+                      </div>
+                    </Link>
+                )
                 }
               </div>
             }
@@ -87,7 +97,7 @@ class MapPageWithClasses extends Component {
               {
                 nextPageTitle ?
                   <div className={classes.zoomIconAndText}>
-                    <div className={classes.zoomText}>Zoom in to <b className={classes.zoomTextTitle}>{nextPageTitle}</b></div>
+                    <div className={classes.zoomText}><span style={useWhiteText ? {color: "white"}: undefined}>Zoom in to</span> <b className={classes.zoomTextTitle}>{nextPageTitle}</b></div>
                     <Link to={nextPageLink}>
                       <div className={classes.iconContainer}>
                         <img src={ZoomIn} alt="" />
