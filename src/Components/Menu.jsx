@@ -7,6 +7,9 @@ import Logo from '../images/logo.1.svg';
 import Menu from '../images/Menu.svg';
 import ExitMenu from '../images/exitMenu.svg';
 import DownArrow from '../images/downArrow.svg';
+import InstituteForFoodLogo from './../images/InstituteForFoodLogo.png';
+import OhioHumanities from './../images/OhioHumanities.png';
+import Usda from './../images/Usda.jpg';
 import Button from '../Components/Button';
 
 const MenuWithClasses = ({
@@ -67,6 +70,11 @@ const MenuWithClasses = ({
             {children}
           </div>
           <div>
+            <div className={classes.logos}>
+                <img src={InstituteForFoodLogo} alt=""/>
+                <img src={OhioHumanities} alt=""/>
+                <img src={Usda} alt=""/>
+            </div>
             <Link to="/explore/earth">
               <Button className={classes.button} buttonText="EXPLORE THE MAP"/>
             </Link>
@@ -90,6 +98,16 @@ const styles = {
       height: 'unset',
       flexDirection: 'column',
       width: '100vw',
+    }
+  },
+  logos: {
+    display: 'flex',
+    width: '90%',
+    margin: '20px auto',
+    height: 50,
+    justifyContent: 'space-around',
+    '& img': {
+      height: '100%'
     }
   },
   button: {

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import OxfordMapImage from '../images/ButlerCoAtlas1875OxfordTwnspMap.png';
 import LargeLogoImage from '../images/Logo_Large.svg';
 import SmartMenu from '../Components/SmartMenu';
+import Footer from '../Components/Footer';
 
 const HomePageWithClasses = ({classes}) => (
   <div>
@@ -26,6 +27,7 @@ const HomePageWithClasses = ({classes}) => (
           <Link to="/educatingfromthegroundup" className={classes.learnMoreLink}>LEARN MORE</Link>
         </p>
       </div>
+      <Footer />
       <div className={classes.marquee}>
         <Marquee
           direction="up"

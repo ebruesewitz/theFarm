@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
 import EssayPage from '../../../Components/EssayPage';
+import Footer from '../../../Components/Footer';
 import ArticleBackgroundImage from '../../../images/EssayBackground3.jpg';
 import AustinMagiefarmhouse1841 from './images/AustinMagiefarmhouse1841.jpg';
 import Blackcoveredbridge from './images/Blackcoveredbridge.jpg';
@@ -13,6 +14,7 @@ import CSAPackOut from './images/CSAPackOut.jpg';
 const EducatingFromTheGroundUpWithClasses = ({
   classes
 }) => (
+  <React.Fragment>
     <EssayPage
       articleTitle='Educating from the Ground Up'
       authorName='Ben Jacks & Marguerite S. Shaffer'
@@ -85,6 +87,8 @@ const EducatingFromTheGroundUpWithClasses = ({
       <p>In this vein, <b>Educating from the Ground Up</b> has two motives: It seeks to document a threatened historic farm—the Austin-Magie Farm—while also imagining and enacting a blueprint (greenprint) for its future. The maps, icons, images, and essays populating this website document the ecology, history, and local food system that define this place. The icons locate you in relation to the farm in relative scale and lead you to information about the topics they represent. Icons representing soil, water, and flora & fauna detail the first nature or ecosystems of the area. Icons representing the Archeology, Austin Mill Complex, Austin-Magie Farm, Bees, Black Covered Bridge, Corn & Cows, Migration and Settlement, and Pigs chronicle of the history of this place. Icons representing Breaking Ground, Food Security, Harvest, Institute for Food, Landscape Choreography, and We Believe document experiential education projects. And Icons representing Local Food, New Ruralism, and Sustainable Food explore the current local food system. Each icon is located on a map linked to the scale of the place it defines and impacts. You can move through the maps from the local to the global following the icons. Each is connected to a longer illustrated essay and links to resources. You will also find a printable PDF of a self-guided tour related to the icons.</p>
       <p><b>Educating from the Ground Up</b> is a project that has developed a life of its own.  Student, faculty, and community participants have given their time, talent, and energy to a project and a place larger than the sum of the individuals involved in an effort to imagine a more sustainable future. Enjoy!</p>
     </ EssayPage>
+    <Footer className={classes.footerOverrides}/>
+  </React.Fragment>
   );
 
 const styles = {
@@ -94,6 +98,9 @@ const styles = {
       fontSize: '.7em',
       color: '#F05A28',
     },
+  },
+  footerOverrides: {
+    marginLeft: 0,
   },
   blockQuote: {
     width: '75%',
