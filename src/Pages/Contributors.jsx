@@ -104,6 +104,15 @@ const styles = {
     height: 50,
     width: '50vw',
     padding: 0,
+    '@media (max-width: 760px)': {
+      height: 80,
+      padding: '25px 0px',
+      backgroundColor: 'unset',
+      margin: '40px auto',
+      '& img': {
+        margin: '0px 15px',
+      }
+    }
   },
   blockQuote: {
     width: '75%',
@@ -126,12 +135,18 @@ const styles = {
   },
   figureOverride: {
     width: 'calc(50% - 100px)',
+    '@media (max-width: 500px)': {
+      width: '75%',
+    }
   },
   figureContainer: {
     width: '100%',
     display: 'flex',
     '& figure': {
       margin: '50px'
+    },
+    '@media (max-width: 500px)': {
+      flexDirection: 'column',
     }
   },
   sectionDivider: {

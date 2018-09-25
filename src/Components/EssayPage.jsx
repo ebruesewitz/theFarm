@@ -79,6 +79,25 @@ class EssayPageWithClasses extends Component {
               <div>
                 <div className={classes.sectionDivider} />
                 {footNotes}
+                {
+                  (resources || references) &&
+                  <div className={classes.linksContainerMobile}>
+                    {
+                      resources && 
+                      <div>
+                        <h2>Resources & PDFs</h2>
+                        {resources}
+                      </div>
+                    }
+                    {
+                      references && 
+                      <div>
+                        <h2>References</h2>
+                        {references}
+                      </div>
+                    }
+                  </div>
+                }
                 <div className={classes.sectionDivider} />
               </div>
             }
@@ -120,10 +139,8 @@ const styles = {
       color: '#F05A28'
     },
     '@media (max-width: 760px)': {
-      width: '100vw',
-      right: 0,
-      transform: 'initial',
-      bottom: 0,
+      display: 'none',
+      visibility: 'hidden',
     }
   },
   linksContainer: {
@@ -151,9 +168,24 @@ const styles = {
       textDecoration: 'none',
     },
     '@media (max-width: 760px)': {
-      width: '100vw',
-      height: 'calc(100vh - 50px)',
-      right: '0px',
+      display: 'none',
+      visibility: 'hidden',
+    }
+  },
+  linksContainerMobile: {
+    display: 'none',
+    visibility: 'hidden',
+    '& h2': {
+      fontFamily: 'komu-b',
+      textAlign: 'center',
+    },
+    '& a': {
+      color: '#F05A28',
+      textDecoration: 'none',
+    },
+    '@media (max-width: 760px)': {
+      display: 'block',
+      visibility: 'unset',
     }
   },
   homePage: {

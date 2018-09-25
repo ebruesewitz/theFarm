@@ -126,6 +126,9 @@ const styles = {
   },
   figureOverride: {
     width: 'calc(70% - 100px)',
+    '@media (max-width: 500px)': {
+      width: '75%',
+    }
   },
   pullQuote: {
     color: '#F05A28',

@@ -150,6 +150,16 @@ const styles = {
     justifyContent: 'flex-start',
     '& img': {
       marginRight: 30, 
+    },
+    '@media (max-width: 760px)': {
+      height: 80,
+      padding: '25px 0px',
+      marginLeft: 0,
+      justifyContent: 'space-around',
+      backgroundColor: 'unset',
+      '& img': {
+        margin: '0px 15px',
+      }
     }
   },
   pageContainer: {

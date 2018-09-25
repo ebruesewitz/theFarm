@@ -229,6 +229,9 @@ const LandscapeChoreographyWithClasses = ({
     },
     figureOverride: {
       width: 'calc(50% - 100px)',
+      '@media (max-width: 500px)': {
+        width: '75%',
+      }
     },
     figureContainer: {
       width: '100%',
@@ -236,6 +239,9 @@ const LandscapeChoreographyWithClasses = ({
       alignItems: 'baseline',
       '& figure': {
         margin: '50px'
+      },
+      '@media (max-width: 500px)': {
+        flexDirection: 'column',
       }
     },
     sectionDivider: {
