@@ -72,11 +72,9 @@ const InstituteForFoodWithClasses = ({
           <img src={ChineseCabbage} alt="" className={classes.image}/>
         </div>
         <div className={classes.figure}>
-          <img src={CSABoxNov} alt="" className={classes.image}/>
+          <img src={StudentSalsaSale} alt="" className={classes.image}/>
         </div>
-      </div>
-      <div className={classes.figure}>
-        <img src={StudentSalsaSale} alt="" className={classes.image}/>
+
       </div>
       <p>As part of the Institute for the Environment and Sustainability at Miami University (IES), whose mission is to promote a more sustainable society, the Institute for Food follows John Elkington’s integrated model for supporting people, profits, and the planet. We believe local food systems offer a comprehensive framework for building more sustainable communities. Food links individuals in a series of concentric circles starting with families and communities, extending to local and regional economies, and expanding to watersheds, natural habitats, and ecosystems. Fresh nutritional food impacts individual health. Local farms along with farmer’s markets, Community Supported Agriculture programs (CSA), farm-to-table restaurants, and local food businesses and coops offer opportunities for local entrepreneurship. Sustainably grown food provides ecosystem services that promote biodiversity, pollinator habitat, healthy soil, clean water, and carbon sequestration. In this way, sustainable local food has the capacity to impact a range of issues from health care to rural economic development to energy use and natural resource conservation. This informs our vision for the Institute for Food. Just as a seed is nourished by water, soil, and sun to flourish, we envision the Institute for Food as a framework to encourage students to imagine and enact a more sustainable future.</p>
       <p>As one of the students first involved in this project put it, “We believe in an Institute for Food that promotes passionate education, sustainable agriculture, and a future for people on our planet.”</p>

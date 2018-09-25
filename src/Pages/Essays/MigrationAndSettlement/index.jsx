@@ -23,7 +23,7 @@ const MigrationAndSettlementWithClasses = ({
       mapPageLink="/explore/ohiorivervalley"
       references={
         [
-          <p>Crane, John. 1855. “Map of Butler County Ohio.”. Butler County Historical Society: <a href="http://bchistoricalsociety.com/main/wp-content/uploads/2015/06/1-Oxford-f.jpg" target="blank" >http://bchistoricalsociety.com/main/wp-content/uploads/2015/06/1-Oxford-f.jpg</a></p>,
+          <p>Crane, John. 1855. “Map of Butler County Ohio.” Butler County Historical Society: <a href="http://bchistoricalsociety.com/main/wp-content/uploads/2015/06/1-Oxford-f.jpg" target="blank" >http://bchistoricalsociety.com/main/wp-content/uploads/2015/06/1-Oxford-f.jpg</a></p>,
           <p>Government Land Office Records, Bureau of Land Management: <a href="https://glorecords.blm.gov/details/patent/default.aspx?accession=0006-009&docClass=CV&sid=rnzbv3to.4gd" target="blank" >https://glorecords.blm.gov/details/patent/default.aspx?accession=0006-009&docClass=CV&sid=rnzbv3to.4gd</a></p>,
           <p>The Miami River Survey. 1798.</p>,
           <p>U.S. Census. 1850. Agricultural Manuscript Census Schedules.</p>,
@@ -62,7 +62,7 @@ const MigrationAndSettlementWithClasses = ({
         <img src={Figure4} className={classes.image} alt=""/>
         <figcaption>Figure 4: Migrant Nativity by Township, Butler County, 1850 (1850 Population Manuscript Census Schedules)</figcaption>
       </figure>
-      <p>These migrants from southeastern Pennsylvania and adjacent regions of the Mid-Atlantic brought with them a distinctive regional subculture, characterized most readily by a commercially-oriented and diversified agricultural economy focused on both crop production and livestock rearing. This system was distinguished from the small-scale subsistence based agricultural system in New England and the plantation-based, monoculture cropping system in Virginia and Maryland. The 1850 agricultural census for Butler County reveals this diversified system, with a focus on corn and hogs, and as such Butler County’s early agricultural system was a good example of the Corn Belt system that would come to be common in western Ohio, Indiana and Illinois in the nineteenth century (Fig. 5).</p>
+      <p>These migrants from southeastern Pennsylvania and adjacent regions of the Mid-Atlantic brought with them a distinctive regional subculture, characterized most readily by a commercially-oriented and diversified agricultural economy focused on both crop production and livestock rearing. This system was distinguished from the small-scale subsistence based agricultural system in New England and the plantation-based, monoculture cropping system in Virginia and Maryland. The 1850 agricultural census for Butler County reveals this diversified system, with a focus on corn and hogs, and as such Butler County’s early agricultural system was a good example of the Corn Belt system that would come to be common in western Ohio, Indiana and Illinois in the 19<sup style={{color: 'black'}}>th</sup> century (Fig. 5).</p>
       <figure
         className={classes.figure}
       >
