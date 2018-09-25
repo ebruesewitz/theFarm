@@ -46,11 +46,11 @@ const styles = {
     top: '46vh',
     left: 'calc(50vw + 7vh)',
     '@media (max-width: 760px)': {
-      top: 'calc(29vh + 25px)',
-      left: 'calc(50vw - 1vh)',
+      top: '47vh',
+      left: 'calc(50vw - 2vh)',
     },
     '@media (max-width: 500px)': {
-      top: '40vh',
+      top: '48vh',
     },
   },
 }

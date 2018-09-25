@@ -79,22 +79,34 @@ const styles = {
   HoneycombIcon: {
     top: '56vh',
     left: 'calc(50vw + 17vh)',
+    '@media (max-width: 760px)': {
+      top: '50vh',
+      left: 'calc(50vw + 5vh)',
+    }
   },
   BeesIcon: {
     top: '56vh',
     left: 'calc(50vw + 8vh)',
+    '@media (max-width: 760px)': {
+      top: '50vh',
+      left: 'calc(50vw - 3vh)',
+    }
   },
   foodSecurityIcon: {
     top: '33vh',
     left: 'calc(50vw - 23vh)',
     '@media (max-width: 760px)': {
       top: '39.2vh',
-      left: 'calc(50vw - 11.9vh)',
+      left: 'calc(50vw - 14vh)',
     },
   },
   localFoodIcon: {
     top: '52vh',
     left: 'calc(50vw - 33vh)',
+    '@media (max-width: 760px)': {
+      top: '49vh',
+      left: 'calc(50vw - 19vh)',
+    }
   },
 }
 

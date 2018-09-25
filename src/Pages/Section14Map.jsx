@@ -69,14 +69,26 @@ const styles = {
   austinMagieIcon: {
     top: '63vh',
     left: 'calc(50vw + 16vh)',
+    '@media (max-width: 760px)': {
+      top: '59vh',
+      left: 'calc(50vw + 5vh)',
+    }
   },
   austinMillComplexIcon: {
     top: '59vh',
     left: 'calc(50vw + 7vh)',
+    '@media (max-width: 760px)': {
+      top: '52vh',
+      left: '50vw',
+    }
   },
   blackCoveredBridgeIcon: {
     top: '67vh',
     left: 'calc(50vw - 11vh)',
+    '@media (max-width: 760px)': {
+      top: '55vh',
+      left: 'calc(50vw - 12vh)',
+    }
   },
 }
 

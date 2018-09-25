@@ -80,26 +80,42 @@ const styles = {
   pigsIcon: {
     top: '56vh',
     left: 'calc(50vw + 17vh)',
+    '@media (max-width: 760px)': {
+      top: '54vh',
+      left: 'calc(50vw + 2vh)',
+    }
   },
   soilIcon: {
     top: '33vh',
     left: 'calc(50vw - 23vh)',
     '@media (max-width: 760px)': {
       top: '39.2vh',
-      left: 'calc(50vw - 11.9vh)',
+      left: 'calc(50vw - 17vh)',
     },
   },
   archaeologyIcon: {
     top: '52vh',
     left: 'calc(50vw - 33vh)',
+    '@media (max-width: 760px)': {
+      top: '52vh',
+      left: 'calc(50vw - 18vh)',
+    }
   },
   waterIcon: {
     top: '33vh',
     left: 'calc(50vw + 23vh)',
+    '@media (max-width: 760px)': {
+      top: '42vh',
+      left: 'calc(50vw + 4vh)',
+    }
   },
   floraandFaunaIcon: {
     top: '44vh',
     left: 'calc(50vw - 10vh)',
+    '@media (max-width: 760px)': {
+      top: '46vh',
+      left: 'calc(50vw - 10vh)',
+    }
   },
 }
 

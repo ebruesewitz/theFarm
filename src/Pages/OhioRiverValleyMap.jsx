@@ -57,6 +57,10 @@ const styles = {
   migrationandSettlementIcon: {
     top: '56vh',
     left: 'calc(50vw + 17vh)',
+    '@media (max-width: 760px)': {
+      top: '51vh',
+      left: 'calc(50vw + 5vh)',
+    }
   },
   sustainableFoodIcon: {
     top: '33vh',

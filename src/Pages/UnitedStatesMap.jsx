@@ -70,10 +70,22 @@ const styles = {
   newRuralismIcon: {
     top: '39vh',
     left: 'calc(50vw + 33vh)',
+    '@media (max-width: 760px)': {
+      top: '41vh',
+      left: '66vw',
+    },
+    '@media (max-width: 500px)': {
+      top: '46vh',
+      left: '66vw',
+    }
   },
   cornandCowsIcon: {
     top: '33vh',
     left: 'calc(50vw + 20vh)',
+    '@media (max-width: 760px)': {
+      top: '36vh',
+      left: '55vw',
+    },
     '@media (max-width: 500px)': {
       left: '53vw',
       top: '42vh',

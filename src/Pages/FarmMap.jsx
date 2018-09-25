@@ -94,26 +94,42 @@ const styles = {
     top: '51vh',
     left: 'calc(50vw - 2vh)',
     '@media (max-width: 760px)': {
-      top: '39.2vh',
-      left: 'calc(50vw - 11.9vh)',
+      top: '53.2vh',
+      left: 'calc(50vw - 9vh)',
     },
+
   },
   breakingGroundIcon: {
     top: '46vh',
     left: 'calc(50vw + 4vh)',
+    '@media (max-width: 760px)': {
+      top: '48vh',
+      left: 'calc(50vw - 3vh)',
+    }
   },
   landscapeChoreographyIcon: {
-    //1.4
     top: '80vh',
     left: 'calc(50vw - 5vh)',
+    '@media (max-width: 760px)': {
+      top: '62vh',
+      left: 'calc(50vw - 5vh)',
+    }
   },
   studentReflectionsIcon: {
     top: '60vh',
     left: 'calc(50vw + 23vh)',
+    '@media (max-width: 760px)': {
+      top: '54vh',
+      left: 'calc(50vw + 8vh)',
+    }
   },
   weBelieveIcon: {
     top: '41vh',
     left: 'calc(50vw + 9vh)',
+    '@media (max-width: 760px)': {
+      top: '42vh',
+      left: 'calc(50vw + 3vh)',
+    }
   },
 }
 
