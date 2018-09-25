@@ -28,6 +28,9 @@ const HomePageWithClasses = ({classes}) => (
         <p>
           <Link to="/educatingfromthegroundup" className={classes.learnMoreLink}>LEARN MORE</Link>
         </p>
+        <p>
+          <Link to="/explore/earth" className={classes.learnMoreLink}>EXPLORE THE MAP</Link>
+        </p>
         <a href={SelfGuidedDrivingTourMap} target="blank" className={classes.iconLink}>
           <div className={classes.iconContainer}>
             <img src={CarIcon} alt="" className={classes.articleIcon}/>
@@ -36,7 +39,7 @@ const HomePageWithClasses = ({classes}) => (
         </a>
         <p className={classes.sectionTwoText}>This self-guided driving tour highlights the links between local food and agricultural history in and around Oxford, Ohio. Each place on the tour is connected to a larger story about the local foodshed. Follow the icons on the website.</p>
       </div>
-      <Footer />
+      <Footer className={classes.footerOverrides}/>
       <div className={classes.marquee}>
         <Marquee
           direction="up"
@@ -143,6 +146,12 @@ const styles = {
       padding: '75px 0px 77px 0px'
     }
   },
+  footerOverrides: {
+    justifyContent: 'flex-start',
+    '& img': {
+      marginRight: 30, 
+    }
+  },
   pageContainer: {
     minHeight: '100vh',
     boxSizing: 'border-box',
@@ -229,6 +238,7 @@ const styles = {
   learnMoreLink: {
     fontSize: '1.3em',
     fontWeight: 800,
+    marginBottom: 25,
     borderBottom: '2px solid #F05A28',
     '@media (max-width: 760px)': {
       marginLeft: '5vw',
@@ -248,7 +258,7 @@ const styles = {
     alignItems: 'center'
   },
   iconLink: {
-    marginTop: 50,
+    marginTop: 25,
   }
 }
 

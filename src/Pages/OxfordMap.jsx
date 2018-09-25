@@ -24,8 +24,8 @@ const OxfordMapWithClasses = ({
   classes
 }) => (
     <MapPage
-      iconImages={[HoneycombIcon, FoodSecurityIcon, LocalFoodIcon, BeesIcon]}
-      iconImageTitles={['beekeeping', 'food security', 'local food', 'bees']}
+      iconImages={[BeesIcon, HoneycombIcon, FoodSecurityIcon, LocalFoodIcon]}
+      iconImageTitles={['bees', 'beekeeping', 'food security', 'local food']}
       mapImage={OxfordImage}
       previousPageTitle="The Region"
       previousPageLink="/explore/region"

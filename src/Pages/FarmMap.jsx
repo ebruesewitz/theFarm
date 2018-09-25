@@ -91,16 +91,16 @@ const styles = {
     }
   },
   harvestIcon: {
-    top: '53vh',
-    left: 'calc(50vw - 15vh)',
+    top: '51vh',
+    left: 'calc(50vw - 2vh)',
     '@media (max-width: 760px)': {
       top: '39.2vh',
       left: 'calc(50vw - 11.9vh)',
     },
   },
   breakingGroundIcon: {
-    top: '50vh',
-    left: 'calc(50vw - 3vh)',
+    top: '46vh',
+    left: 'calc(50vw + 4vh)',
   },
   landscapeChoreographyIcon: {
     //1.4
@@ -112,8 +112,8 @@ const styles = {
     left: 'calc(50vw + 23vh)',
   },
   weBelieveIcon: {
-    top: '46vh',
-    left: 'calc(50vw + 5vh)',
+    top: '41vh',
+    left: 'calc(50vw + 9vh)',
   },
 }
 

@@ -22,7 +22,7 @@ const RegionMapWithClasses = ({
 }) => (
     <MapPage
       iconImages={[PigsIcon, SoilIcon, WaterIcon, ArchaeologyIcon, FloraandFaunaIcon]}
-      iconImageTitles={['pigs', 'soil', 'water', '', 'flora']}
+      iconImageTitles={['pigs', 'soil', 'water', 'Archaeology', 'flora']}
       mapImage={RegionImage}
       previousPageTitle="Ohio River Valley"
       previousPageLink="/explore/ohiorivervalley"

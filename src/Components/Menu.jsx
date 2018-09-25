@@ -71,9 +71,15 @@ const MenuWithClasses = ({
           </div>
           <div>
             <div className={classes.logos}>
-                <img src={InstituteForFoodLogo} alt=""/>
-                <img src={OhioHumanities} alt=""/>
-                <img src={Usda} alt=""/>
+                <div>
+                  <img src={OhioHumanities} alt=""/>
+                </div>
+                <div>
+                  <img src={InstituteForFoodLogo} alt=""/>
+                </div>
+                <div>
+                  <img src={Usda} alt=""/>
+                </div>
             </div>
             <Link to="/explore/earth">
               <Button className={classes.button} buttonText="EXPLORE THE MAP"/>
@@ -106,8 +112,16 @@ const styles = {
     margin: '20px auto',
     height: 50,
     justifyContent: 'space-around',
+    '& div': {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      width: '100%',
+      height: '100%',
+    },
     '& img': {
-      height: '100%'
+      maxWidth: '90%',
+      maxHeight: '100%',
     }
   },
   button: {

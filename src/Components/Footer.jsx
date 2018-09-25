@@ -9,8 +9,8 @@ const FooterWithClasses = ({
   className,
 }) => (
   <div className={className ? [classes.footer, className].join(" ") : classes.footer}>
-      <img src={InstituteForFoodLogo} alt=""/>
       <img src={OhioHumanities} alt=""/>
+      <img src={InstituteForFoodLogo} alt=""/>
       <img src={Usda} alt=""/>
   </div>
 );

@@ -15,6 +15,7 @@ const ContributorsWithClasses = ({
           <p>The American Studies Program, the Institute for Food, the Department of Architecture and Interior Design, and the College of Creative Arts at Miami University provided additional funding.</p>
           <p><i>Educating from the Ground Up</i> is part of a larger curriculum initiative in food systems and food studies at Miami University, which is supported by a capacity building grant [#2017-70001-25988] from the USDA National Institute of Food and Agriculture.</p>
           <p className={classes.paragraphOverride}>Ohio Humanities is a state affiliate of the National Endowment for the Humanities. Any views, findings, conclusions or recommendations expressed in this publication do not necessarily represent those of the National Endowment for the Humanities.</p>
+          <Footer className={classes.footerOverrides}/>
           <div className={classes.sectionDivider}/>
           <h3>Special Thank You</h3>
           <p>We would also like to thank the Smith Library of Regional History at The Lane Library in Oxford, Ohio, and our community partners, Oxford Farmer’s Market Uptown and MOON Co-Op.</p>
@@ -22,15 +23,19 @@ const ContributorsWithClasses = ({
           <p>Project Director: Ben Jacks</p>
           <p>Conceived, produced, and edited by Ben Jacks.</p>
           <p>Designed by Vanessa Cannon and Ben Kolde, with programming by Elisabeth Bruesewitz.</p>
+          <h4>Ben Jacks, MArch, MFA</h4>
+          <p>Ben Jacks is an Associate Professor in the Department of Architecture and Interior Design, Miami University, where he teaches architecture to non-majors and beginning design students, as well as teaching at the advanced undergraduate and graduate levels. He focuses on aesthetics and perception in architecture and landscape. His journal publications include: “Reimagining Walking: Four Practices,” <i>Journal of Architectural Education</i>, (2004); “Walking the City: Manhattan Projects,” <i>Places: A Forum of Environmental Design</i> (2006); “Walking and Reading in Landscape,” <i>Landscape Journal</i> (2007); “Atmospheres, Expressed,” <i>Journal of Interior Design</i>, (2018); and “Photographs and Spiritual Atmospheres,” <i>Journal of Interior Design</i>, (2019). His books include <i>The Architect’s Tour: Notes for the Design Traveler</i>, (Culicidae Architectural Press, 2014), and <i>A House and its Atmosphere</i>, (Culicidae Architectural Press, 2017). He holds degrees from the University of Southern Maine (MFA), the University of Pennsylvania (MArch), and the University of Chicago (BA).</p>
+          
           <h4>Vanessa Cannon</h4>
-          <p>Vanessa Cannon is a professor in the Armstrong Center for  Interactive Media Studies at Miami University in Oxford, Ohio.  Using her 20 years of real-world experience, she helps students see design not as just a concept but as something that the world is held together by.  Previous to her teaching appointment, she has both been an Art Director and Lead Graphic Designer. Her skills range from web and marketing design, to identity, logo and brand guide production. She has collaborated on teams as well as individually both in house and remotely, to achieve large scale advertising campaigns, websites and business to business projects. Vanessa also operates a free-lance design firm which has built projects for clients such as Proctor and Gamble, Community First Solutions, Neyer industries, Miami University, Ohio University, Butler Tech, Clark-Theders Insurance Agency, CNBS Software, Hamilton Community Foundation, Butler County Department of Environmental Services, Bauscher Construction, City of Hamilton, West Chester Township, Hampton Publishing, Miller Valentine, Ohio Township Association, and the Fitton Center for Creative Arts.</p>
+          <p>Vanessa Cannon is an instructor in the Armstrong Center for Interactive Media Studies at Miami University, Oxford, Ohio. She earned a Bachelor of Science degree from Ohio University in Visual Communication. Before joining Miami, she worked as an art director and lead graphic designer. Vanessa also operates a free-lance design firm which has built projects for clients such as Proctor and Gamble, Community First Solutions, Neyer Industries, Miami University, Ohio University, Butler Tech, Butler County Department of Environmental Services, City of Hamilton, West Chester Township, and Ohio Township Association.</p>
+          
           <h4>Ben Kolde</h4>
+          <p>Ben Kolde is an honors student at Miami University with experience in design and development for websites and branding including  UI/UX and photography. He has been a designer and developer for Curology, Barefoot Design, Gainful, and the Brandery.</p>
+
           <h4>Elisabeth Bruesewitz</h4>
           <p>Elisabeth Bruesewitz is a computer science honors student at the University of Cincinnati, with experience in front end design and development, marketing, and entrepreneurship. She is passionate about bridging the gap between developers and designers. She has been a developer for the Brandery, Kroger Technology, and has done freelance work for multiple startups over the past two years.</p>
           <div className={classes.sectionDivider}/>
           <h3>Contributors</h3>
-          <h4>Ben Jacks, MArch, MFA</h4>
-          <p>Ben Jacks is an Associate Professor in the Department of Architecture and Interior Design, Miami University, where he teaches architecture to non-majors and beginning design students, as well as teaching at the advanced undergraduate and graduate levels. He focuses on aesthetics and perception in architecture and landscape. His journal publications include: “Reimagining Walking: Four Practices,” <i>Journal of Architectural Education</i>, (2004); “Walking the City: Manhattan Projects,” <i>Places: A Forum of Environmental Design</i> (2006); “Walking and Reading in Landscape,” <i>Landscape Journal</i> (2007); “Atmospheres, Expressed,” <i>Journal of Interior Design</i>, (2018); and “Photographs and Spiritual Atmospheres,” <i>Journal of Interior Design</i>, (2019). His books include <i>The Architect’s Tour: Notes for the Design Traveler</i>, (Culicidae Architectural Press, 2014), and <i>A House and its Atmosphere</i>, (Culicidae Architectural Press, 2017). He holds degrees from the University of Southern Maine (MFA), the University of Pennsylvania (MArch), and the University of Chicago (BA).</p>
           
           <h4>Timothy G. Anderson, PhD</h4>
           <p>Timothy G. Anderson, Department of Geography, Ohio University, is a historical geographer with research interests in the historical settlement geography of the United States, especially with regard to the historical production of regional cultural landscapes and identities; the historical settlement geography of Ohio during the early National period, with an emphasis on sub-regional cultural landscape formation; and the production of cultural landscapes associated with Germanic Diasporas, especially in North America and Europe. Dr. Anderson received his PhD from Texas A & M University in 1994.</p>
@@ -71,7 +76,6 @@ const ContributorsWithClasses = ({
           <h4>R. Alan Wight, PhD</h4>
           <p>R. Alan Wight is an environmental sociologist and educator, and Service Learning Coordinator at The Christ College of Nursing and Health Sciences, Cincinnati. Alan’s research and advocacy agenda focuses on raising people’s food and ecological consciousness by dialoguing about the personal health, economic, and larger environmental implications of our food system. He works communities and schools to plant edible forest gardens. His recent publications and community asset maps include: Who is Training Farmers in the CORV Foodshed, Camp Washington Art and Mobile Produce, and Ecology, Energy, and Alternative Agriculture: A New Synthesis. His dissertation examines the types of learning and education that occur within the context of Community Supported Agriculture Programs.</p>
       </ EssayPage>
-      <Footer className={classes.footerOverrides}/>
       </React.Fragment>
   );
 
@@ -95,7 +99,11 @@ const styles = {
     fontSize: '.7em',
   },
   footerOverrides: {
-    marginLeft: 0,
+    margin: '40px 0px 20px 0px',
+    justifyContent: 'space-around',
+    height: 50,
+    width: '50vw',
+    padding: 0,
   },
   blockQuote: {
     width: '75%',
