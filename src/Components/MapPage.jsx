@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import ZoomIn from '../images/zoomin.png';
 import ZoomOut from '../images/zoomout.png';
 import SmartMenu from '../Components/SmartMenu';
-import LandscapeForBees from '../Pages/Essays/LandscapeForBees.pdf';
 
 class MapPageWithClasses extends Component {
   constructor(){
@@ -78,7 +77,7 @@ class MapPageWithClasses extends Component {
                 <p>{iconInformationMap[this.state.selectedIcon].articleContent}</p>
                 {iconInformationMap[this.state.selectedIcon].articleLink && (
                   iconInformationMap[this.state.selectedIcon].isExternalLink ? 
-                    <a href={LandscapeForBees} target="blank">
+                    <a href={`${process.env.PUBLIC_URL}/pdf/LandscapeForBees.pdf`} target="blank">
                       <div className={classes.readMoreButton}>
                         Read More
                       </div>

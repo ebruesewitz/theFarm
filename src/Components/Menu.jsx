@@ -65,7 +65,7 @@ const MenuWithClasses = ({
         <div className={classes.rightMenuContent}>
           <div className={classes.rightMenuChildren}>
             <Link to={`/`}>HOME</Link>
-            <Link to={`/contact`}>CONTACT</Link>
+            {/* <Link to={`/contact`}>CONTACT</Link> */}
             <Link to={`/contributors`}>CONTRIBUTORS</Link>
             {children}
           </div>

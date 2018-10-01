@@ -101,7 +101,7 @@ const styles = {
   footerOverrides: {
     margin: '40px 0px 20px 0px',
     justifyContent: 'space-around',
-    height: 50,
+    height: 90,
     width: '50vw',
     padding: 0,
     '@media (max-width: 760px)': {

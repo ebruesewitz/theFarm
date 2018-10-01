@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Switch,
 } from 'react-router-dom';
@@ -39,7 +39,7 @@ import FloraAndFauna from './Pages/Essays/FloraAndFauna';
 import Contributors from './Pages/Contributors';
 
 const Routes = () => (
-  <Router basename={'/farmsitepreview'}>
+  <Router>
     <ScrollToTop>
     <div>
       <Route

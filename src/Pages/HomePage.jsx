@@ -147,10 +147,6 @@ const styles = {
     }
   },
   footerOverrides: {
-    justifyContent: 'flex-start',
-    '& img': {
-      marginRight: 30, 
-    },
     '@media (max-width: 760px)': {
       height: 80,
       padding: '25px 0px',

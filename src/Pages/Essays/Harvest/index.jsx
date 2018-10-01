@@ -17,7 +17,7 @@ const HarvestWithClasses = ({
       authorName='Charles Griffin'
       articleBackgroundImage={ArticleBackgroundImage}
       className={classes.essayOverrides}
-      mapPageLink="/explore/farm"
+      mapPageLink="/plore/farm"
     >
       <figure
         className={classes.figure}

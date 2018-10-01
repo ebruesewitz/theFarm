@@ -44,20 +44,44 @@ class ContactFormWithClasses extends Component{
     }
 
     if(!areErrors){
-      this.setState({
-        name: {
-          value: '',
-          error: false,
+      const request = {
+        email: this.state.email.value,
+        name: this.state.name.value,
+        message: this.state.message.value,
+      }
+
+      return fetch('https://h8jmbankhg.execute-api.us-east-1.amazonaws.com/prod/contact-us', {
+        method: "POST",
+        mode: "cors",
+        cache: "no-cache",
+        headers: {
+            "Content-Type": "application/json; charset=utf-8",
         },
-        email: {
-          value: '',
-          error: false,
+        redirect: "follow",
+        referrer: "no-referrer",
+        body: JSON.stringify(request),
+      }).then(response => response.json()).then(
+        (result) =>{
+          console.log(result);
+          this.setState({
+            name: {
+              value: '',
+              error: false,
+            },
+            email: {
+              value: '',
+              error: false,
+            },
+            message: {
+              value: '',
+              error: false,
+            },
+          });
         },
-        message: {
-          value: '',
-          error: false,
-        },
-      });
+        (error) => {
+          console.log(error);
+        }
+      );
     }
   }
   

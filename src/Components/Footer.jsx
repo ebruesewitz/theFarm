@@ -18,15 +18,15 @@ const FooterWithClasses = ({
 const styles = {
   footer: {
     display: 'flex',
-    height: 200,
+    height: 150,
     width: '100vw',
     backgroundColor: 'white',
     marginLeft: -200,
-    padding: '50px 200px',
-    justifyContent: 'space-around',
+    padding: '40px 350px 40px 200px',
+    justifyContent: 'space-between',
     boxSizing: 'border-box',
     '& img': {
-      height: '100%',
+      height: '80%',
       width: 'auto'
     }
   },
