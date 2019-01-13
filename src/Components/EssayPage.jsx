@@ -35,11 +35,12 @@ class EssayPageWithClasses extends Component {
       headerClassName,
       mapPageLink,
       mapTextOverride,
+      subTitle,
     } = this.props;
     
     return (
       <div>
-        <SmartMenu shouldShowArrow isArrowDirectionFixed/>
+        <SmartMenu shouldShowArrow isArrowDirectionFixed mapPageLink={mapPageLink} shouldShowMapLink/>
         {
           (resources || references) &&
           <div className={classes.linksMenu} onClick={this.toggleMenu}>Resources &amp; References</div>
@@ -67,6 +68,10 @@ class EssayPageWithClasses extends Component {
         <div className={classes.homePage}>
           { articleTitle &&
             <h1 className={[classes.bannerText, headerClassName].join(" ")}>{articleTitle}</h1>
+          }
+          {
+            subTitle &&
+            <h1 className={[classes.bannerText, classes.subtitleText, headerClassName ].join(" ")}>{subTitle}</h1>
           }
           {
             authorName &&
@@ -218,6 +223,9 @@ const styles = {
       marginLeft: '10vw',
       fontSize: 70,
     }
+  },
+  subtitleText: {
+    marginTop: 0,
   },
   authorName: {
     textTransform: 'uppercase',

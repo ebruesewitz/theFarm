@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import injectSheet from 'react-jss';
 import { Link } from 'react-router-dom'
+import ExitMenu from '../images/exitMenu.svg';
 import ZoomIn from '../images/zoomin.png';
 import ZoomOut from '../images/zoomout.png';
 import SmartMenu from '../Components/SmartMenu';
@@ -15,6 +16,10 @@ class MapPageWithClasses extends Component {
 
   setSelectedIcon = (event) => {
     this.setState({selectedIcon: event.target.id});
+  }
+
+  clearSelectedIcon = () => {
+    this.setState({selectedIcon: null});
   }
 
   render(){
@@ -64,6 +69,9 @@ class MapPageWithClasses extends Component {
             {
               this.state.selectedIcon && iconInformationMap && iconInformationMap[this.state.selectedIcon] &&
               <div className={classes.summaryContainer}>
+                <div className={classes.exitIconContainer}>
+                    <img onClick={this.clearSelectedIcon} src={ExitMenu} alt=""/>
+                </div>
                 <h2>{iconInformationMap[this.state.selectedIcon].articleTitle}</h2>
                 { iconInformationMap[this.state.selectedIcon].thumbnails && 
                   <div className={classes.thumbnailContainer}>
@@ -294,6 +302,14 @@ const styles = {
     '&:hover': {
       opacity: 1,
     },
+  },
+  exitIconContainer: {
+    display: 'flex',
+    justifyContent: 'flex-end',
+    marginBottom: 20,
+    '& img': {
+      cursor: 'pointer',
+    }
   }
 }
 

@@ -46,7 +46,6 @@ const BeesWithClasses = ({
         <a target="blank" href={FNaileLangstrothSketchManuscript}><p>F. Naile Langstroth Sketch Manuscript</p></a>,
         <a target="blank" href={JBrooksBeeKeeperofOxfordManuscript}><p>J. Brooks Bee-Keeper of Oxford Manuscript</p></a>,
         <a target="blank" href={LangstrothBeeLibraryBibliography}><p>Langstroth Bee Library Bibliography</p></a>,
-        <a target="blank" href={BuildTheOriginalLangstrothHive}><p>Build the Original Langstroth Hive</p></a>,
       ]}
     >
       <figure

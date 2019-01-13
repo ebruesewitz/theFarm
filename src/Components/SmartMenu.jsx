@@ -52,8 +52,10 @@ export default class SmartMenu extends Component{
       children,
       iconImages,
       iconImageTitles,
+      mapPageLink,
       selectedIcon,
       setSelectedIcon, 
+      shouldShowMapLink,
     } = this.props;
 
     return(
@@ -67,6 +69,8 @@ export default class SmartMenu extends Component{
         shouldShowArrow={shouldShowArrow}
         selectedIcon={selectedIcon}
         setSelectedIcon={setSelectedIcon}
+        mapPageLink={mapPageLink}
+        shouldShowMapLink={shouldShowMapLink}
       >
         {children}  
       </Menu>

@@ -12,7 +12,8 @@ const CornAndCowsWithClasses = ({
   classes
 }) => (
     <EssayPage
-      articleTitle='Corn &amp; Cows (The Fryman Farm)'
+      articleTitle='Corn &amp; Cows'
+      subTitle="(The Fryman Farm)"
       authorName='Marguerite S. Shaffer'
       articleBackgroundImage={ArticleBackgroundImage}
       className={classes.essayOverrides}
@@ -36,7 +37,7 @@ const CornAndCowsWithClasses = ({
       ]}
       resources={[
         <a target="blank" href="https://butler.osu.edu/home"><p>OSU Extension, Butler County</p></a>,
-        <a target="blank" href="https://www.lanepl.org/research/smith-library/"><p>OSU Extension, Butler County</p></a>,
+        <a target="blank" href="https://www.lanepl.org/research/smith-library/"><p>Smith Library of Regional History</p></a>,
         <a target="blank" href={PDFMapOxfordTownship}><p>1930 Map Oxford Township</p></a>
       ]}
     >

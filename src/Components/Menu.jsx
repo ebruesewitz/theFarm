@@ -24,6 +24,8 @@ const MenuWithClasses = ({
   shouldShowArrow,
   arrowDirection,
   children,
+  mapPageLink = "/explore/earth",
+  shouldShowMapLink,
 }) => (
   <div className={isOpen ? classes.blurSiblings : classes.menuContainer}>
     <div className={classes.leftMenu}>
@@ -38,9 +40,12 @@ const MenuWithClasses = ({
         </div>
       </div>
       { shouldShowArrow &&
+      <div className={classes.mapLinkContainer}>
+        {shouldShowMapLink && <div className={classes.mapLink}><Link to={mapPageLink} >RETURN TO MAP</Link></div>}
         <div onClick={onArrowClick} className={[classes.logoContainer, classes.downArrowContainer].join(' ')}>
           <img className={arrowDirection === 'up' ? classes.rotate : undefined} src={DownArrow} alt=""/>
         </div>
+      </div>
       }
       {
         iconImages && iconImages.length > 0 &&
@@ -65,7 +70,7 @@ const MenuWithClasses = ({
         <div className={classes.rightMenuContent}>
           <div className={classes.rightMenuChildren}>
             <Link to={`/`}>HOME</Link>
-            {/* <Link to={`/contact`}>CONTACT</Link> */}
+            <Link to={`/contact`}>CONTACT</Link>
             <Link to={`/contributors`}>CONTRIBUTORS</Link>
             {children}
           </div>
@@ -327,6 +332,15 @@ const styles = {
       backgroundColor: 'unset',
     },
   },
+  mapLinkContainer: {
+    textAlign: 'center',
+    fontWeight: 'bold',
+    textDecoration: 'underline',
+  },
+  mapLink: {
+    maxWidth: '90%',
+    margin: '12px auto',
+  }
 };
 
 export default injectSheet(styles)(MenuWithClasses);

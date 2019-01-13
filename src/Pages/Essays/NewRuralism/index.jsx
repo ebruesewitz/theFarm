@@ -19,7 +19,7 @@ const NewRuralismWithClasses = ({
       <p>Florida, Richard L. 2008. <i>Who's Your City?: How the Creative Economy is Making Where to Live the Most important Decision of your Life</i>. New York: Basic Books.</p>,
       <p>Fryman, John Felix. 1971. <i>From the Mountains to the Valley</i>. Oxford, OH: Oxford Press.</p>,
       <p>Lambert, Kelly. 2008 <i>Lifting Depression: A neuroscientist's Hands-on Approach to Activating your Brain's Healing Power</i>. New York: Basic Books.</p>,
-      <p>Malabar Farm State Park website. http://www.malabarfarm.org/</p>,
+      <p>Malabar Farm State Park website. <a target="blank" href="http://www.malabarfarm.org/">http://www.malabarfarm.org/</a></p>,
       <p>Mazoyer, Marcel and Laurence Roudart. 2006. <i>A History of World Agriculture: From the Neolithic Age to the Current Crisis</i>. New York: Monthly Review Press.</p>,
       <p>Orr, David W. 2011. <i>Hope is an Imperative: The Essential David Orr</i>. Washington, DC: Island Press.</p>,
       <p>Selhub, Eva M. and Logan, Alan C. 2012. <i>Your Brain on Nature: The Science of Nature’s Influence on your Health, Happiness, and Vitality</i>. Ontario, Canada: John Wiley &amp; Sons. </p>,

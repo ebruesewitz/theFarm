@@ -10,8 +10,6 @@ import PorkopolisThumbnail02 from './Essays/Porkopolis/images/thumbnails/thumbna
 import SoilIcon from '../images/SoilIcon.png';
 import SoilsThumbnail01 from './Essays/Soils/images/thumbnails/thumbnail01.jpg';
 
-import ArchaeologyIcon from '../images/ArchaeologyIcon.png';
-
 import WaterIcon from '../images/WaterIcon.png';
 import GroundwaterThumbnail01 from './Essays/Groundwater/images/thumbnails/thumbnail01.jpg';
 
@@ -21,8 +19,8 @@ const RegionMapWithClasses = ({
   classes
 }) => (
     <MapPage
-      iconImages={[PigsIcon, SoilIcon, WaterIcon, ArchaeologyIcon, FloraandFaunaIcon]}
-      iconImageTitles={['pigs', 'soil', 'water', 'Archaeology', 'flora']}
+      iconImages={[PigsIcon, SoilIcon, WaterIcon, FloraandFaunaIcon]}
+      iconImageTitles={['pigs', 'soil', 'water', 'flora']}
       mapImage={RegionImage}
       previousPageTitle="Ohio River Valley"
       previousPageLink="/explore/ohiorivervalley"
@@ -54,15 +52,10 @@ const RegionMapWithClasses = ({
           articleContent: "The biogeographic distribution of vegetation types and their ecological composition and structure provide important interpretative clues to a place. Patterns of vegetation diversity offer clues to human-historical processes that modify land-cover change and vegetation dynamics over time.",
           articleLink: "/essays/floraandfauna",
         },
-        [ArchaeologyIcon]: {
-          articleTitle: "Archaeology Article - Coming Soon!",
-          articleContent: "Check back often. We'll be publishing new content soon!"
-        }
       }}
     >
       <img id={PigsIcon} src={PigsIcon} className={[classes.pigsIcon, classes.mapIcons].join(" ")} alt="" />
       <img id={SoilIcon} src={SoilIcon} className={[classes.soilIcon, classes.mapIcons].join(" ")} alt="" />
-      <img id={ArchaeologyIcon} src={ArchaeologyIcon} className={[classes.archaeologyIcon, classes.mapIcons].join(" ")} alt="" />
       <img id={WaterIcon} src={WaterIcon} className={[classes.waterIcon, classes.mapIcons].join(" ")} alt="" />
       <img id={FloraandFaunaIcon} src={FloraandFaunaIcon} className={[classes.floraandFaunaIcon, classes.mapIcons].join(" ")} alt="" />
     </MapPage>
@@ -92,14 +85,6 @@ const styles = {
       top: '39.2vh',
       left: 'calc(50vw - 17vh)',
     },
-  },
-  archaeologyIcon: {
-    top: '52vh',
-    left: 'calc(50vw - 33vh)',
-    '@media (max-width: 760px)': {
-      top: '52vh',
-      left: 'calc(50vw - 18vh)',
-    }
   },
   waterIcon: {
     top: '33vh',

@@ -8,6 +8,7 @@ import PughsMill from './images/PughsMill.jpg';
 import OxfordTownshipIndustryCensusData from './images/OxfordTownshipIndustryCensusData.pdf';
 import OEvansTheYoungMillwright from './images/OEvansTheYoungMillwright.pdf';
 import NationalRegisterApplication from './images/NationalRegisterApplication.pdf';
+import TenisonRechMillBooklet from './images/2018TenisonRechMillBooklet.pdf';
 
 const AustinsMillsWithClasses = ({
   classes
@@ -27,6 +28,7 @@ const AustinsMillsWithClasses = ({
       }
       resources={[
         <a target="blank" href="https://en.wikipedia.org/wiki/Austin%E2%80%93Magie_Farm_and_Mill_District"><p>Austin Magie Farm and Mill District (Wikipedia)</p></a>,
+        <a target="blank" href={TenisonRechMillBooklet}><p>A Brief History of Long-Standing Mills in and around Oxford, Ohio</p></a>,
         <a target="blank" href="https://www.lanepl.org/research/smith-library/"><p>Smith Library of Regional History</p></a>,
         <a target="blank" href={OxfordTownshipIndustryCensusData}><p>1870 Oxford Township Industry Census Data</p></a>,
         <a target="blank" href={OEvansTheYoungMillwright}><p>Oliver Evans, The Young Millwright and Miller’s Guide, 1795</p></a>,

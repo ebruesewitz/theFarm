@@ -6,6 +6,8 @@ import ArticleBackgroundImage from '../../../images/EssayBackground3.jpg';
 import AustinMagiefarmhouse1841 from './images/AustinMagiefarmhouse1841.jpg';
 import Blackcoveredbridge from './images/Blackcoveredbridge.jpg';
 import ACallforNewRuralism from './images/ACallforNewRuralism.pdf';
+import CarIcon from '../../../images/CarIcon.png';
+import SelfGuidedDrivingTourMap from '../../SelfGuidedDrivingTourMap.pdf';
 import DesigningIFFarm from './images/DesigningIFFarm.jpg';
 import SalsaMoonCoop from './images/SalsaMoonCoop.jpg';
 import Newplots from './images/Newplots.jpg';
@@ -84,7 +86,13 @@ const EducatingFromTheGroundUpWithClasses = ({
           <figcaption>Packing out for the CSA. (courtesy Claire Anderson)</figcaption>
         </figure>
       </div>
-      <p>In this vein, <b>Educating From the Ground Up</b> has two motives: It seeks to document a threatened historic farm—the Austin-Magie Farm—while also imagining and enacting a blueprint (greenprint) for its future. The maps, icons, images, and essays populating this website document the ecology, history, and local food system that define this place. The icons locate you in relation to the farm in relative scale and lead you to information about the topics they represent. Icons representing Soil, Water, Flora, and Fauna detail the first nature or ecosystems of the area. Icons representing the Archeology, Austin Mill Complex, Austin-Magie Farm, Bees, Black Covered Bridge, Corn and Cows, Migration and Settlement, and Pigs chronicle of the history of this place. Icons representing Breaking Ground, Food Security, Harvest, Institute for Food, Landscape Choreography, and We Believe document experiential education projects. And Icons representing Local Food, New Ruralism, and Sustainable Food explore the current local food system. Each icon is located on a map linked to the scale of the place it defines and impacts. You can move through the maps from the local to the global following the icons. Each is connected to a longer illustrated essay and links to resources. You will also find a printable PDF of a self-guided tour related to the icons.</p>
+      <p>In this vein, <b>Educating From the Ground Up</b> has two motives: It seeks to document a threatened historic farm—the Austin-Magie Farm—while also imagining and enacting a blueprint (greenprint) for its future. The maps, icons, images, and essays populating this website document the ecology, history, and local food system that define this place. The icons locate you in relation to the farm in relative scale and lead you to information about the topics they represent. Icons representing Soil, Water, Flora, and Fauna detail the first nature or ecosystems of the area. Icons representing the Archeology, Austin Mill Complex, Austin-Magie Farm, Bees, Black Covered Bridge, Corn and Cows, Migration and Settlement, Myammia, and Pigs chronicle of the history of this place. Icons representing Breaking Ground, Food Security, Harvest, Institute for Food, Landscape Choreography, and We Believe document experiential education projects. And Icons representing Local Food, New Ruralism, and Sustainable Food explore the current local food system. Each icon is located on a map linked to the scale of the place it defines and impacts. You can move through the maps from the global to the local following the icons. Each is connected to a longer illustrated essay. Click on the resources & references ribbon on the right for additional information, links, and related documents. You will also find a printable PDF of a self-guided tour related to the icons.</p>
+      <a href={SelfGuidedDrivingTourMap} target="blank" className={classes.iconLink}>
+          <div className={classes.iconContainer}>
+            <img src={CarIcon} alt="" className={classes.articleIcon}/>
+            <p className={classes.learnMoreLink}>VIEW/PRINT THE SELF-GUIDED DRIVING TOUR</p>
+          </div>
+        </a>
       <p><b>Educating From the Ground Up</b> is a project that has developed a life of its own.  Student, faculty, and community participants have given their time, talent, and energy to a project and a place larger than the sum of the individuals involved in an effort to imagine a more sustainable future. Enjoy!</p>
     </ EssayPage>
     <Footer className={classes.footerOverrides}/>
@@ -152,6 +160,27 @@ const styles = {
     textAlign: 'justify',
     lineHeight: '1.5em',
 
+  },
+  iconContainer: {
+    display: 'flex',
+    alignItems: 'center'
+  },
+  articleIcon: {
+    height: 40,
+    width: 40,
+    marginRight: 10,
+    cursor: 'pointer',
+    '&:hover': {
+      opacity: '.7 !important',
+    }
+  },
+  learnMoreLink: {
+    fontSize: '.8em',
+    fontWeight: 800,
+    borderBottom: '2px solid #F05A28',
+    '@media (max-width: 760px)': {
+      marginLeft: '5vw',
+    }
   },
 };
 

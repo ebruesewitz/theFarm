@@ -6,6 +6,10 @@ import OhioRiverValleyImage from '../images/ohiorivervalley.jpg';
 import MigrationandSettlementIcon from '../images/MigrationandSettlementIcon.png';
 import MigrationAndSettlementThumbnail01 from './Essays/MigrationAndSettlement/images/thumbnails/thumbnail01.jpg';
 
+import MyaamiakiAndMyaamionkiIcon from '../images/MyaamiakiAndMyaamionkiIcon.png';
+import MyaamiakiAndMyaamionkiThumbnail01 from './Essays/MyaamiakiAndMyaamionki/images/thumbnails/thumbnail01.jpg';
+import MyaamiakiAndMyaamionkiThumbnail02 from './Essays/MyaamiakiAndMyaamionki/images/thumbnails/thumbnail02.jpg';
+
 import SustainableFoodIcon from '../images/SustainableFoodIcon.png';
 import SustainableFoodThumbnail01 from './Essays/SustainableFood/images/thumbnails/thumbnail01.jpg';
 import SustainableFoodThumbnail02 from './Essays/SustainableFood/images/thumbnails/thumbnail02.jpg';
@@ -16,8 +20,8 @@ const OhioRiverValleyMapWithClasses = ({
   classes
 }) => (
     <MapPage
-      iconImages={[MigrationandSettlementIcon, SustainableFoodIcon]}
-      iconImageTitles={['migration and settlement', 'sustainable agriculture']}
+      iconImages={[MigrationandSettlementIcon, MyaamiakiAndMyaamionkiIcon, SustainableFoodIcon]}
+      iconImageTitles={['migration and settlement', 'Myaamiaki and Myaamionki', 'sustainable agriculture']}
       mapImage={OhioRiverValleyImage}
       previousPageTitle="United States"
       previousPageLink="/explore/unitedstates"
@@ -38,10 +42,17 @@ const OhioRiverValleyMapWithClasses = ({
           articleLink: "/essays/migrationandsettlement",
           thumbnails: [MigrationAndSettlementThumbnail01],
         },
+        [MyaamiakiAndMyaamionkiIcon]: {
+          articleTitle: "Myaamiaki and Myaamionki",
+          articleContent: "The Austin-Magie farm sits on the southeastern edges of Myaamionki—the heritage homelands of the Myaamia ‘Miami’ people. The land now known as the Austin-Magie farm has been sustaining communities for as long as we can remember. The farm, like Myaamia Mihši- nipwaantikaani ‘Miami University,’ was built on land watered by the Ahsenisiipi siipiiwi ‘Great Miami River.’",
+          articleLink: "/essays/myaamiakiandmyaamionki",
+          thumbnails: [MyaamiakiAndMyaamionkiThumbnail01, MyaamiakiAndMyaamionkiThumbnail02],
+        },
       }}
     >
       <img id={MigrationandSettlementIcon} src={MigrationandSettlementIcon} className={[classes.migrationandSettlementIcon, classes.mapIcons].join(" ")} alt="" />
       <img id={SustainableFoodIcon} src={SustainableFoodIcon} className={[classes.sustainableFoodIcon, classes.mapIcons].join(" ")} alt="" />
+      <img id={MyaamiakiAndMyaamionkiIcon} src={MyaamiakiAndMyaamionkiIcon} className={[classes.MyaamiakiAndMyaamionkiIcon, classes.mapIcons].join(" ")} alt="" />
     </MapPage>
   );
 
@@ -68,6 +79,14 @@ const styles = {
     '@media (max-width: 760px)': {
       top: '39.2vh',
       left: 'calc(50vw - 11.9vh)',
+    },
+  },
+  MyaamiakiAndMyaamionkiIcon: {
+    top: '45vh',
+    left: 'calc(50vw - 10vh)',
+    '@media (max-width: 760px)': {
+      top: '47vh',
+      left: 'calc(50vw - 5vh)',
     },
   },
 }

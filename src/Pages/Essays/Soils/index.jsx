@@ -24,6 +24,7 @@ const SoilsWithClasses = ({
       }
       resources={[
         <a target="blank" href="https://www.farmland.org/"><p>American Farmland Trust</p></a>,
+        <a target="blank" href="https://www.butlerswcd.org/"><p>Butler County Soil and Water Conservation District</p></a>,
         <a target="blank" href="https://www.3vct.org/"><p>Three Valley Conservation Trust</p></a>,
       ]}
     >

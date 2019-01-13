@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import OxfordMapImage from '../images/ButlerCoAtlas1875OxfordTwnspMap.png';
 import LargeLogoImage from '../images/Logo_Large.svg';
 import CarIcon from '../images/CarIcon.png';
+import Button from '../Components/Button';
 import SmartMenu from '../Components/SmartMenu';
 import SelfGuidedDrivingTourMap from './SelfGuidedDrivingTourMap.pdf';
 import Footer from '../Components/Footer';
@@ -26,7 +27,9 @@ const HomePageWithClasses = ({classes}) => (
         <h2 className={[classes.sectionTwoText, classes.headingText].join(" ")}>Educating From The Ground Up</h2>
         <p className={classes.sectionTwoText}>Educating From the Ground Up maps a particular place: a historic farm north of the city of Oxford, Ohio. A micro history that expands out through multiple layers, it explores the intricate connections that link agricultural areas to metropolitan regions—the country and the city—the local and the global. It traces the lay of the land and tracks agricultural development. It documents the economic, ecological, social and cultural value of rural places. And it advocates a vision for the New Ruralism.</p>
         <p>
-          <Link to="/educatingfromthegroundup" className={classes.learnMoreLink}>LEARN MORE</Link>
+          <Link to="/educatingfromthegroundup" className={classes.learnMoreLink}>
+            <Button className={classes.buttonOverrides} buttonText="LEARN MORE" />
+          </Link>
         </p>
         <p>
           <Link to="/explore/earth" className={classes.learnMoreLink}>EXPLORE THE MAP</Link>
@@ -34,7 +37,7 @@ const HomePageWithClasses = ({classes}) => (
         <a href={SelfGuidedDrivingTourMap} target="blank" className={classes.iconLink}>
           <div className={classes.iconContainer}>
             <img src={CarIcon} alt="" className={classes.articleIcon}/>
-            <p className={classes.learnMoreLink}>SELF-GUIDED DRIVING TOUR</p>
+            <p className={classes.learnMoreLink}>VIEW/PRINT THE SELF-GUIDED DRIVING TOUR</p>
           </div>
         </a>
         <p className={classes.sectionTwoText}>This self-guided driving tour highlights the links between local food and agricultural history in and around Oxford, Ohio. Each place on the tour is connected to a larger story about the local foodshed. Follow the icons on the website.</p>
@@ -145,6 +148,11 @@ const styles = {
     '@media (max-width: 760px)': {
       padding: '75px 0px 77px 0px'
     }
+  },
+  buttonOverrides: {
+    padding: '15px 45px',
+    width: 'auto',
+    display: 'inline',
   },
   footerOverrides: {
     '@media (max-width: 760px)': {

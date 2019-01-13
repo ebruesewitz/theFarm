@@ -20,6 +20,7 @@ import CornAndCows from './Pages/Essays/CornAndCows/index';
 import NewRuralism from './Pages/Essays/NewRuralism/index';
 import SustainableFood from './Pages/Essays/SustainableFood/index';
 import MigrationAndSettlement from './Pages/Essays/MigrationAndSettlement/index';
+import MyaamiakiAndMyaamionki from './Pages/Essays/MyaamiakiAndMyaamionki/index';
 import Groundwater from './Pages/Essays/Groundwater/index';
 import Soils from './Pages/Essays/Soils/index';
 import Porkopolis from './Pages/Essays/Porkopolis';
@@ -86,7 +87,7 @@ const Routes = () => (
                   <Route exact path="/explore/ohiorivervalley" component={OhioRiverValleyMap} />
                   <Route exact path="/essays/sustainableagriculture" component={SustainableFood} />
                   <Route exact path="/essays/migrationandsettlement" component={MigrationAndSettlement} />
-            
+                  <Route exact path="/essays/myaamiakiandmyaamionki" component={MyaamiakiAndMyaamionki} />
             
                   <Route exact path="/explore/unitedstates" component={UnitedStatesMap} />
                   <Route exact path="/essays/cornandcows" component={CornAndCows} />

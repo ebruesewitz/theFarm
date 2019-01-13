@@ -3,7 +3,6 @@ import injectSheet from 'react-jss';
 import EssayPage from '../../../Components/EssayPage';
 import ArticleBackgroundImage from '../../../images/EssayBackground5.jpg';
 import InstituteforFood from './images/InstituteforFood.jpg';
-import LoadedTruck from './images/LoadedTruck.jpg';
 import CSABoxNov from './images/CSABoxNov.jpg';
 import CarrotsPeppers from './images/CarrotsPeppers.jpg';
 import ConstructingHoopHouse from './images/ConstructingHoopHouse.jpg';
@@ -18,7 +17,8 @@ const InstituteForFoodWithClasses = ({
   classes
 }) => (
     <EssayPage
-      articleTitle='The Institute for Food: IF Miami'
+      articleTitle='The Institute for Food:'
+      subTitle="IF Miami"
       authorName='Marguerite S. Shaffer'
       articleBackgroundImage={ArticleBackgroundImage}
       className={classes.essayOverrides}
@@ -30,6 +30,7 @@ const InstituteForFoodWithClasses = ({
       }
       resources={[
         <a target="blank" href="http://miamioh.edu/cas/academics/centers/iff/index.html"><p>Institute for Food</p></a>,
+        <a target="blank" href="http://miamioh.edu/cas/academics/programs/ies/">Institute for the Environment and Sustainability</a>
       ]}
     >
       <div className={classes.figure}>
@@ -43,9 +44,6 @@ const InstituteForFoodWithClasses = ({
         <div className={classes.figure}>
           <img src={CarrotsPeppers} alt="" className={classes.image}/>
         </div>
-      </div>
-      <div className={[classes.figure, classes.figureOverride].join(" ")}>
-        <img src={LoadedTruck} alt="" className={classes.image}/>
       </div>
       <p>Food is elemental to our lives; it is also a topic of serious concern as we confront how to feed a world projected to reach nine billion people by 2050; no less how to address a public health crisis precipitated by our dependence on cheap, sugar-laden, processed foods. As a basic biological necessity, a critical economic and political product, and a potent cultural agent, food defines our relationship to particular places and links people across the table and across the globe. As such, food offers an ideal focus for collaborative interdisciplinary study. From soil to plate, every meal is embedded with layered individual, local, national, and global meaning. Issues of food reach back into history and connect diverse people in the present through complex commodity and energy chains, which have wide-ranging implications for the future. With every bite we cut across social, political, economic, geographical, technological, cultural, chemical, and biological contexts. Food is as much about survival and health as it is about politics and identity. It speaks to issues of abundance and poverty as well as issues of sustainability and national security. As environmental historian Jane Dusselier argues, food and cuisines “reveal and shape social relations and connect the past with present concerns and future possibilities” (Dusselier 2009, 334). Fusing multiple, diverse perspectives, food provides a compelling framework for critical exploration of the complex connections that link the local and the global, ecology and economy, individual and community—all issues that are central to imagining a sustainable future.</p>
       <div className={classes.figure}>

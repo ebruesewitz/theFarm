@@ -32,6 +32,7 @@ const MigrationAndSettlementWithClasses = ({
         ]
       }
       resources={[
+        <a target="blank" href="https://www.chrisholmhistoricfarmstead.org/index.html"><p>Chrisholm Historic Farmstead</p></a>,
         <a target="blank" href="https://www.lanepl.org/research/smith-library/"><p>Smith Library of Regional History</p></a>,
         <a target="blank" href="https://oxfordmuseumassociation.com/"><p>Oxford Museum Association</p></a>,
       ]}

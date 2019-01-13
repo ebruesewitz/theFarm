@@ -30,8 +30,7 @@ const PorkopolisWithClasses = ({
         ]
       }
       resources={[
-        <a target="blank" href={RethinkingPorkopolis}><p>Rethinking Porkopolis</p></a>,
-        <p>Credits: Ohio Humanities; Harriet Beecher Stowe House; Robert Gioielli, Project Director and Curator; Jamie Albert, Project Designer</p>,
+        <p><a target="blank" href={RethinkingPorkopolis}>Rethinking Porkopolis</a> <span className={classes.creditOverride}>Credits: Ohio Humanities; Harriet Beecher Stowe House; Robert Gioielli, Project Director and Curator; Jamie Albert, Project Designer</span></p>,
       ]}
     >
       <p>The Austin-Magie Farm was an important part of the economy of the Miami River Valley in the 19th century, but also connected the community to Cincinnati, the rest of the country, and the globe. The farm did this through the region’s primary agricultural product–pigs.</p>
@@ -92,6 +91,9 @@ const PorkopolisWithClasses = ({
         fontFamily: 'komu-b',
         fontSize: '2.5em',
       }
+    },
+    creditOverride: {
+      fontSize: '.7em'
     },
     blockQuote: {
       width: '75%',
