@@ -20,6 +20,7 @@ import InstituteforFoodsymposium from './images/InstituteforFoodsymposium.jpg';
 import ClaireAnderson from './images/ClaireAnderson.jpg';
 import ReimagingWalking from './images/ReimagingWalking.pdf';
 import TransformativeIdeaUtopianIdeal from './images/TransformativeIdeaUtopianIdeal.pdf';
+import IFToolShedDesignBuild from './images/IFToolShedDesignBuild.pdf';
 
 const BreakingGroundWithClasses = ({
   classes
@@ -47,6 +48,7 @@ const BreakingGroundWithClasses = ({
         <a target="blank" href="https://www.youtube.com/watch?v=L2_ldb2zUHE&app=desktop"><p>IF Farm Pavilion</p></a>,
         <a target="blank" href="https://www.youtube.com/watch?v=eizh2g6HYU0&app=desktop"><p>IF Farm Living Learning Community</p></a>,
         <a target="blank" href="https://www.youtube.com/watch?v=MdlwShgzMqo&app=desktop"><p>IF Farm Restaurant</p></a>,
+        <a target="blank" href={IFToolShedDesignBuild}><p>IF Tool Shed Design-Build "The First Seed"</p></a>,
         <a target="blank" href={ReimagingWalking}><p>Ben Jacks: Reimagining Walking</p></a>,
         <a target="blank" href={TransformativeIdeaUtopianIdeal}><p>Ben Jacks: Transformative Idea/ Utopian Ideal</p></a>,
       ]}
