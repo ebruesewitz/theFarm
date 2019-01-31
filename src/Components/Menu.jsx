@@ -333,6 +333,7 @@ const styles = {
     },
   },
   mapLinkContainer: {
+    width: '100%',
     textAlign: 'center',
     fontWeight: 'bold',
     textDecoration: 'underline',

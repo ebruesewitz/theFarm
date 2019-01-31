@@ -18,6 +18,11 @@ const HarvestWithClasses = ({
       articleBackgroundImage={ArticleBackgroundImage}
       className={classes.essayOverrides}
       mapPageLink="/explore/farm"
+      resources={[
+        <a target="blank" href="https://www.oeffa.org/"><p>OEFFA</p></a>,
+        <a target="blank" href="https://www.nal.usda.gov/afsic/community-supported-agriculture"><p>USDA CSA</p></a>,
+        <a target="blank" href="https://www.ams.usda.gov/sites/default/files/media/CSANewModelsforChangingMarketsb.pdf"><p>USDA CSA AMS</p></a>,
+      ]}
     >
       <figure
         className={classes.figure}

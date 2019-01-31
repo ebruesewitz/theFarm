@@ -148,7 +148,7 @@ const styles = {
     width: '100vw',
     paddingLeft: 200,
     minHeight: '100vh',
-    backgroundColor: '#F7F7F7',
+    backgroundColor: '#D1D1CF',
     boxSizing: 'border-box',
     '@media (max-width: 760px)': {
       padding: '75px 0px 77px 0px'
@@ -268,7 +268,7 @@ const styles = {
   zoomText: {
     fontSize: 12,
     textTransform: 'uppercase',
-    color: 'rgba(0,0,0,.23)',
+    color: 'white',
     fontWeight: 'bold',
     paddingRight: 20,
   },

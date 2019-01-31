@@ -37,7 +37,7 @@ const MyaamiakiAndMyaamionkiWithClasses = ({
         ]
       }
       resources={[
-        <p><a target="blank" href={HominySoupRecipe}></a>Karen’s hominy recipe. Courtesy Karen L. Baldwin</p>,
+        <p><a target="blank" href={HominySoupRecipe}>Karen’s hominy recipe. Courtesy Karen L. Baldwin</a></p>,
         <p><a target="blank" href="https://archive.org/details/americanpioneerm01cinc/page/318">Daily Journal of Wayne’s Campaign, pp. 317-321</a></p>,
       ]}
     >
@@ -47,7 +47,7 @@ const MyaamiakiAndMyaamionkiWithClasses = ({
       <figure
         className={classes.figure}
       >
-        <img src={Picture1} className={classes.image}/>
+        <img src={Picture1} className={classes.image} alt="John Patten, “A Trader’s Map of the Ohio country before 1753,” courtesy Library of Congress Geography and Map Division."/>
         <figcaption>John Patten, “A Trader’s Map of the Ohio country before 1753,” courtesy Library of Congress Geography and Map Division.</figcaption>
       </figure>
       <p>The Myaamia, along with their relatives the Wyandots, Delawares, Shawnees, Ottawas, Potawatomis, Ojibwes, Kickapoos, Piankeshaws, Weas, and Kaskaskias, relinquished their ownership of much of Ohio, including the land between the Miami Rivers, by signing the 1795 Treaty of Greenville.</p>
@@ -58,7 +58,7 @@ const MyaamiakiAndMyaamionkiWithClasses = ({
       <figure
         className={classes.figure}
       >
-        <img src={Picture2} className={classes.image}/>
+        <img src={Picture2} className={classes.image} alt="Depiction of the Kiihkayonki region in 1790, as depicted in Ebenezer Denny, “View of the Maumee Towns” Military Journal of Major Ebenezer Denny (Philadelphia, 1859), 146-47"/>
         <figcaption>Depiction of the Kiihkayonki region in 1790, as depicted in Ebenezer Denny, “View of the Maumee Towns” Military Journal of Major Ebenezer Denny (Philadelphia, 1859), 146-47.</figcaption>
       </figure>
       <p>Nearly all was rebuilt, but at great cost. By 1794, when another American army arrived to re-burn the region, one soldier noted 500 contiguous acres under cultivation. <sup>6</sup> Cornfields, interspersed with beans, continued from the Kiihkayonki metropolitan area down the Maumee to Fort Miamis near modern-day Toledo. General Anthony Wayne reported that he had never seen “such immense fields of corn in any part of America from Canada to Florida.” <sup>7</sup> The legion marched across Myaamionki, “burning and destroying all the houses and corn on their route,” a soldier wrote. <sup>8</sup> After the entire Maumee River valley lay in ashes, the Indian nations agreed to sign the Treaty of Greenville, yielding most of the Ohio Territory to the United States.</p>
@@ -71,14 +71,14 @@ const MyaamiakiAndMyaamionkiWithClasses = ({
       <figure
         className={classes.figure}
       >
-        <img src={Picture3} className={classes.image}/>
+        <img src={Picture3} className={classes.image} alt="Photo of Myaamia Miincipi, a traditional white, 8 row flour corn. Grown and harvested in 2016 at Ecological Research Center at Miami University. by Karen L. Baldwin"/>
         <figcaption>Photo of Myaamia Miincipi, a traditional white, 8 row flour corn. Grown and harvested in 2016 at Ecological Research Center at Miami University. Photo by Karen L. Baldwin</figcaption>
       </figure>
       <p>Miami White Corn continued to be grown through two forced removals (to eastern Kansas, and then to northeastern Oklahoma). In the post-World War II generation, and for unknown reasons, Myaamia families put corn on the shelf. <sup>13</sup> Since the 1990s, however, Miami White Corn has re-entered the earth and grows every spring and summer.</p>
       <figure
         className={[classes.figure, classes.figureOverride].join(" ")}
       >
-        <img src={Picture4} className={classes.image}/>
+        <img src={Picture4} className={classes.image} alt="Various stages of Myaamia Miincipi processing. From whole kernels to flour, miincipi was a flexible food source with many uses. by Karen L. Baldwin"/>
         <figcaption>Various stages of Myaamia Miincipi processing. From whole kernels to flour, miincipi was a flexible food source with many uses. Photo by Karen L. Baldwin</figcaption>
       </figure>
       <p>Against this historical context, the modern Myaamia community’s planting of their seeds is a form of sovereignty; of re-claiming the power of Myaamia food in Myaamionki ‘the Miami homeland.’</p>

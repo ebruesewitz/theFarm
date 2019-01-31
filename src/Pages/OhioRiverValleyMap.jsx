@@ -66,27 +66,27 @@ const styles = {
     }
   },
   migrationandSettlementIcon: {
-    top: '56vh',
-    left: 'calc(50vw + 17vh)',
+    top: '33vh',
+    left: 'calc(50vw + 46vh)',
     '@media (max-width: 760px)': {
-      top: '51vh',
-      left: 'calc(50vw + 5vh)',
+      top: '42vh',
+      left: 'calc(50vw + 13vh)',
     }
   },
   sustainableFoodIcon: {
-    top: '33vh',
-    left: 'calc(50vw - 23vh)',
+    top: '35vh',
+    left: 'calc(50vw + 31vh)',
     '@media (max-width: 760px)': {
       top: '39.2vh',
-      left: 'calc(50vw - 11.9vh)',
+      left: 'calc(50vw + 6.9vh)',
     },
   },
   MyaamiakiAndMyaamionkiIcon: {
-    top: '45vh',
-    left: 'calc(50vw - 10vh)',
+    top: '38vh',
+    left: 'calc(50vw + 15vh)',
     '@media (max-width: 760px)': {
       top: '47vh',
-      left: 'calc(50vw - 5vh)',
+      left: '50vw',
     },
   },
 }

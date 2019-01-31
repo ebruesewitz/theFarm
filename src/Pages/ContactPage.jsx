@@ -1,8 +1,5 @@
 import React from 'react';
 import injectSheet from 'react-jss';
-import {
-  Link
-} from 'react-router-dom'
 import SmartMenu from '../Components/SmartMenu';
 import ContactForm from '../Components/ContactForm';
 

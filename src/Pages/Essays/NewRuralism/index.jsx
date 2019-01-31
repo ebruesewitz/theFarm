@@ -34,7 +34,7 @@ const NewRuralismWithClasses = ({
     <figure
       className={classes.figure}
     >
-        <img src={DowntownCincinnati} className={classes.image} alt="Downtown Cincinnati, 2010 (photo by Kevin D. Hartnell)." />
+        <img src={DowntownCincinnati} className={classes.image} alt="Downtown Cincinnati, 2010 (by Kevin D. Hartnell)." />
         <figcaption>Downtown Cincinnati, 2010 (photo by Kevin D. Hartnell).</figcaption>
     </figure>
       <p>As a transplant to Ohio, a resident of Cincinnati, an African historian who has worked at the nexus of sustainability, globalization, and agriculture for some time, and an educator at Xavier University where students come from urban, suburban and rural backgrounds, I see the rural-urban divide as a global phenomenon that requires urgent attention. It is likely going to be one of a handful of essential sociocultural divides of the 21st century.</p>

@@ -29,7 +29,7 @@ const LocalFoodWithClasses = ({
       <figure
         className={classes.figure}
       >
-        <img src={OxfordFarmersMarketUptownJuly2018} className={classes.image} alt="Oxford Farmers Market Uptown (photo by James Rubinstein)"/>
+        <img src={OxfordFarmersMarketUptownJuly2018} className={classes.image} alt="Oxford Farmers Market Uptown (by James Rubinstein)"/>
         <figcaption>Oxford Farmers Market Uptown (photo by James Rubinstein)</figcaption>
       </figure>
       <p>The four dozen vendors are at Oxford’s Farmers Market for a variety of reasons. For Bob Rauen, Harv Roehling, and Ted Elliott, veterans of four decades, setting up on Saturday mornings is an opportunity to socialize. It’s a question of scale for Jennifer Bayne of 7 Wonders Farm and Kristi Hutchinson of 5 Oaks Farm. They don’t grow enough to sell in the national distribution system, where margins are so low that farmers can only survive through very high volume.</p>
@@ -38,14 +38,14 @@ const LocalFoodWithClasses = ({
       <figure
         className={classes.figure}
       >
-        <img src={FreedomFarmsJohnBigham} className={classes.image} alt="Freedom Farm’s John Bigham at Oxford Farmers Market Uptown (photo by James Rubinstein)"/>
+        <img src={FreedomFarmsJohnBigham} className={classes.image} alt="Freedom Farm’s John Bigham at Oxford Farmers Market Uptown (by James Rubinstein)"/>
         <figcaption>Freedom Farm’s John Bigham at Oxford Farmers Market Uptown (photo by James Rubinstein)</figcaption>
       </figure>
       <p>Artistry Farm’s Debra Bowles raises goats on her farm and makes products like soap from the goat milk. She considers the Farmers Market and MOON Co-op Grocery as opportunities to teach how food is grown to people who know little about agriculture. Harv Roehling, whose Locust Run Farm is certified organic, concurs with the mission of educating people about the importance of certifying produce as organic. “It’s healthier and better tasting.”</p>
       <figure
         className={classes.figure}
       >
-        <img src={LocustRunFarmsHarvRoehling} className={classes.image} alt="Locust Run Farm’s Harv Roehling with certified organic lettuce at Oxford Farmers Market Uptown (photo by James Rubinstein)"/>
+        <img src={LocustRunFarmsHarvRoehling} className={classes.image} alt="Locust Run Farm’s Harv Roehling with certified organic lettuce at Oxford Farmers Market Uptown (by James Rubinstein)"/>
         <figcaption>Locust Run Farm’s Harv Roehling with certified organic lettuce at Oxford Farmers Market Uptown (photo by James Rubinstein)</figcaption>
       </figure>
       <p>Miami Oxford Organic Network (MOON) Cooperative Services Inc. was incorporated in 2004 for the purpose of opening a locally owned, operated, and stocked grocery store. Many of the folks working to open a store were vendors at the Farmers Market. They recognized the need for a place to sell what they made and grew and raised seven days a week. The big box supermarkets didn’t want them, so they decided to open their own store. Co-op grocery stores are common in the Upper Midwest and New England, but when MOON opened in 2011 it was the first co-op in Ohio in 45 years. The co-op is owned by around 880 households, including 650 who live in and around Oxford. However, anyone can shop in the store.</p>
@@ -55,14 +55,14 @@ const LocalFoodWithClasses = ({
       <figure
         className={classes.figure}
       >
-        <img src={LindaSimmons} className={classes.image} alt="Linda Simmons, member-owner, former board member and produce manager, MOON Co-op Grocery (photo by James Rubinstein)"/>
+        <img src={LindaSimmons} className={classes.image} alt="Linda Simmons, member-owner, former board member and produce manager, MOON Co-op Grocery (by James Rubinstein)"/>
         <figcaption>Linda Simmons, member-owner, former board member and produce manager, MOON Co-op Grocery (photo by James Rubinstein)</figcaption>
       </figure>
       <p>Products from outside Oxford come primarily from certified organic, non-GMO, Fair Trade, and producer co-ops. For example, MOON Co-op’s principal supplier of coffee, tea, and chocolate is Equal Exchange, a co-op owned by its 100 employees in Massachusetts. Equal Exchange in turn sources its beans from grower-owned co-ops in Africa and South America.</p>
       <figure
         className={classes.figure}
       >
-        <img src={LarryandKennedyJohnson} className={classes.image} alt="Local growers Larry and Kennedy Johnson at MOON Co-op Grocery (photo by James Rubinstein)"/>
+        <img src={LarryandKennedyJohnson} className={classes.image} alt="Local growers Larry and Kennedy Johnson at MOON Co-op Grocery (by James Rubinstein)"/>
         <figcaption>Local growers Larry and Kennedy Johnson at MOON Co-op Grocery (photo by James Rubinstein)</figcaption>
       </figure>
       <p>Carla Blackmar Rice and Andy Rice judged the presence of a co-op to be an important factor in their decision to move from Los Angeles to Oxford, a small-town in the Midwest. They love what Carla calls Oxford’s “hyper local” food, compared with Los Angeles where “local” meant several hundred miles.</p>

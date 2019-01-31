@@ -10,12 +10,6 @@ class EssayPageWithClasses extends Component {
     this.state = {areLinksOpen: false}
   }
 
-  // componentDidMount(){
-  //   if(window.innerWidth > 760){
-  //     this.setState({areLinksOpen: true})
-  //   }
-  // }
-
   toggleMenu = () => {
     this.setState({areLinksOpen: !this.state.areLinksOpen})
   }
@@ -156,11 +150,9 @@ const styles = {
     top: '0',
     padding: 15,
     overflowY: 'scroll',
-    textAlign: 'center',
     right: 50,
     backgroundColor: '#ffffff',
     borderRight: '2px solid #e4e4e4',
-    // borderLeft: '2px solid #e4e4e4',
     textAlign: 'left',
     boxSizing: 'border-box',
     boxShadow: '-4px 0px 10px 1px rgba(0, 0, 0, .2)',

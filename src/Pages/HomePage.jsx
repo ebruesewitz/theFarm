@@ -26,11 +26,11 @@ const HomePageWithClasses = ({classes}) => (
       <div className={classes.pageContainer}>
         <h2 className={[classes.sectionTwoText, classes.headingText].join(" ")}>Educating From The Ground Up</h2>
         <p className={classes.sectionTwoText}>Educating From the Ground Up maps a particular place: a historic farm north of the city of Oxford, Ohio. A micro history that expands out through multiple layers, it explores the intricate connections that link agricultural areas to metropolitan regions—the country and the city—the local and the global. It traces the lay of the land and tracks agricultural development. It documents the economic, ecological, social and cultural value of rural places. And it advocates a vision for the New Ruralism.</p>
-        <p>
-          <Link to="/educatingfromthegroundup" className={classes.learnMoreLink}>
-            <Button className={classes.buttonOverrides} buttonText="LEARN MORE" />
-          </Link>
-        </p>
+          <div>
+            <Link to="/educatingfromthegroundup" className={classes.learnMoreLink}>
+              <Button className={classes.buttonOverrides} buttonText="LEARN MORE" />
+            </Link>
+          </div>
         <p>
           <Link to="/explore/earth" className={classes.learnMoreLink}>EXPLORE THE MAP</Link>
         </p>
@@ -172,6 +172,9 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
+    '@media (max-width: 760px)': {
+      padding: 15,
+    }
   },
   largeLogo: {
     margin: '10vh 0 5vh 0',

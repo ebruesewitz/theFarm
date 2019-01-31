@@ -11,7 +11,6 @@ import BeeManofOxfordManuscript from './images/BeeManofOxfordManuscript.pdf';
 import FNaileLangstrothSketchManuscript from './images/FNaileLangstrothSketchManuscript.pdf';
 import JBrooksBeeKeeperofOxfordManuscript from './images/JBrooksBeeKeeperofOxfordManuscript.pdf';
 import LangstrothBeeLibraryBibliography from './images/LangstrothBeeLibraryBibliography.pdf';
-import BuildTheOriginalLangstrothHive from './images/BuildTheOriginalLangstrothHive.pdf';
 
 const BeesWithClasses = ({
   classes

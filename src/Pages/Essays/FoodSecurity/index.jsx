@@ -38,25 +38,25 @@ const FoodSecurityWithClasses = ({
       <div
         className={classes.figure}
       >
-        <img src={Picture1} className={classes.image}/>
+        <img src={Picture1} className={classes.image} alt="students gardening"/>
       </div>
       <p>They also participated in hands-on vegetable preparation and nutrition/cooking workshops and received CSA supplemental produce along with simple recipes weekly. Families received knives, cutting boards, vegetable peelers, MyPlate plates, and water bottles as incentives for participation.</p>
       <div
         className={classes.figure}
       >
-        <img src={Picture2} className={classes.image}/>
+        <img src={Picture2} className={classes.image} alt="student chopping vegetables at cooking workshop"/>
       </div>
       <p>Families in the Summer Harvest Program at the OCCP received CSA supplemental produce and recipes bi-weekly with their regularly scheduled visit to the pantry. This was in addition to the extra food provided through the Summer Harvest Program.</p>
       <div
         className={classes.figure}
       >
-        <img src={Picture3} className={classes.image}/>
+        <img src={Picture3} className={classes.image} alt="CSA produce bag"/>
       </div>
       <p>The results of the project so far indicate that the children in the gardening program have an increased self-efficacy for gardening and vegetable preparation. The impact of the garden on the housing community has been positive. Parents said they and their children enjoyed and respected the community garden established at their apartment complex. They shared that the garden helped their children grow in maturity, independence and responsibility. The children have taken pride in their garden, but more work needs to occur to increase the sense of ownership for the garden by the parents and children. The children in the garden program developed a liking for certain vegetables such as carrots and squash. They also discussed making the flavored water (such as strawberry water they made during the camp program) as substitutes for other beverages. Other families reported the children using the MyPlate plate (received during the program) as a guide to what they should have on their plate. The children’s favorite activities were all hands-on and included watering the garden, cutting the vegetables, and building the herb spiral. Participation in the program increased with consistency of the weekly program which built increased familiarity and connectedness to the camp staff. </p>
       <div
         className={classes.figure}
       >
-        <img src={Picture4} className={classes.image}/>
+        <img src={Picture4} className={classes.image} alt="children's garden"/>
       </div>
       <p>The program would benefit from a parent-child component. Parent involvement increased throughout the summer, as a result of comfort and familiarity. Additional workshops need to be conducted to build familiarity and knowledge of cooking techniques with the vegetables in the CSA bags. Work continues to build a sustainable model for providing CSA produce to the OCCP.</p>
     </ EssayPage>
